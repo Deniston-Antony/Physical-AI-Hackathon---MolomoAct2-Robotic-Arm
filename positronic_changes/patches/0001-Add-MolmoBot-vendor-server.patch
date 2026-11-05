@@ -1,0 +1,332 @@
+From 1c2abfb5ee6636aa7b72280166f9a83238dff0e2 Mon Sep 17 00:00:00 2001
+From: denistonantony <deniston2k@gmail.com>
+Date: Thu, 5 Nov 2026 21:11:47 +0100
+Subject: [PATCH 1/3] Add MolmoBot vendor server
+
+Serve MolmoBot DROID checkpoints through the offboard server: memory-mapped weight load into bfloat16, two frames per camera from the previous call, joint step cap and gripper threshold from `FrankaState8ClampAbsPosConfig`, a camera choice per session, and the `droid`, `droid_overlap` and `droid_half_overlap` commands.
+---
+ positronic/vendors/molmobot/__init__.py |   5 +
+ positronic/vendors/molmobot/codecs.py   |  59 +++++++++
+ positronic/vendors/molmobot/policy.py   | 163 ++++++++++++++++++++++++
+ positronic/vendors/molmobot/server.py   |  61 +++++++++
+ 4 files changed, 288 insertions(+)
+ create mode 100644 positronic/vendors/molmobot/__init__.py
+ create mode 100644 positronic/vendors/molmobot/codecs.py
+ create mode 100644 positronic/vendors/molmobot/policy.py
+ create mode 100644 positronic/vendors/molmobot/server.py
+
+diff --git a/positronic/vendors/molmobot/__init__.py b/positronic/vendors/molmobot/__init__.py
+new file mode 100644
+index 00000000..d2048e82
+--- /dev/null
++++ b/positronic/vendors/molmobot/__init__.py
+@@ -0,0 +1,5 @@
++"""Keys of the observation MolmoBot sessions take, which the codec writes and a warmup rebuilds."""
++
++IMAGES = 'images'
++STATE = 'state'
++TASK = 'task'
+diff --git a/positronic/vendors/molmobot/codecs.py b/positronic/vendors/molmobot/codecs.py
+new file mode 100644
+index 00000000..991a6745
+--- /dev/null
++++ b/positronic/vendors/molmobot/codecs.py
+@@ -0,0 +1,59 @@
++"""MolmoBot codec: both exterior cameras and the wrist camera, 8-D joint state, and the DROID joint action space."""
++
++from typing import Any
++
++import configuronic as cfn
++import numpy as np
++
++from positronic import keys
++from positronic.cfg import codecs
++from positronic.policy.codecs import Codec
++from positronic.vendors import molmobot
++
++
++def _image(key: str, inputs: dict[str, Any]) -> np.ndarray:
++    frame = np.asarray(inputs[key])
++    if frame.ndim != 3 or frame.shape[2] != 3:
++        raise ValueError(f"Image '{key}' must be HWC with 3 channels, got {frame.shape}")
++    return frame
++
++
++class MolmoBotObservationCodec(Codec):
++    """Encodes positronic observations into MolmoBot inputs.
++
++    Emits the camera list ``[exterior, exterior_2, wrist]`` (uint8 HWC RGB), the 8-D state
++    ``[joint_positions(7), grip(1)]`` and the language task. The model picks one exterior camera, keeps the earlier
++    frames and converts the grip to its own units.
++    """
++
++    def __init__(
++        self,
++        exterior_camera: str = keys.EXTERIOR_IMAGE,
++        exterior_camera_2: str = keys.EXTERIOR_IMAGE_2,
++        wrist_camera: str = keys.WRIST_IMAGE,
++        joint_key: str = keys.JOINTS,
++        grip_key: str = keys.GRIP,
++    ):
++        self._cameras = (exterior_camera, exterior_camera_2, wrist_camera)
++        self._joint_key = joint_key
++        self._grip_key = grip_key
++
++    def encode(self, inputs: dict[str, Any]) -> dict[str, Any]:
++        joints = np.asarray(inputs[self._joint_key], dtype=np.float32).reshape(-1)
++        grip = np.asarray(inputs[self._grip_key], dtype=np.float32).reshape(-1)
++        return {
++            molmobot.IMAGES: [_image(k, inputs) for k in self._cameras],
++            molmobot.STATE: np.concatenate([joints, grip]).astype(np.float32),
++            molmobot.TASK: inputs.get(keys.TASK, ''),
++        }
++
++
++molmobot_obs = cfn.Config(MolmoBotObservationCodec)
++
++# The model returns absolute joint positions (7) and a grip closure of 0 or 1.
++_action = codecs.absolute_joints_action.override(tgt_joints_key=keys.TARGET_JOINTS, tgt_grip_key=keys.TARGET_GRIP)
++
++# MolmoBot-Data records at 66 ms per step.
++droid = codecs.compose.override(
++    obs=molmobot_obs, action=codecs.droid_execution.override(action=_action), training_fps=15.0
++)
+diff --git a/positronic/vendors/molmobot/policy.py b/positronic/vendors/molmobot/policy.py
+new file mode 100644
+index 00000000..03037db9
+--- /dev/null
++++ b/positronic/vendors/molmobot/policy.py
+@@ -0,0 +1,163 @@
++from pathlib import Path
++from typing import Any
++
++import numpy as np
++import torch
++from olmo.models.model_config import BaseModelConfig
++from olmo.models.molmobot.inference_wrapper import SynthManipMolmoInferenceWrapper
++
++from positronic.offboard.spec import Model
++from positronic.policy import keys as policy_keys
++from positronic.policy.base import Obs
++from positronic.policy.codecs import ACTION
++from positronic.simulator.molmo_spaces import mapping
++from positronic.vendors import molmobot
++
++STATE_DIM = 8  # [joint_positions(7), grip(1)]
++_NUM_JOINTS = 7
++_IMAGE_SHAPE = (352, 624, 3)
++# MolmoBot's FrankaState8ClampAbsPosConfig: the largest joint step per action, and the gripper command threshold.
++_MAX_JOINT_STEP = 0.2
++_GRIP_THRESHOLD = 128.0
++# The exterior camera the model sees: the one in `image.exterior`, or the left or the right shoulder camera.
++CAMERAS = ('exterior', 'left', 'right')
++
++
++def warm_observation() -> dict[str, Any]:
++    """Zero-filled inputs one inference can run on, so the model's first-call cost is paid before it serves."""
++    return {
++        molmobot.IMAGES: [np.zeros(_IMAGE_SHAPE, dtype=np.uint8) for _ in range(3)],
++        molmobot.STATE: np.zeros(STATE_DIM, dtype=np.float32),
++        molmobot.TASK: '',
++    }
++
++
++class _MmapCheckpointWrapper(SynthManipMolmoInferenceWrapper):
++    """The upstream wrapper, with the float32 checkpoint read through a memory map into the bfloat16 model.
++
++    The upstream load reads the whole 20 GB checkpoint into RAM first.
++    """
++
++    def _load_checkpoint(self) -> None:
++        self.model_config = BaseModelConfig.load(str(Path(self.checkpoint_path) / 'config.yaml'), key='model')
++        self.max_seq_len = self.model_config.llm.max_sequence_length
++        self.action_horizon = self.model_config.action_horizon
++        self.action_dim = self.model_config.action_dim
++        self.n_obs_steps = self.model_config.n_obs_steps
++        if self.num_flow_steps is None:
++            self.num_flow_steps = self.model_config.flow_matching_num_steps
++        if self.states_mode is not None:
++            self.model_config.states_mode = self.states_mode
++        with torch.device('meta'):
++            self.model = self.model_config.build_model()
++        self.model.to(torch.bfloat16)
++        self.model.to_empty(device=self.device)
++        state = torch.load(Path(self.checkpoint_path) / 'model.pt', map_location='cpu', weights_only=True, mmap=True)
++        self.model.load_state_dict(state, strict=True)
++        del state
++        self.model.eval()
++
++
++def _white_lean(img: np.ndarray) -> float:
++    """How much more of the lower right than of the lower left is near-white: the robot base at the home pose."""
++    h, w, _ = img.shape
++    rgb = np.asarray(img, dtype=np.int16)
++    white = (rgb.min(axis=2) > 170) & (rgb.max(axis=2) - rgb.min(axis=2) < 30)
++    lower = white[h // 2 :]
++    return float(lower[:, 2 * w // 3 :].mean() - lower[:, : w // 3].mean())
++
++
++def exterior_side(exterior: np.ndarray, exterior_2: np.ndarray) -> str:
++    """The shoulder of the camera in ``exterior``, from frames of both shoulder cameras at the home pose.
++
++    The left shoulder camera sees the robot base in the lower right of its image. About 94% right on 119 local
++    episodes.
++    """
++    return 'left' if _white_lean(exterior) > _white_lean(exterior_2) else 'right'
++
++
++def limit_chunk(chunk: np.ndarray, joints: np.ndarray) -> np.ndarray:
++    """Scale each joint step to ``_MAX_JOINT_STEP`` and turn the gripper command into a closure of 0 or 1."""
++    out = np.asarray(chunk, dtype=np.float32).copy()
++    reference = np.asarray(joints, dtype=np.float32)
++    for action in out:
++        step = action[:_NUM_JOINTS] - reference
++        scale = np.max(np.abs(step)) / _MAX_JOINT_STEP
++        if scale > 1:
++            step /= scale
++        action[:_NUM_JOINTS] = reference + step
++        action[_NUM_JOINTS] = 1.0 if action[_NUM_JOINTS] > _GRIP_THRESHOLD else 0.0
++        reference = action[:_NUM_JOINTS]
++    return out
++
++
++class MolmoBotModel(Model):
++    """MolmoBot on the GPU, with the previous call's camera frames kept per session.
++
++    The observation holds both shoulder cameras and the wrist camera; the model sees one shoulder camera and the
++    wrist camera. A checkpoint with ``n_obs_steps=2`` takes two frames per camera. The previous call is one
++    executed chunk earlier, which is the frame gap the checkpoint trained on when a chunk executes
++    ``obs_step_delta`` actions.
++    """
++
++    def __init__(
++        self, checkpoint_dir: str, *, num_flow_steps: int | None = None, skip_actions: int = 0, camera: str = 'exterior'
++    ):
++        """``skip_actions`` drops that many actions from the start of each chunk after a session's first one.
++
++        A schedule that requests the next chunk when the current one starts plays it one chunk after its
++        observation, so the robot has passed the chunk's first actions by then. ``camera`` is one of ``CAMERAS``;
++        a shoulder is picked once per session, from its first observation.
++        """
++        if camera not in CAMERAS:
++            raise ValueError(f'camera must be one of {CAMERAS}, got {camera!r}')
++        if not torch.cuda.is_available():
++            raise RuntimeError('MolmoBot found no CUDA GPU.')
++        self._agent = _MmapCheckpointWrapper(checkpoint_dir, num_flow_steps=num_flow_steps, states_mode='cross_attn')
++        if self._agent.n_obs_steps not in (1, 2):
++            raise ValueError(
++                f'MolmoBot serves 1 or 2 frames per camera, the checkpoint takes {self._agent.n_obs_steps}'
++            )
++        if not 0 <= skip_actions < self._agent.action_horizon:
++            raise ValueError(f'skip_actions must be in [0, {self._agent.action_horizon}), got {skip_actions}')
++        self._skip_actions = skip_actions
++        self._camera = camera
++        self._use_exterior_2: dict[str, bool] = {}
++        self._previous_images: dict[str, list[np.ndarray]] = {}
++        name = Path(checkpoint_dir).name
++        self._meta = {policy_keys.TYPE: 'molmobot', 'model_id': name, policy_keys.CHECKPOINT_ID: name}
++
++    def __call__(self, obs: Obs, *, session_id: str) -> list[dict[str, Any]]:
++        exterior, exterior_2, wrist = obs[molmobot.IMAGES]
++        if session_id not in self._use_exterior_2:
++            self._use_exterior_2[session_id] = (
++                self._camera != 'exterior' and exterior_side(exterior, exterior_2) != self._camera
++            )
++        images = [exterior_2 if self._use_exterior_2[session_id] else exterior, wrist]
++        previous = self._previous_images.get(session_id)
++        self._previous_images[session_id] = images
++        if self._agent.n_obs_steps == 2 and previous is not None:
++            images = [frame for pair in zip(previous, images, strict=True) for frame in pair]
++        state = np.asarray(obs[molmobot.STATE], dtype=np.float32)
++        joints = state[:_NUM_JOINTS]
++        model_state = np.append(joints, state[_NUM_JOINTS] * mapping.GRIPPER_QPOS_CLOSED).astype(np.float32)
++        chunk = self._agent.get_action_chunk(
++            images=images, task_description=obs.get(molmobot.TASK, ''), state=model_state
++        )
++        actions = limit_chunk(chunk, joints)
++        if previous is not None:
++            actions = actions[self._skip_actions :]
++        return [{ACTION: action} for action in actions]
++
++    def end_session(self, session_id: str) -> None:
++        self._previous_images.pop(session_id, None)
++        self._use_exterior_2.pop(session_id, None)
++
++    def meta(self) -> dict[str, Any]:
++        return self._meta
++
++    def close(self):
++        if self._agent is not None:
++            del self._agent
++            self._agent = None
++            torch.cuda.empty_cache()
+diff --git a/positronic/vendors/molmobot/server.py b/positronic/vendors/molmobot/server.py
+new file mode 100644
+index 00000000..cf30eff1
+--- /dev/null
++++ b/positronic/vendors/molmobot/server.py
+@@ -0,0 +1,61 @@
++import logging
++
++import configuronic as cfn
++
++from pimm.logging import init_logging
++from positronic.offboard.server import serve
++from positronic.offboard.server_utils import warmup
++from positronic.offboard.spec import Model, PolicyDeployment
++from positronic.policy import Codec, Sequential
++from positronic.policy.codecs import ResizeMode, TransformImages
++from positronic.policy.processors import ChunkedSchedule, ConstantDuration
++from positronic.vendors.molmobot import codecs as molmobot_codecs
++from positronic.vendors.molmobot.policy import MolmoBotModel, warm_observation
++
++logger = logging.getLogger(__name__)
++
++DEFAULT_CHECKPOINT_DIR = '/opt/molmobot/MolmoBot-DROID'
++
++
++@cfn.config(checkpoint_dir=DEFAULT_CHECKPOINT_DIR, num_flow_steps=None, skip_actions=0, camera='exterior')
++def molmobot_model(checkpoint_dir: str, num_flow_steps: int | None, skip_actions: int, camera: str) -> Model:
++    """One MolmoBot checkpoint directory (``config.yaml`` and ``model.pt``), in process."""
++    logger.info(f'Loading MolmoBot model {checkpoint_dir}')
++    policy = MolmoBotModel(checkpoint_dir, num_flow_steps=num_flow_steps, skip_actions=skip_actions, camera=camera)
++    warmup(policy, warm_observation())
++    return policy
++
++
++# The checkpoint predicts 16 steps; MolmoBot's own eval executes the first 8 of them, at 66 ms per step.
++@cfn.config(codec=molmobot_codecs.droid)
++def pipeline(
++    codec: Codec,
++    fps: float = 15.0,
++    horizon_sec: float | None = 7.5 / 15,
++    inference_lead_sec: float = 0.0,
++    compress_images: bool = False,
++):
++    schedule = ChunkedSchedule(fps, horizon_sec, inference_lead=ConstantDuration(inference_lead_sec))
++    return PolicyDeployment(
++        Sequential(schedule, TransformImages(640, 640, mode=ResizeMode.BOUND)), codec, compress_images=compress_images
++    )
++
++
++droid = pipeline
++# The next chunk is requested when the current one starts, so inference runs while the robot moves. That chunk
++# starts one chunk (8 actions) after its observation, so the model drops its first 8 actions.
++droid_overlap = pipeline.override(inference_lead_sec=1.0)
++# The next chunk is requested 0.2 s before the current one ends. The control rounds come every 66 ms, so the
++# request goes out in round 5 of the chunk, and the robot plays the chunk's last 4 actions after its observation.
++droid_half_overlap = pipeline.override(inference_lead_sec=0.2)
++
++COMMANDS = {
++    **{k: serve.override(model=molmobot_model, pipeline=droid) for k in ('', 'serve', 'droid')},
++    'droid_overlap': serve.override(model=molmobot_model.override(skip_actions=8), pipeline=droid_overlap),
++    'droid_half_overlap': serve.override(model=molmobot_model.override(skip_actions=4), pipeline=droid_half_overlap),
++}
++
++
++if __name__ == '__main__':
++    init_logging()
++    cfn.cli(COMMANDS)
+-- 
+2.43.0
+

@@ -1,0 +1,107 @@
+# syntax=docker/dockerfile:1.7
+# A policy image the platform can run: a MolmoBot checkpoint for DROID (Ai2), served through the MolmoBot code.
+# docs/submit-a-policy-image.md says what the platform requires of the image and how to test it.
+#
+# Usage (from the repository root). Two named build contexts supply what this repository does not hold:
+#   molmobot = the `MolmoBot` folder of a github.com/allenai/MolmoBot checkout at commit 33c0ca77
+#   weights  = a download of a MolmoBot checkpoint, for example allenai/MolmoBot-DROID at revision cbe6ec35 or
+#              allenai/MolmoBot-Img-DROID: `config.yaml` and `model.pt`. CHECKPOINT_NAME names its folder.
+#   docker buildx build --platform linux/amd64 --provenance=false --sbom=false \
+#       --build-context molmobot=<checkout>/MolmoBot --build-context weights=<weights folder> \
+#       -f docker/Dockerfile.serve-molmobot-droid -t docker.io/<you>/molmobot-droid:v1 .
+#   docker run --rm --network none docker.io/<you>/molmobot-droid:v1        # the offline pre-flight
+#
+# The base, the dependencies and the source match `Dockerfile.serve-molmoact2-droid`. The MolmoBot code needs
+# packages that no positronic extra holds; `molmobot-constraints.txt` pins them to the versions this image was
+# tested with.
+
+ARG BASE_IMAGE=ghcr.io/astral-sh/uv:python3.13-bookworm
+ARG TOKENIZER=Qwen/Qwen3-4B-Instruct-2507
+ARG TOKENIZER_REVISION=cdbee75f17c01a7cc42f958dc650907174af0554
+
+# The MolmoBot code loads its text tokenizer from the Hugging Face cache.
+FROM python:3.12-slim@sha256:05cda9777409a9c3ffddd94a4c476b79f0769a0b4857f0c7ed9226b6800b0d6f AS tokenizer
+ARG TOKENIZER TOKENIZER_REVISION
+ENV HF_HOME=/opt/hf
+RUN pip install --no-cache-dir huggingface_hub==0.35.3
+# A download by commit writes no `refs/main`, and the offline load of the default revision reads it.
+RUN hf download "$TOKENIZER" --revision "$TOKENIZER_REVISION" \
+      --include "tokenizer.json" "tokenizer_config.json" "vocab.json" "merges.txt" "config.json" > /dev/null \
+ && refs="$HF_HOME/hub/models--$(echo "$TOKENIZER" | sed 's|/|--|g')/refs" \
+ && mkdir -p "$refs" && printf %s "$TOKENIZER_REVISION" > "$refs/main"
+
+FROM ${BASE_IMAGE}
+# robosuite, a positronic dependency, pulls in opencv-python, and its cv2 loads libGL at import.
+RUN apt-get update && apt-get install -y --no-install-recommends libgl1 && rm -rf /var/lib/apt/lists/*
+
+ENV HF_HOME=/opt/hf \
+    PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/positronic:/positronic/client:/positronic/wire:/positronic/model_server:/positronic/vocabulary:/positronic/evals:/opt/molmobot \
+    UV_PROJECT_ENVIRONMENT=/positronic/.venv \
+    VIRTUAL_ENV=/positronic/.venv \
+    UV_PYTHON_DOWNLOADS=never \
+    UV_LINK_MODE=copy \
+    UV_HTTP_TIMEOUT=600 \
+    PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \
+    NVIDIA_VISIBLE_DEVICES=all \
+    NVIDIA_DRIVER_CAPABILITIES=compute,utility
+
+WORKDIR /positronic
+COPY pyproject.toml uv.lock ./
+COPY client/pyproject.toml client/
+COPY wire/pyproject.toml wire/
+COPY model_server/pyproject.toml model_server/
+COPY vocabulary/pyproject.toml vocabulary/
+COPY evals/pyproject.toml evals/
+RUN uv sync --locked --python 3.13 --extra molmoact2 --no-dev --no-install-workspace && uv cache clean
+
+COPY README.md LICENSE ./
+COPY client/README.md client/
+COPY wire/README.md wire/
+COPY model_server/README.md model_server/
+COPY vocabulary/README.md vocabulary/
+COPY evals/README.md evals/
+COPY positronic/__init__.py positronic/
+COPY pimm/__init__.py pimm/
+COPY client/platform_client/py.typed client/platform_client/
+COPY wire/positronic_wire/py.typed wire/positronic_wire/
+COPY model_server/positronic_model_server/py.typed model_server/positronic_model_server/
+COPY vocabulary/eval_vocabulary/py.typed vocabulary/eval_vocabulary/
+COPY evals/positronic_evals/py.typed evals/positronic_evals/
+RUN uv sync --locked --python 3.13 --extra molmoact2 --no-dev && uv cache clean
+
+# After the last sync, which removes every package the lock does not name. `--no-config` drops the project's
+# `exclude-newer`, which hides some of the pinned versions.
+COPY docker/molmobot-constraints.txt /tmp/molmobot-constraints.txt
+RUN uv pip install --no-config --python /positronic/.venv/bin/python -c /tmp/molmobot-constraints.txt \
+      omegaconf einops einops-exts rich cached-path torchmetrics datasets decord huggingface-hub \
+ && uv cache clean && rm /tmp/molmobot-constraints.txt
+
+COPY --link . /positronic
+COPY --link --from=molmobot olmo /opt/molmobot/olmo
+COPY --link --from=molmobot LICENSE /opt/molmobot/LICENSE
+COPY --link --from=tokenizer /opt/hf /opt/hf
+ARG CHECKPOINT_NAME=MolmoBot-DROID
+COPY --link --from=weights config.yaml model.pt /opt/molmobot/${CHECKPOINT_NAME}/
+
+# A fetch the build did not make fails at once on the denied network.
+ENV HF_HUB_OFFLINE=1 \
+    TRANSFORMERS_OFFLINE=1 \
+    UV_OFFLINE=1 \
+    UV_NO_SYNC=1
+
+# After the weights, so another server command rebuilds no layer. `droid_half_overlap` requests the next chunk
+# while the robot plays the last actions of the current one.
+# SERVER_ARGS adds server flags, for example `--model.camera=left`.
+ARG SERVER_COMMAND=droid
+ARG SERVER_ARGS=
+ENV MOLMOBOT_COMMAND=${SERVER_COMMAND} \
+    MOLMOBOT_CHECKPOINT=/opt/molmobot/${CHECKPOINT_NAME} \
+    MOLMOBOT_ARGS=${SERVER_ARGS}
+
+EXPOSE 8000
+
+# `exec` makes the server pid 1, so it receives the stop signal.
+ENTRYPOINT ["/bin/sh", "-c", \
+  "exec /positronic/.venv/bin/python -m positronic.vendors.molmobot.server \"$MOLMOBOT_COMMAND\" \
+   --model.checkpoint_dir=\"$MOLMOBOT_CHECKPOINT\" $MOLMOBOT_ARGS \"$@\"", "--"]

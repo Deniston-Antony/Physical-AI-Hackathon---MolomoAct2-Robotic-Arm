@@ -1,0 +1,28 @@
+From 411cd022b1dfed596e9287dc50e2083ec584db24 Mon Sep 17 00:00:00 2001
+From: denistonantony <deniston2k@gmail.com>
+Date: Thu, 5 Nov 2026 21:11:47 +0100
+Subject: [PATCH 3/3] Set the NVIDIA variables in the MolmoAct2 image
+
+Without them the platform container sees no CUDA GPU and the run fails with `policy_setup_crash`.
+---
+ docker/Dockerfile.serve-molmoact2-droid | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/docker/Dockerfile.serve-molmoact2-droid b/docker/Dockerfile.serve-molmoact2-droid
+index 7a40870a..0e59086f 100644
+--- a/docker/Dockerfile.serve-molmoact2-droid
++++ b/docker/Dockerfile.serve-molmoact2-droid
+@@ -45,7 +45,9 @@ ENV HF_HOME=/opt/hf \
+     VIRTUAL_ENV=/positronic/.venv \
+     UV_PYTHON_DOWNLOADS=never \
+     UV_LINK_MODE=copy \
+-    UV_HTTP_TIMEOUT=600
++    UV_HTTP_TIMEOUT=600 \
++    NVIDIA_VISIBLE_DEVICES=all \
++    NVIDIA_DRIVER_CAPABILITIES=compute,utility
+ 
+ # The dependencies install from the lock alone, so a source change does not reinstall them.
+ WORKDIR /positronic
+-- 
+2.43.0
+
