@@ -1,0 +1,93 @@
+[
+ {
+  "set": "FrankaPickandPlaceNextToHardBench",
+  "path": "molmospaces-bench-v2/procthor-objaverse/FrankaPickandPlaceNextToHardBench/FrankaPickandPlaceNextToHardBench_20260305_json_benchmark/935",
+  "task": "Pick up the wooden humanoid puzzle piece and place it next to the shiny gold vase",
+  "molmoact2": true,
+  "timeout": 31.03
+ },
+ {
+  "set": "FrankaPickandPlaceNextToHardBench",
+  "path": "molmospaces-bench-v2/procthor-objaverse/FrankaPickandPlaceNextToHardBench/FrankaPickandPlaceNextToHardBench_20260305_json_benchmark/941",
+  "task": "Pick up the sleek black spinning top and place it next to the gold metallic phone",
+  "molmoact2": false,
+  "timeout": 31.03
+ },
+ {
+  "set": "FrankaPickandPlaceNextToHardBench",
+  "path": "molmospaces-bench-v2/procthor-objaverse/FrankaPickandPlaceNextToHardBench/FrankaPickandPlaceNextToHardBench_20260305_json_benchmark/29",
+  "task": "Pick up the orange cylindrical medicine bottle with label and place it next to the octagonal translucent soap bottle",
+  "molmoact2": false,
+  "timeout": 31.03
+ },
+ {
+  "set": "FrankaPickandPlaceNextToHardBench",
+  "path": "molmospaces-bench-v2/procthor-objaverse/FrankaPickandPlaceNextToHardBench/FrankaPickandPlaceNextToHardBench_20260305_json_benchmark/711",
+  "task": "Pick up the glossy orange bell pepper with stem and place it next to the irish potato",
+  "molmoact2": false,
+  "timeout": 31.03
+ },
+ {
+  "set": "FrankaPickandPlaceNextToHardBench",
+  "path": "molmospaces-bench-v2/procthor-objaverse/FrankaPickandPlaceNextToHardBench/FrankaPickandPlaceNextToHardBench_20260305_json_benchmark/868",
+  "task": "Pick up the gray metal rod with perforated top and place it next to the angular dark stealth aircraft with wings",
+  "molmoact2": false,
+  "timeout": 31.03
+ },
+ {
+  "set": "FrankaPickandPlaceNextToHardBench",
+  "path": "molmospaces-bench-v2/procthor-objaverse/FrankaPickandPlaceNextToHardBench/FrankaPickandPlaceNextToHardBench_20260305_json_benchmark/10",
+  "task": "Pick up the green gemstone and place it next to the red spaceship",
+  "molmoact2": false,
+  "timeout": 31.03
+ },
+ {
+  "set": "FrankaPickandPlaceNextToHardBench",
+  "path": "molmospaces-bench-v2/procthor-objaverse/FrankaPickandPlaceNextToHardBench/FrankaPickandPlaceNextToHardBench_20260305_json_benchmark/151",
+  "task": "Pick up the green grenade with metal lever and base and place it next to the gray rectangular ethernet transceiver",
+  "molmoact2": false,
+  "timeout": 31.03
+ },
+ {
+  "set": "FrankaPickandPlaceNextToHardBench",
+  "path": "molmospaces-bench-v2/procthor-objaverse/FrankaPickandPlaceNextToHardBench/FrankaPickandPlaceNextToHardBench_20260305_json_benchmark/913",
+  "task": "Pick up the light wooden bridge with arches and place it next to the purple and yellow pixelated knife",
+  "molmoact2": false,
+  "timeout": 31.03
+ },
+ {
+  "set": "FrankaPickandPlaceNextToHardBench",
+  "path": "molmospaces-bench-v2/procthor-objaverse/FrankaPickandPlaceNextToHardBench/FrankaPickandPlaceNextToHardBench_20260305_json_benchmark/848",
+  "task": "Pick up the root vegetable and place it next to the medium round red tomato with stem",
+  "molmoact2": false,
+  "timeout": 31.03
+ },
+ {
+  "set": "FrankaPickandPlaceNextToHardBench",
+  "path": "molmospaces-bench-v2/procthor-objaverse/FrankaPickandPlaceNextToHardBench/FrankaPickandPlaceNextToHardBench_20260305_json_benchmark/248",
+  "task": "Pick up the dark metal frying pan and place it next to the bulbous shiny gold metallic vase",
+  "molmoact2": false,
+  "timeout": 31.03
+ },
+ {
+  "set": "FrankaPickandPlaceNextToHardBench",
+  "path": "molmospaces-bench-v2/procthor-objaverse/FrankaPickandPlaceNextToHardBench/FrankaPickandPlaceNextToHardBench_20260305_json_benchmark/276",
+  "task": "Pick up the denture and place it next to the red lighthouse with framework",
+  "molmoact2": false,
+  "timeout": 31.03
+ },
+ {
+  "set": "FrankaPickandPlaceNextToHardBench",
+  "path": "molmospaces-bench-v2/procthor-objaverse/FrankaPickandPlaceNextToHardBench/FrankaPickandPlaceNextToHardBench_20260305_json_benchmark/745",
+  "task": "Pick up the smooth brown chicken egg and place it next to the transparent soap bottle with bronze pump",
+  "molmoact2": false,
+  "timeout": 31.03
+ },
+ {
+  "set": "FrankaPickandPlaceNextToHardBench",
+  "path": "molmospaces-bench-v2/procthor-objaverse/FrankaPickandPlaceNextToHardBench/FrankaPickandPlaceNextToHardBench_20260305_json_benchmark/65",
+  "task": "Pick up the medallion with crown and shields and place it next to the dark gray bowl",
+  "molmoact2": true,
+  "timeout": 31.03
+ }
+]
