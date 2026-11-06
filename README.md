@@ -4,14 +4,14 @@ This Repository is related to the Physical AI Hackathon which I Participated in 
 Team: **The Risers**. Competition: PHAIL stage 1 (Positronic platform, board `molmo.competition_v2`). A Franka robot
 arm in the MolmoSpaces simulator does 320 episodes: pick, pick and place, place next to, open and close.
 
-## Current status (6 November 2026, 10:00 CET)
+## Current status (6 November 2026, 12:30 CET)
 
 | | |
 |---|---|
-| Best board score | **47.2% (151/320)**, rank 13 of 33 |
+| Best board score | **47.2% (151/320)**, rank 14 of 33 (rank 13 on 5 November) |
 | Best model | MolmoBot-Img-DROID (Ai2), half-overlap timing, left shoulder camera |
 | Best image | `docker.io/denistonantony/molmobot-img-droid:v1` |
-| Work in progress | Overnight tests on hard episodes (see below). The best new setting is **not submitted yet**. |
+| Best new setting | Play 12 actions per model call and use 5 flow steps: 16/28 hard episodes on the local PC, against 3/28 for the current image. **Not submitted yet.** |
 
 ## Board submissions
 
@@ -45,9 +45,9 @@ for about 63% of each episode.
 
 | Step | Content | Status |
 |---|---|---|
-| 1 | Speed: play more actions per model call, and use fewer flow-matching steps | **Done** |
-| 2 | Gripper rule: a closed gripper opens only when the model value is below 40 (of 255) | Running |
-| 3 | Look at the replay videos of top teams on hard episodes that we fail | Next |
+| 1 | Speed: play more actions per model call, and use fewer flow-matching steps | **Done**: 16/28 against 3/28 |
+| 2 | Gripper rule: a closed gripper opens only when the model value is below 40 (of 255) | **Done**: no change |
+| 3 | Look at the replay videos of top teams on hard episodes that we fail | **Done**: our robot is slower |
 
 ### Test set
 
@@ -103,12 +103,36 @@ By group:
 - 28 episodes is a small test. Most of them are episodes that our board run failed.
 - Fewer flow steps can make the actions less exact. The test shows no loss, but only on 28 episodes.
 
+### Step 2 results: gripper rule
+
+| Run | Solved | Hard pick | Hard pick and place | Failures where the gripper closed, then opened again |
+|---|---|---|---|---|
+| play12_flow5 | 16/28 | 9/16 | 7/12 | 11 |
+| grip40 (play12_flow5 and the rule) | 16/28 | 9/16 | 7/12 | 11 |
+
+- The rule changes nothing. When the robot opens the gripper, the model value is clearly low. The model decides to
+  open, so a second threshold does not stop it.
+- The two runs solved 12 of the same episodes and 4 different episodes each. So a difference of up to about 4
+  episodes on this set can be chance. The step 1 gain (16 against 3) is much larger. The gains of `play12` and
+  `flow5` alone are not.
+
+### Step 3 results: top-team replay videos
+
+We compared our board run with the runs of 3 top teams on 8 hard-pick episodes that they solve and we fail.
+
+- In most episodes our robot moves along about the same path as the top teams' robots. It arrives late and runs out
+  of time. The top teams finish in 6 to 19 s. The limit is 21 s.
+- In some episodes our robot goes to the wrong place first, then turns back.
+- We saw no grasp method of the top teams that differs from ours.
+
+Full results: [reports/2026-11-06-overnight-results.md](reports/2026-11-06-overnight-results.md).
+
 ### Next
 
-1. Step 2 (gripper rule) finishes at about 12:30. Its result goes into
-   [reports/2026-11-06-overnight-results.md](reports/2026-11-06-overnight-results.md).
-2. Step 3: compare our robot with the robots of the top teams on the same hard episodes.
-3. Then build an image with the best setting and submit it.
+1. Build an image with the best setting (`--pipeline.horizon_sec=0.7667 --model.num_flow_steps=5`, plus the current
+   settings) and submit it.
+2. Test 3 flow steps (218 ms per call) and 14–16 actions per call.
+3. Do not use the gripper rule.
 
 ## Repository layout
 
