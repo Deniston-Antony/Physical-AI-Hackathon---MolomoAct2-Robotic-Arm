@@ -131,7 +131,7 @@ Full results: [reports/2026-11-06-overnight-results.md](reports/2026-11-06-overn
 
 1. Build an image with the best setting (`--pipeline.horizon_sec=0.7667 --model.num_flow_steps=5`, plus the current
    settings) and submit it.
-2. Test 3 flow steps (218 ms per call) and 14–16 actions per call.
+2. Test 3 flow steps (218 ms per call). The model predicts 16 actions and drops 4, so 12 actions per call is the most it can play now.
 3. Do not use the gripper rule.
 
 ## Repository layout
