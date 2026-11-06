@@ -17,11 +17,25 @@ logger = logging.getLogger(__name__)
 DEFAULT_CHECKPOINT_DIR = '/opt/molmobot/MolmoBot-DROID'
 
 
-@cfn.config(checkpoint_dir=DEFAULT_CHECKPOINT_DIR, num_flow_steps=None, skip_actions=0, camera='exterior')
-def molmobot_model(checkpoint_dir: str, num_flow_steps: int | None, skip_actions: int, camera: str) -> Model:
+@cfn.config(
+    checkpoint_dir=DEFAULT_CHECKPOINT_DIR,
+    num_flow_steps=None,
+    skip_actions=0,
+    camera='exterior',
+    grip_release_below=None,
+)
+def molmobot_model(
+    checkpoint_dir: str, num_flow_steps: int | None, skip_actions: int, camera: str, grip_release_below: float | None
+) -> Model:
     """One MolmoBot checkpoint directory (``config.yaml`` and ``model.pt``), in process."""
     logger.info(f'Loading MolmoBot model {checkpoint_dir}')
-    policy = MolmoBotModel(checkpoint_dir, num_flow_steps=num_flow_steps, skip_actions=skip_actions, camera=camera)
+    policy = MolmoBotModel(
+        checkpoint_dir,
+        num_flow_steps=num_flow_steps,
+        skip_actions=skip_actions,
+        camera=camera,
+        grip_release_below=grip_release_below,
+    )
     warmup(policy, warm_observation())
     return policy
 

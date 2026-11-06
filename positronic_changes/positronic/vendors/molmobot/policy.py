@@ -1,3 +1,5 @@
+import logging
+import time
 from pathlib import Path
 from typing import Any
 
@@ -13,12 +15,18 @@ from positronic.policy.codecs import ACTION
 from positronic.simulator.molmo_spaces import mapping
 from positronic.vendors import molmobot
 
+logger = logging.getLogger(__name__)
+
 STATE_DIM = 8  # [joint_positions(7), grip(1)]
 _NUM_JOINTS = 7
 _IMAGE_SHAPE = (352, 624, 3)
 # MolmoBot's FrankaState8ClampAbsPosConfig: the largest joint step per action, and the gripper command threshold.
 _MAX_JOINT_STEP = 0.2
 _GRIP_THRESHOLD = 128.0
+# An observed grip above this is a gripper that is closed or closing: an open gripper reads 0.
+_GRIP_CLOSED_OBS = 0.05
+# The model logs its inference time once per this many calls.
+_TIMING_LOG_CALLS = 100
 # The exterior camera the model sees: the one in `image.exterior`, or the left or the right shoulder camera.
 CAMERAS = ('exterior', 'left', 'right')
 
@@ -91,6 +99,15 @@ def limit_chunk(chunk: np.ndarray, joints: np.ndarray) -> np.ndarray:
     return out
 
 
+def hold_grip(raw: np.ndarray, closed: bool, release_below: float) -> np.ndarray:
+    """Gripper closures of 0 or 1: close above ``_GRIP_THRESHOLD``, and open again only below ``release_below``."""
+    out = np.empty(len(raw), dtype=np.float32)
+    for i, value in enumerate(raw):
+        closed = bool(value > (release_below if closed else _GRIP_THRESHOLD))
+        out[i] = float(closed)
+    return out
+
+
 class MolmoBotModel(Model):
     """MolmoBot on the GPU, with the previous call's camera frames kept per session.
 
@@ -101,16 +118,25 @@ class MolmoBotModel(Model):
     """
 
     def __init__(
-        self, checkpoint_dir: str, *, num_flow_steps: int | None = None, skip_actions: int = 0, camera: str = 'exterior'
+        self,
+        checkpoint_dir: str,
+        *,
+        num_flow_steps: int | None = None,
+        skip_actions: int = 0,
+        camera: str = 'exterior',
+        grip_release_below: float | None = None,
     ):
         """``skip_actions`` drops that many actions from the start of each chunk after a session's first one.
 
         A schedule that requests the next chunk when the current one starts plays it one chunk after its
         observation, so the robot has passed the chunk's first actions by then. ``camera`` is one of ``CAMERAS``;
-        a shoulder is picked once per session, from its first observation.
+        a shoulder is picked once per session, from its first observation. With ``grip_release_below``, a closed
+        gripper opens only when the model's gripper value is below it (the model's range is 0 to 255).
         """
         if camera not in CAMERAS:
             raise ValueError(f'camera must be one of {CAMERAS}, got {camera!r}')
+        if grip_release_below is not None and not 0 <= grip_release_below < _GRIP_THRESHOLD:
+            raise ValueError(f'grip_release_below must be in [0, {_GRIP_THRESHOLD}), got {grip_release_below}')
         if not torch.cuda.is_available():
             raise RuntimeError('MolmoBot found no CUDA GPU.')
         self._agent = _MmapCheckpointWrapper(checkpoint_dir, num_flow_steps=num_flow_steps, states_mode='cross_attn')
@@ -122,6 +148,8 @@ class MolmoBotModel(Model):
             raise ValueError(f'skip_actions must be in [0, {self._agent.action_horizon}), got {skip_actions}')
         self._skip_actions = skip_actions
         self._camera = camera
+        self._grip_release_below = grip_release_below
+        self._infer_ms: list[float] = []
         self._use_exterior_2: dict[str, bool] = {}
         self._previous_images: dict[str, list[np.ndarray]] = {}
         name = Path(checkpoint_dir).name
@@ -141,13 +169,25 @@ class MolmoBotModel(Model):
         state = np.asarray(obs[molmobot.STATE], dtype=np.float32)
         joints = state[:_NUM_JOINTS]
         model_state = np.append(joints, state[_NUM_JOINTS] * mapping.GRIPPER_QPOS_CLOSED).astype(np.float32)
+        start = time.perf_counter()
         chunk = self._agent.get_action_chunk(
             images=images, task_description=obs.get(molmobot.TASK, ''), state=model_state
         )
+        self._log_timing((time.perf_counter() - start) * 1000)
         actions = limit_chunk(chunk, joints)
+        if self._grip_release_below is not None:
+            closed = state[_NUM_JOINTS] > _GRIP_CLOSED_OBS
+            actions[:, _NUM_JOINTS] = hold_grip(chunk[:, _NUM_JOINTS], closed, self._grip_release_below)
         if previous is not None:
             actions = actions[self._skip_actions :]
         return [{ACTION: action} for action in actions]
+
+    def _log_timing(self, ms: float) -> None:
+        self._infer_ms.append(ms)
+        if len(self._infer_ms) == _TIMING_LOG_CALLS:
+            p50, p95 = np.percentile(self._infer_ms, [50, 95])
+            logger.info(f'MolmoBot inference over {_TIMING_LOG_CALLS} calls: p50 {p50:.0f} ms, p95 {p95:.0f} ms')
+            self._infer_ms.clear()
 
     def end_session(self, session_id: str) -> None:
         self._previous_images.pop(session_id, None)
