@@ -1,0 +1,15 @@
+# syntax=docker/dockerfile:1.7
+# A MolmoBot policy image: a base image from docker/Dockerfile.serve-molmobot-droid, with the MolmoBot server code
+# of this checkout and other server flags. Only this layer is new, so a push sends only this layer.
+#
+# Usage (from the folder that holds positronic/ and molmobot_image/):
+#   docker buildx build --platform linux/amd64 --provenance=false --sbom=false --load \
+#     --build-arg BASE=<base image> --build-arg SERVER_ARGS="<server flags>" \
+#     -f molmobot_image/Dockerfile.settings -t <tag> positronic/positronic/vendors/molmobot
+# The build context is the MolmoBot vendor folder. SERVER_ARGS replaces the flags of the base image.
+
+ARG BASE
+FROM ${BASE}
+COPY *.py /positronic/positronic/vendors/molmobot/
+ARG SERVER_ARGS=
+ENV MOLMOBOT_ARGS=${SERVER_ARGS}

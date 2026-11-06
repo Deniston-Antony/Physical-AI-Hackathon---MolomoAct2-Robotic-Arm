@@ -4,14 +4,14 @@ This Repository is related to the Physical AI Hackathon which I Participated in 
 Team: **The Risers**. Competition: PHAIL stage 1 (Positronic platform, board `molmo.competition_v2`). A Franka robot
 arm in the MolmoSpaces simulator does 320 episodes: pick, pick and place, place next to, open and close.
 
-## Current status (6 November 2026, 12:30 CET)
+## Current status (6 November 2026, 18:20 CET)
 
 | | |
 |---|---|
 | Best board score | **47.2% (151/320)**, rank 14 of 33 (rank 13 on 5 November) |
 | Best model | MolmoBot-Img-DROID (Ai2), half-overlap timing, left shoulder camera |
 | Best image | `docker.io/denistonantony/molmobot-img-droid:v1` |
-| Best new setting | Play 12 actions per model call and use 5 flow steps: 16/28 hard episodes on the local PC, against 3/28 for the current image. **Not submitted yet.** |
+| Best new setting | Play 12 actions per model call and use 5 flow steps: 16/28 hard episodes on the local PC, against 3/28 for the current image. **Submitted on 6 November** (`58f19b77fa0acea3`). The score is not known yet. |
 
 ## Board submissions
 
@@ -22,6 +22,7 @@ arm in the MolmoSpaces simulator does 320 episodes: pick, pick and place, place 
 | 5 Nov | MolmoBot-DROID, normal timing | 36.6% |
 | 5 Nov | MolmoBot-DROID, half-overlap timing | 40.6% |
 | 5 Nov | **MolmoBot-Img-DROID, half-overlap timing, left camera** | **47.2%** |
+| 6 Nov | MolmoBot-Img-DROID, half-overlap timing, left camera, 12 actions per call, 5 flow steps | running |
 
 The full report of 5 November: [reports/2026-11-05-molmobot-report.md](reports/2026-11-05-molmobot-report.md).
 
@@ -127,10 +128,31 @@ We compared our board run with the runs of 3 top teams on 8 hard-pick episodes t
 
 Full results: [reports/2026-11-06-overnight-results.md](reports/2026-11-06-overnight-results.md).
 
+### Image v2 (6 November)
+
+Image `docker.io/denistonantony/molmobot-img-droid@sha256:d0bdd083425e397046c6e4536000b4aa3b10a4445a0faf46ec6c6f85a7fb1e23`
+(tag `v2`, public). It is the 47.2% image with one more layer (`risers/molmobot_image/Dockerfile.settings`). The
+layer holds the current MolmoBot server code and these server flags:
+
+```
+--model.camera=left --pipeline.horizon_sec=0.7667 --model.num_flow_steps=5
+```
+
+The layer is small, so the build took 1 s and the push took 5 s. A full build needs about 30 GB more disk.
+
+| Check | Result |
+|---|---|
+| Platform start test (`docker/test_policy_image.sh --gpu`, no network) | Pass: the server answered after about 95 s |
+| 4 hard episodes that `play12_flow5` solved and `base` failed | 3/4 solved. The robot waits 41% (`play12_flow5`: 39%, `base`: 59%) |
+
+The failed episode (goggles, pick and place) took 37.7 s of 40 s in the overnight run. So it is near the time limit.
+
+The new code logs the model time once per 100 calls: "MolmoBot inference over 100 calls". The board log then
+shows the model time on the competition machine.
+
 ### Next
 
-1. Build an image with the best setting (`--pipeline.horizon_sec=0.7667 --model.num_flow_steps=5`, plus the current
-   settings) and submit it.
+1. Read the board result of `58f19b77fa0acea3`, and the model time in its log.
 2. Test 3 flow steps (218 ms per call). The model predicts 16 actions and drops 4, so 12 actions per call is the most it can play now.
 3. Do not use the gripper rule.
 
@@ -141,7 +163,7 @@ Full results: [reports/2026-11-06-overnight-results.md](reports/2026-11-06-overn
 | `positronic_changes/` | The MolmoBot server, the image recipe and the MolmoAct2 GPU fix. `patches/` holds them as `git am` patches for Positronic commit `e6c45ba`. |
 | `risers/eval_local/` | Local test tools, episode sets (`hard28.json`, `make_hard_set.py`) |
 | `risers/overnight/` | Overnight test runner, results summary, progress timer, top-team video tool |
-| `risers/molmobot_image/` | Image build script |
+| `risers/molmobot_image/` | Image build script, and `Dockerfile.settings`: a one-layer image with other server flags |
 | `risers/competition_runs/` | Submit scripts and board results |
 | `risers/datagen/`, `risers/nebius_train/` | Data generation and GR00T training scripts |
 | `reports/` | Test reports |
