@@ -173,8 +173,8 @@ The median columns use the episodes that both images solved in that set.
   39 hard pick and place episodes. Image v2 solves 29 and 34, so it is now in their range.
 - On the 130 episodes that both images solved, the median time fell from 16.0 s to 9.9 s.
 - v2 solved 62 episodes that v1 did not solve. v1 solved 21 episodes that v2 did not solve.
-- The board log gives the model time on the competition machine: p50 245 ms per call (67 logs of 100 calls,
-  242 to 266 ms). On the local PC it is about 800 ms, because the simulator uses the same GPU.
+- The board log (`risers/competition_runs/molmobot_img_v2/policy_log.txt`) gives the model time on the competition
+  machine: p50 245 ms per call (67 logs of 100 calls, 242 to 266 ms). On the local PC it is about 800 ms, because the simulator uses the same GPU.
 - Open is the weakest task: 2 of 30. Place next to is 4 of 16.
 
 ### Next
