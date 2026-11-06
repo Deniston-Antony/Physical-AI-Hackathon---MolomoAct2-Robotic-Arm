@@ -4,14 +4,13 @@ This Repository is related to the Physical AI Hackathon which I Participated in 
 Team: **The Risers**. Competition: PHAIL stage 1 (Positronic platform, board `molmo.competition_v2`). A Franka robot
 arm in the MolmoSpaces simulator does 320 episodes: pick, pick and place, place next to, open and close.
 
-## Current status (6 November 2026, 18:20 CET)
+## Current status (6 November 2026, 20:10 CET)
 
 | | |
 |---|---|
-| Best board score | **47.2% (151/320)**, rank 14 of 33 (rank 13 on 5 November) |
-| Best model | MolmoBot-Img-DROID (Ai2), half-overlap timing, left shoulder camera |
-| Best image | `docker.io/denistonantony/molmobot-img-droid:v1` |
-| Best new setting | Play 12 actions per model call and use 5 flow steps: 16/28 hard episodes on the local PC, against 3/28 for the current image. **Submitted on 6 November** (`58f19b77fa0acea3`). The score is not known yet. |
+| Best board score | **60.0% (192/320)**, rank 12 of 33 (rank 11 has the same score). 1st place: 67.8% |
+| Best model | MolmoBot-Img-DROID (Ai2), half-overlap timing, left shoulder camera, 12 actions per call, 5 flow steps |
+| Best image | `docker.io/denistonantony/molmobot-img-droid:v2` |
 
 ## Board submissions
 
@@ -21,12 +20,12 @@ arm in the MolmoSpaces simulator does 320 episodes: pick, pick and place, place 
 | 1 Nov | GR00T N1.5, our fine-tune (step 10000) | 20.6% |
 | 5 Nov | MolmoBot-DROID, normal timing | 36.6% |
 | 5 Nov | MolmoBot-DROID, half-overlap timing | 40.6% |
-| 5 Nov | **MolmoBot-Img-DROID, half-overlap timing, left camera** | **47.2%** |
-| 6 Nov | MolmoBot-Img-DROID, half-overlap timing, left camera, 12 actions per call, 5 flow steps | running |
+| 5 Nov | MolmoBot-Img-DROID, half-overlap timing, left camera | 47.2% |
+| 6 Nov | **MolmoBot-Img-DROID, half-overlap timing, left camera, 12 actions per call, 5 flow steps** | **60.0%** |
 
 The full report of 5 November: [reports/2026-11-05-molmobot-report.md](reports/2026-11-05-molmobot-report.md).
 
-## Where we lose points
+## Where we lost points (47.2% image)
 
 The public board replays give the result of each episode for each team. The two hard sets hold the largest gap:
 
@@ -150,10 +149,39 @@ The failed episode (goggles, pick and place) took 37.7 s of 40 s in the overnigh
 The new code logs the model time once per 100 calls: "MolmoBot inference over 100 calls". The board log then
 shows the model time on the competition machine.
 
+### Board result of image v2
+
+Submission `58f19b77fa0acea3`: **192/320 = 60.0%**, against 151/320 = 47.2% for image v1 (`30b01a00181a225`).
+
+| Set | Episodes | v2 | v1 | Change | v2 median s | v1 median s |
+|---|---|---|---|---|---|---|
+| Pick, normal rooms | 59 | 56 | 56 | +0 | 5.0 | 7.5 |
+| **Pick, hard** | 57 | **29** | 14 | **+15** | 9.2 | 16.0 |
+| Pick and place, normal rooms | 54 | 39 | 37 | +2 | 12.9 | 21.3 |
+| **Pick and place, hard** | 58 | **34** | 19 | **+15** | 19.2 | 33.3 |
+| Pick and place, color | 16 | 11 | 9 | +2 | 22.6 | 25.5 |
+| Place next to | 16 | 4 | 0 | +4 | - | - |
+| Open, data generation | 15 | 1 | 3 | -2 | 19.5 | 21.3 |
+| Open, hard | 15 | 1 | 1 | +0 | - | - |
+| Close, data generation | 15 | 11 | 9 | +2 | 2.3 | 3.8 |
+| Close, hard | 15 | 6 | 3 | +3 | 3.7 | 11.6 |
+
+The median columns use the episodes that both images solved in that set.
+`risers/competition_runs/board_by_set.py` makes this table.
+
+- The two hard sets give 30 of the 41 more successes. The top 6 teams solve 25 to 40 hard pick episodes and 32 to
+  39 hard pick and place episodes. Image v2 solves 29 and 34, so it is now in their range.
+- On the 130 episodes that both images solved, the median time fell from 16.0 s to 9.9 s.
+- v2 solved 62 episodes that v1 did not solve. v1 solved 21 episodes that v2 did not solve.
+- The board log gives the model time on the competition machine: p50 245 ms per call (67 logs of 100 calls,
+  242 to 266 ms). On the local PC it is about 800 ms, because the simulator uses the same GPU.
+- Open is the weakest task: 2 of 30. Place next to is 4 of 16.
+
 ### Next
 
-1. Read the board result of `58f19b77fa0acea3`, and the model time in its log.
-2. Test 3 flow steps (218 ms per call). The model predicts 16 actions and drops 4, so 12 actions per call is the most it can play now.
+1. Test 3 flow steps (218 ms per call on the local PC, model alone). The model predicts 16 actions and drops 4, so
+   12 actions per call is the most it can play now.
+2. Find why open fails (2 of 30). MolmoBot has no open or close training data.
 3. Do not use the gripper rule.
 
 ## Repository layout
@@ -164,7 +192,7 @@ shows the model time on the competition machine.
 | `risers/eval_local/` | Local test tools, episode sets (`hard28.json`, `make_hard_set.py`) |
 | `risers/overnight/` | Overnight test runner, results summary, progress timer, top-team video tool |
 | `risers/molmobot_image/` | Image build script, and `Dockerfile.settings`: a one-layer image with other server flags |
-| `risers/competition_runs/` | Submit scripts and board results |
+| `risers/competition_runs/` | Submit scripts, board results, and `board_by_set.py` (successes per task set) |
 | `risers/datagen/`, `risers/nebius_train/` | Data generation and GR00T training scripts |
 | `reports/` | Test reports |
 

@@ -1,0 +1,1602 @@
+[
+{
+"task": "pick up the tissue.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the spatula and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the black moka.",
+"set": "FrankaPickHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the white mug and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "Pick up the red teardrop keychain holder with button and place it in or on the tan ceramic bowl",
+"set": "FrankaPickandPlaceColorHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "Pick up the garden hose nozzle and place it next to the bulbous shiny gold vase",
+"set": "FrankaPickandPlaceNextToHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "close the drawer.",
+"set": "FrankaCloseDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the drawer.",
+"set": "FrankaOpenDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the dishwasher.",
+"set": "FrankaOpenHardBench",
+"scene": "ithor"
+},
+{
+"task": "close the cabinet.",
+"set": "FrankaCloseHardBench",
+"scene": "ithor"
+},
+{
+"task": "pick up the tissue.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bottle and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the brown pinecone keychain.",
+"set": "FrankaPickHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the bowl and place it on the dish.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "Pick up the yellow flower with leaf and place it in or on the light yellow bowl",
+"set": "FrankaPickandPlaceColorHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "Pick up the blue patterned cat and place it next to the gold pump bottle",
+"set": "FrankaPickandPlaceNextToHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "close the drawer.",
+"set": "FrankaCloseDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the drawer.",
+"set": "FrankaOpenDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the refrigerator.",
+"set": "FrankaOpenHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "close the table.",
+"set": "FrankaCloseHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bowl.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the fork and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the cream candle.",
+"set": "FrankaPickHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the card and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "Pick up the red wall-mounted fire connection with caps and place it in or on the blue decorative bowl",
+"set": "FrankaPickandPlaceColorHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "Pick up the hexagonal dark stone platform and place it next to the stylized orange butterfly with brown body",
+"set": "FrankaPickandPlaceNextToHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "close the drawer.",
+"set": "FrankaCloseDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the oven.",
+"set": "FrankaOpenDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the wooden table.",
+"set": "FrankaOpenHardBench",
+"scene": "ithor"
+},
+{
+"task": "close the brown wooden desk.",
+"set": "FrankaCloseHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the apple.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the knife and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the comb.",
+"set": "FrankaPickHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the gold watch and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "Pick up the vintage bird-shaped metal nutcracker and place it in or on the blue bowl",
+"set": "FrankaPickandPlaceColorHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "Pick up the wooden humanoid puzzle piece and place it next to the shiny gold vase",
+"set": "FrankaPickandPlaceNextToHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "close the drawer.",
+"set": "FrankaCloseDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the desk.",
+"set": "FrankaOpenDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the wooden table.",
+"set": "FrankaOpenHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "close the oven.",
+"set": "FrankaCloseHardBench",
+"scene": "ithor"
+},
+{
+"task": "pick up the spatula.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the shaker and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the mechanism.",
+"set": "FrankaPickHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the brush and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "Pick up the standard playing card with clubs and place it in or on the tan mug",
+"set": "FrankaPickandPlaceColorHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "Pick up the sleek black spinning top and place it next to the gold metallic phone",
+"set": "FrankaPickandPlaceNextToHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "close the drawer.",
+"set": "FrankaCloseDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the oven.",
+"set": "FrankaOpenDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the desk.",
+"set": "FrankaOpenHardBench",
+"scene": "ithor"
+},
+{
+"task": "close the brown wooden desk.",
+"set": "FrankaCloseHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the shaker.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the shaker and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the toilet.",
+"set": "FrankaPickHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the leather-wrapped brass telescope and place it on the box.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "Pick up the reddish metal brooch with swirl and place it in or on the white decorative bowl",
+"set": "FrankaPickandPlaceColorHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "Pick up the orange cylindrical medicine bottle with label and place it next to the octagonal translucent soap bottle",
+"set": "FrankaPickandPlaceNextToHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "close the table.",
+"set": "FrankaCloseDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the dresser.",
+"set": "FrankaOpenDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the dark table.",
+"set": "FrankaOpenHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "close the white dresser.",
+"set": "FrankaCloseHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the shaker.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the knife and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the wheel.",
+"set": "FrankaPickHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the brown cat figurine and place it on the gray bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "Pick up the gray dragon pipe with scales and place it in or on the purple bowl",
+"set": "FrankaPickandPlaceColorHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "Pick up the glossy orange bell pepper with stem and place it next to the irish potato",
+"set": "FrankaPickandPlaceNextToHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "close the drawer.",
+"set": "FrankaCloseDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the dresser.",
+"set": "FrankaOpenDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the wooden table.",
+"set": "FrankaOpenHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "close the desk.",
+"set": "FrankaCloseHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the shaker.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bottle and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the hammer.",
+"set": "FrankaPickHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the wooden pencil and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "Pick up the red white striped teacup and place it in or on the purple ceramic bowl",
+"set": "FrankaPickandPlaceColorHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "Pick up the gray metal rod with perforated top and place it next to the angular dark stealth aircraft with wings",
+"set": "FrankaPickandPlaceNextToHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "close the drawer.",
+"set": "FrankaCloseDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the drawer.",
+"set": "FrankaOpenDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the large wooden dresser.",
+"set": "FrankaOpenHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "close the white table.",
+"set": "FrankaCloseHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the bottle.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the egg and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the metallic multi-tool.",
+"set": "FrankaPickHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the metal component and place it on the metal tin.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "Pick up the curve and place it in or on the green dish",
+"set": "FrankaPickandPlaceColorHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "Pick up the green gemstone and place it next to the red spaceship",
+"set": "FrankaPickandPlaceNextToHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "close the cabinet.",
+"set": "FrankaCloseDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the drawer.",
+"set": "FrankaOpenDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the dark fridge.",
+"set": "FrankaOpenHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "close the table.",
+"set": "FrankaCloseHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the mug.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the spatula and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the cup.",
+"set": "FrankaPickHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the pointed metal awl and place it on the white bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "Pick up the blue birthday card with fox and rabbit and place it in or on the green ashtray",
+"set": "FrankaPickandPlaceColorHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "Pick up the green grenade with metal lever and base and place it next to the gray rectangular ethernet transceiver",
+"set": "FrankaPickandPlaceNextToHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "close the dresser.",
+"set": "FrankaCloseDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the cabinet.",
+"set": "FrankaOpenDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the tall wooden shelf.",
+"set": "FrankaOpenHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "close the light brown table.",
+"set": "FrankaCloseHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the bottle.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the tissue and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the notebook.",
+"set": "FrankaPickHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the purple bottle and place it on the ceramic bowl with rice.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "Pick up the polished metal shuriken with four blades and place it in or on the blue bowl",
+"set": "FrankaPickandPlaceColorHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "Pick up the light wooden bridge with arches and place it next to the purple and yellow pixelated knife",
+"set": "FrankaPickandPlaceNextToHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "close the table.",
+"set": "FrankaCloseDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the dresser.",
+"set": "FrankaOpenDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the tall dark refrigerator.",
+"set": "FrankaOpenHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "close the dresser.",
+"set": "FrankaCloseHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bottle.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bottle and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the pot.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bowl and place it on the mug.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "Pick up the dark wand with red crystal and place it in or on the light blue bowl",
+"set": "FrankaPickandPlaceColorHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "Pick up the root vegetable and place it next to the medium round red tomato with stem",
+"set": "FrankaPickandPlaceNextToHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "close the drawer.",
+"set": "FrankaCloseDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the dresser.",
+"set": "FrankaOpenDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the table.",
+"set": "FrankaOpenHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "close the white wooden dresser.",
+"set": "FrankaCloseHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the box.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the fork and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bottle.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bottle and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "Pick up the worn white metal paint can and place it in or on the green bowl",
+"set": "FrankaPickandPlaceColorHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "Pick up the dark metal frying pan and place it next to the bulbous shiny gold metallic vase",
+"set": "FrankaPickandPlaceNextToHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "close the table.",
+"set": "FrankaCloseDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the table.",
+"set": "FrankaOpenDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the dresser.",
+"set": "FrankaOpenHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "close the dresser.",
+"set": "FrankaCloseHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the tissue.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the mug and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the kettle.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the red apple and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "Pick up the low-poly brown acorn and place it in or on the black bowl",
+"set": "FrankaPickandPlaceColorHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "Pick up the denture and place it next to the red lighthouse with framework",
+"set": "FrankaPickandPlaceNextToHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "close the table.",
+"set": "FrankaCloseDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the refrigerator.",
+"set": "FrankaOpenDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the refrigerator.",
+"set": "FrankaOpenHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "close the dark dresser.",
+"set": "FrankaCloseHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the spoon.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the apple and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the red apple.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the candle and place it on the gray bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "Pick up the lighter and place it in or on the white decorative box",
+"set": "FrankaPickandPlaceColorHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "Pick up the smooth brown chicken egg and place it next to the transparent soap bottle with bronze pump",
+"set": "FrankaPickandPlaceNextToHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "close the dresser.",
+"set": "FrankaCloseDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the drawer.",
+"set": "FrankaOpenDataGenConfig",
+"scene": "ithor"
+},
+{
+"task": "open the dresser.",
+"set": "FrankaOpenHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "close the dresser.",
+"set": "FrankaCloseHardBench",
+"scene": "ithor"
+},
+{
+"task": "pick up the cup.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the apple and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the pan.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the spoon and place it on the rustic clay bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "Pick up the black digital music player and place it in or on the light blue bowl",
+"set": "FrankaPickandPlaceColorHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "Pick up the medallion with crown and shields and place it next to the dark gray bowl",
+"set": "FrankaPickandPlaceNextToHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the remote.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bottle and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the red apple.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the butter knife and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the spoon.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the towel and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the potato.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the green tissue and place it on the blue bottle.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the tissue.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the cup and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the plump red tomato.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the mug and place it on the shallow green bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the box.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the spoon and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the silver kettle.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the fork and place it on the round blue bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bottle.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the remote and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the brown egg.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bottle and place it on the glossy white bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the fork.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the mug and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the cup.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the knife and place it on the ashtray.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the tissue.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the fork and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the dog statue.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bottle and place it on the basin.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the remote.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the fork and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the butter knife.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the mug and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bottle.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the egg and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the blue pan.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bowl and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bowl.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the towel and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the metal fork.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the tissue and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the spatula.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the knife and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the pin.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the gray metal ring and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the remote.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the spoon and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bridge.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the watch and place it on the wooden box.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the ladle.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the shaker and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the box.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the camcorder and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the tomato.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the shaker and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the black ribbed cap.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the gray shackle and place it on the pink geometric box.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the spatula.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bottle and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the screwdriver.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the onion and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the fork.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the spatula and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the egg.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the terminal and place it on the gray bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the bottle.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the ladle and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the album.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the bee and place it on the gray bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the apple.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the tissue and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the grenade.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the futuristic black key and place it on the tin.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the bottle.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the tissue and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the green floral invitation.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the screwdriver and place it on the dark pot.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the tissue.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the towel and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the juicer.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the raw meat and place it on the pot.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the remote.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the potato and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the metallic sleek blade.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the grapefruit and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the spoon.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the remote and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the red skull key.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the goggles and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the bowl.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the fork and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the dish.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the wooden stamp and place it on the tray.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the fork.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the potato and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the croissant.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the cup and place it on the container.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the bottle.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the towel and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the black webcam.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the projector and place it on the pot.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the fork.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the spoon and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the shiny gold script.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the yellow wooden pencil and place it on the round wooden bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the spatula.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the cup and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the green battery.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the bark and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the apple.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the candle and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the puck.",
+"set": "FrankaPickHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the colorful mosaic and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the cup.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bottle and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the spatula.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the ceramic bowl and place it on the mug.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the kettle.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the fork and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the brown potato.",
+"set": "FrankaPickHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the pepper shaker and place it on the box.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the box.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the spatula and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the teal ruler.",
+"set": "FrankaPickHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the smart speaker and place it on the rustic brown bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the spatula.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the potato and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the small red potato.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the golden bottle and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the bowl.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the apple and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the smooth light blue dolphin.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the tape and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the box.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the ladle and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the micrometer.",
+"set": "FrankaPickHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the kitchen spatula and place it on the rustic wooden bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the pot.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the mug and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the wooden fan.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the digital wristband and place it on the round gray bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the pot.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the bottle and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the white stopwatch.",
+"set": "FrankaPickHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the newspaper and place it on the white ceramic bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the tissue.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the cup and place it on the bowl.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the apple.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the toy dog and place it on the dish.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the bottle.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the spatula and place it on the dish.",
+"set": "FrankaPickandPlaceDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the knife.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the small red potato and place it on the tan decorative bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the shaker.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the pot.",
+"set": "FrankaPickHardBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the blue die and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the tomato.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the marble rook.",
+"set": "FrankaPickHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the calculator and place it on the round gray bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the bowl.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the gray container.",
+"set": "FrankaPickHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the glossy golden musical note and place it on the bowl.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "holodeck-objaverse"
+},
+{
+"task": "pick up the pepper.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+},
+{
+"task": "pick up the shiny golden chain and place it on the red container.",
+"set": "FrankaPickandPlaceHardBench",
+"scene": "procthor-objaverse"
+},
+{
+"task": "pick up the ladle.",
+"set": "FrankaPickDroidMiniBench",
+"scene": "procthor-10k"
+}
+]
