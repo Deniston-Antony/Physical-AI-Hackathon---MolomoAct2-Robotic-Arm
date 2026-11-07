@@ -287,10 +287,6 @@ the current MolmoBot server code and these server flags:
 
 Platform start test (`docker/test_policy_image.sh --gpu`, no network): pass, the server answered after 65 s.
 
-The platform refused the first submission: it needs `positronic-platform-client` 0.47.10 or later, and the
-Positronic commit `e6c45ba` locks 0.47.1. `uv tool upgrade positronic` installed the client 0.47.12. The submission
-then went through with `~/.local/bin/positronic eval run`.
-
 ### Board result of image v3
 
 Submission `2a74d6b52a67c4be`: **219/320 = 68.4%**, rank 2 of 33. Image v2: 192/320 = 60.0%.
