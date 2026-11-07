@@ -23,9 +23,17 @@ DEFAULT_CHECKPOINT_DIR = '/opt/molmobot/MolmoBot-DROID'
     skip_actions=0,
     camera='exterior',
     grip_release_below=None,
+    training_wording=False,
+    still_calls=None,
 )
 def molmobot_model(
-    checkpoint_dir: str, num_flow_steps: int | None, skip_actions: int, camera: str, grip_release_below: float | None
+    checkpoint_dir: str,
+    num_flow_steps: int | None,
+    skip_actions: int,
+    camera: str,
+    grip_release_below: float | None,
+    training_wording: bool,
+    still_calls: int | None,
 ) -> Model:
     """One MolmoBot checkpoint directory (``config.yaml`` and ``model.pt``), in process."""
     logger.info(f'Loading MolmoBot model {checkpoint_dir}')
@@ -35,6 +43,8 @@ def molmobot_model(
         skip_actions=skip_actions,
         camera=camera,
         grip_release_below=grip_release_below,
+        training_wording=training_wording,
+        still_calls=still_calls,
     )
     warmup(policy, warm_observation())
     return policy
