@@ -1,0 +1,282 @@
+[
+ {
+  "set": "FrankaCloseDataGenConfig",
+  "set_board_count": 15,
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/862",
+  "task": "close the drawer.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaCloseDataGenConfig",
+  "set_board_count": 15,
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/726",
+  "task": "close the table.",
+  "molmoact2": true
+ },
+ {
+  "set": "FrankaCloseHardBench",
+  "set_board_count": 15,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaCloseHardBench/FrankaCloseHardBench_20260206_json_benchmark/1379",
+  "task": "close the dresser.",
+  "molmoact2": true
+ },
+ {
+  "set": "FrankaCloseHardBench",
+  "set_board_count": 15,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaCloseHardBench/FrankaCloseHardBench_20260206_json_benchmark/168",
+  "task": "close the dresser.",
+  "molmoact2": true
+ },
+ {
+  "set": "FrankaOpenDataGenConfig",
+  "set_board_count": 15,
+  "path": "molmospaces-bench-v1/ithor/FrankaOpenDataGenConfig/FrankaOpenDataGenConfig_20260123_json_benchmark/48",
+  "task": "open the oven.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaOpenDataGenConfig",
+  "set_board_count": 15,
+  "path": "molmospaces-bench-v1/ithor/FrankaOpenDataGenConfig/FrankaOpenDataGenConfig_20260123_json_benchmark/244",
+  "task": "open the refrigerator.",
+  "molmoact2": true
+ },
+ {
+  "set": "FrankaOpenHardBench",
+  "set_board_count": 15,
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaOpenHardBench/FrankaOpenHardBench_20260206_json_benchmark/1621",
+  "task": "open the tall wooden shelf.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaOpenHardBench",
+  "set_board_count": 15,
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaOpenHardBench/FrankaOpenHardBench_20260206_json_benchmark/1481",
+  "task": "open the refrigerator.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickDroidMiniBench",
+  "set_board_count": 59,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickDroidMiniBench/FrankaPickDroidMiniBench_json_benchmark_20251231/574",
+  "task": "pick up the spatula.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickDroidMiniBench",
+  "set_board_count": 59,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickDroidMiniBench/FrankaPickDroidMiniBench_json_benchmark_20251231/931",
+  "task": "pick up the fork.",
+  "molmoact2": true
+ },
+ {
+  "set": "FrankaPickDroidMiniBench",
+  "set_board_count": 59,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickDroidMiniBench/FrankaPickDroidMiniBench_json_benchmark_20251231/944",
+  "task": "pick up the bottle.",
+  "molmoact2": true
+ },
+ {
+  "set": "FrankaPickDroidMiniBench",
+  "set_board_count": 59,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickDroidMiniBench/FrankaPickDroidMiniBench_json_benchmark_20251231/202",
+  "task": "pick up the bottle.",
+  "molmoact2": true
+ },
+ {
+  "set": "FrankaPickDroidMiniBench",
+  "set_board_count": 59,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickDroidMiniBench/FrankaPickDroidMiniBench_json_benchmark_20251231/589",
+  "task": "pick up the remote.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickDroidMiniBench",
+  "set_board_count": 59,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickDroidMiniBench/FrankaPickDroidMiniBench_json_benchmark_20251231/422",
+  "task": "pick up the box.",
+  "molmoact2": true
+ },
+ {
+  "set": "FrankaPickDroidMiniBench",
+  "set_board_count": 59,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickDroidMiniBench/FrankaPickDroidMiniBench_json_benchmark_20251231/612",
+  "task": "pick up the tomato.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "set_board_count": 57,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/1145",
+  "task": "pick up the green battery.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "set_board_count": 57,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/677",
+  "task": "pick up the small red potato.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "set_board_count": 57,
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/767",
+  "task": "pick up the marble rook.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "set_board_count": 57,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/1054",
+  "task": "pick up the smooth light blue dolphin.",
+  "molmoact2": true
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "set_board_count": 57,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/746",
+  "task": "pick up the black ribbed cap.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "set_board_count": 57,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/1836",
+  "task": "pick up the dish.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "set_board_count": 57,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/756",
+  "task": "pick up the wooden fan.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickandPlaceColorHardBench",
+  "set_board_count": 16,
+  "path": "molmospaces-bench-v2/procthor-objaverse/FrankaPickandPlaceColorHardBench/FrankaPickandPlaceColorHardBench_20260304_json_benchmark/896",
+  "task": "Pick up the polished metal shuriken with four blades and place it in or on the blue bowl",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickandPlaceColorHardBench",
+  "set_board_count": 16,
+  "path": "molmospaces-bench-v2/procthor-objaverse/FrankaPickandPlaceColorHardBench/FrankaPickandPlaceColorHardBench_20260304_json_benchmark/497",
+  "task": "Pick up the red wall-mounted fire connection with caps and place it in or on the blue decorative bowl",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "set_board_count": 54,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/328",
+  "task": "pick up the tissue and place it on the bowl.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "set_board_count": 54,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/109",
+  "task": "pick up the bottle and place it on the bowl.",
+  "molmoact2": true
+ },
+ {
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "set_board_count": 54,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/525",
+  "task": "pick up the spoon and place it on the bowl.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "set_board_count": 54,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/490",
+  "task": "pick up the towel and place it on the bowl.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "set_board_count": 54,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/543",
+  "task": "pick up the mug and place it on the bowl.",
+  "molmoact2": true
+ },
+ {
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "set_board_count": 54,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/120",
+  "task": "pick up the knife and place it on the bowl.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "set_board_count": 54,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/750",
+  "task": "pick up the spatula and place it on the bowl.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "set_board_count": 58,
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/617",
+  "task": "pick up the toy dog and place it on the dish.",
+  "molmoact2": true
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "set_board_count": 58,
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/592",
+  "task": "pick up the brush and place it on the bowl.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "set_board_count": 58,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/580",
+  "task": "pick up the onion and place it on the bowl.",
+  "molmoact2": true
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "set_board_count": 58,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/1430",
+  "task": "pick up the grapefruit and place it on the bowl.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "set_board_count": 58,
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/1878",
+  "task": "pick up the bowl and place it on the mug.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "set_board_count": 58,
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/490",
+  "task": "pick up the calculator and place it on the round gray bowl.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "set_board_count": 58,
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/1580",
+  "task": "pick up the purple bottle and place it on the ceramic bowl with rice.",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickandPlaceNextToHardBench",
+  "set_board_count": 16,
+  "path": "molmospaces-bench-v2/procthor-objaverse/FrankaPickandPlaceNextToHardBench/FrankaPickandPlaceNextToHardBench_20260305_json_benchmark/248",
+  "task": "Pick up the dark metal frying pan and place it next to the bulbous shiny gold metallic vase",
+  "molmoact2": false
+ },
+ {
+  "set": "FrankaPickandPlaceNextToHardBench",
+  "set_board_count": 16,
+  "path": "molmospaces-bench-v2/procthor-objaverse/FrankaPickandPlaceNextToHardBench/FrankaPickandPlaceNextToHardBench_20260305_json_benchmark/319",
+  "task": "Pick up the blue patterned cat and place it next to the gold pump bottle",
+  "molmoact2": true
+ }
+]

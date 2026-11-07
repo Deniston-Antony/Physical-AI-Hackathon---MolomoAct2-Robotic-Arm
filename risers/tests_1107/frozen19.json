@@ -1,0 +1,154 @@
+[
+ {
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 1,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/35",
+  "task": "pick up the spatula and place it on the bowl.",
+  "limit_s": 46.012
+ },
+ {
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 11,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/109",
+  "task": "pick up the bottle and place it on the bowl.",
+  "limit_s": 46.012
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 13,
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/92",
+  "task": "pick up the bowl and place it on the dish.",
+  "limit_s": 40.996
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 23,
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/148",
+  "task": "pick up the card and place it on the bowl.",
+  "limit_s": 40.996
+ },
+ {
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 31,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/120",
+  "task": "pick up the knife and place it on the bowl.",
+  "limit_s": 46.012
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 93,
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/1356",
+  "task": "pick up the pointed metal awl and place it on the white bowl.",
+  "limit_s": 40.996
+ },
+ {
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 141,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/462",
+  "task": "pick up the apple and place it on the bowl.",
+  "limit_s": 46.012
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 153,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/789",
+  "task": "pick up the spoon and place it on the rustic clay bowl.",
+  "limit_s": 40.996
+ },
+ {
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 161,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/490",
+  "task": "pick up the towel and place it on the bowl.",
+  "limit_s": 46.012
+ },
+ {
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 181,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/548",
+  "task": "pick up the fork and place it on the bowl.",
+  "limit_s": 46.012
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 191,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/1752",
+  "task": "pick up the bowl and place it on the bowl.",
+  "limit_s": 40.996
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 199,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/155",
+  "task": "pick up the gray metal ring and place it on the bowl.",
+  "limit_s": 40.996
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 203,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/349",
+  "task": "pick up the watch and place it on the wooden box.",
+  "limit_s": 40.996
+ },
+ {
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 221,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/753",
+  "task": "pick up the ladle and place it on the bowl.",
+  "limit_s": 46.012
+ },
+ {
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 245,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/965",
+  "task": "pick up the fork and place it on the bowl.",
+  "limit_s": 46.012
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 279,
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/525",
+  "task": "pick up the smart speaker and place it on the rustic brown bowl.",
+  "limit_s": 40.996
+ },
+ {
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 281,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/509",
+  "task": "pick up the potato and place it on the bowl.",
+  "limit_s": 46.012
+ },
+ {
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 297,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/175",
+  "task": "pick up the bottle and place it on the bowl.",
+  "limit_s": 46.012
+ },
+ {
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "group": "froze on the board (img v2)",
+  "board_index": 301,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/932",
+  "task": "pick up the cup and place it on the bowl.",
+  "limit_s": 46.012
+ }
+]

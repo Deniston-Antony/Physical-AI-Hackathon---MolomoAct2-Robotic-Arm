@@ -1,0 +1,254 @@
+[
+ {
+  "set": "FrankaPickHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 32,
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/462",
+  "task": "pick up the comb.",
+  "limit_s": 20.998,
+  "top11_solved": 10
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 306,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/626",
+  "task": "pick up the knife.",
+  "limit_s": 20.998,
+  "top11_solved": 11
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 92,
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/1021",
+  "task": "pick up the cup.",
+  "limit_s": 20.998,
+  "top11_solved": 8
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 162,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/1275",
+  "task": "pick up the potato.",
+  "limit_s": 20.998,
+  "top11_solved": 6
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 12,
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/199",
+  "task": "pick up the brown pinecone keychain.",
+  "limit_s": 20.998,
+  "top11_solved": 9
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 222,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/1068",
+  "task": "pick up the album.",
+  "limit_s": 20.998,
+  "top11_solved": 8
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 178,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/1457",
+  "task": "pick up the cup.",
+  "limit_s": 20.998,
+  "top11_solved": 9
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 186,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/1761",
+  "task": "pick up the butter knife.",
+  "limit_s": 20.998,
+  "top11_solved": 7
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 170,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/1426",
+  "task": "pick up the silver kettle.",
+  "limit_s": 20.998,
+  "top11_solved": 8
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 226,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/1280",
+  "task": "pick up the grenade.",
+  "limit_s": 20.998,
+  "top11_solved": 7
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 242,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/1755",
+  "task": "pick up the red skull key.",
+  "limit_s": 20.998,
+  "top11_solved": 9
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 218,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/993",
+  "task": "pick up the egg.",
+  "limit_s": 20.998,
+  "top11_solved": 8
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "group": "we solve",
+  "board_index": 112,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/313",
+  "task": "pick up the pot.",
+  "limit_s": 20.998,
+  "top11_solved": 7
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "group": "we solve",
+  "board_index": 132,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/944",
+  "task": "pick up the kettle.",
+  "limit_s": 20.998,
+  "top11_solved": 11
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "group": "we solve",
+  "board_index": 174,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/1433",
+  "task": "pick up the brown egg.",
+  "limit_s": 20.998,
+  "top11_solved": 10
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "group": "we solve",
+  "board_index": 122,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/357",
+  "task": "pick up the bottle.",
+  "limit_s": 20.998,
+  "top11_solved": 10
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 159,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/881",
+  "task": "pick up the butter knife and place it on the bowl.",
+  "limit_s": 40.996,
+  "top11_solved": 9
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 215,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/580",
+  "task": "pick up the onion and place it on the bowl.",
+  "limit_s": 40.996,
+  "top11_solved": 8
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 153,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/789",
+  "task": "pick up the spoon and place it on the rustic clay bowl.",
+  "limit_s": 40.996,
+  "top11_solved": 6
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 223,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/822",
+  "task": "pick up the bee and place it on the gray bowl.",
+  "limit_s": 40.996,
+  "top11_solved": 8
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 3,
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/0",
+  "task": "pick up the white mug and place it on the bowl.",
+  "limit_s": 40.996,
+  "top11_solved": 9
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 143,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/659",
+  "task": "pick up the candle and place it on the gray bowl.",
+  "limit_s": 40.996,
+  "top11_solved": 8
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 227,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/951",
+  "task": "pick up the futuristic black key and place it on the tin.",
+  "limit_s": 40.996,
+  "top11_solved": 10
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 235,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/1407",
+  "task": "pick up the raw meat and place it on the pot.",
+  "limit_s": 40.996,
+  "top11_solved": 10
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "top teams solve, we fail",
+  "board_index": 243,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/1557",
+  "task": "pick up the goggles and place it on the bowl.",
+  "limit_s": 40.996,
+  "top11_solved": 9
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "we solve",
+  "board_index": 291,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/1944",
+  "task": "pick up the kitchen spatula and place it on the rustic wooden bowl.",
+  "limit_s": 40.996,
+  "top11_solved": 9
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "we solve",
+  "board_index": 53,
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/600",
+  "task": "pick up the leather-wrapped brass telescope and place it on the box.",
+  "limit_s": 40.996,
+  "top11_solved": 8
+ },
+ {
+  "set": "FrankaPickandPlaceHardBench",
+  "group": "we solve",
+  "board_index": 113,
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaPickandPlaceHardBench/FrankaPickandPlaceHardBench_20260206_json_benchmark/1878",
+  "task": "pick up the bowl and place it on the mug.",
+  "limit_s": 40.996,
+  "top11_solved": 8
+ }
+]

@@ -1,0 +1,118 @@
+From 57d57b01c5315136978d873d8b62145e7ee01bfa Mon Sep 17 00:00:00 2001
+From: Deniston_Antony <deniston2k@gmail.com>
+Date: Sat, 7 Nov 2026 00:22:54 +0100
+Subject: [PATCH 5/6] Add an option to give MolmoBot pick-and-place tasks in
+ its training wording
+
+`training_wording` rewrites "pick up the X and place it on the Y." to "Pick up the X and place it in or on the Y", the wording of the MolmoBot pick-and-place data. Other tasks do not change.
+---
+ positronic/vendors/molmobot/policy.py | 23 +++++++++++++++++++----
+ positronic/vendors/molmobot/server.py |  9 ++++++++-
+ 2 files changed, 27 insertions(+), 5 deletions(-)
+
+diff --git a/positronic/vendors/molmobot/policy.py b/positronic/vendors/molmobot/policy.py
+index fde64990..b49c6f32 100644
+--- a/positronic/vendors/molmobot/policy.py
++++ b/positronic/vendors/molmobot/policy.py
+@@ -1,4 +1,5 @@
+ import logging
++import re
+ import time
+ from pathlib import Path
+ from typing import Any
+@@ -29,6 +30,8 @@ _GRIP_CLOSED_OBS = 0.05
+ _TIMING_LOG_CALLS = 100
+ # The exterior camera the model sees: the one in `image.exterior`, or the left or the right shoulder camera.
+ CAMERAS = ('exterior', 'left', 'right')
++# A pick-and-place task in the board wording. MolmoBot's training data says "place it in or on the", with no full stop.
++_BOARD_PLACE_TASK = re.compile(r'pick up the (?P<item>.+) and place it on the (?P<target>.+?)\.?', re.IGNORECASE)
+ 
+ 
+ def warm_observation() -> dict[str, Any]:
+@@ -84,6 +87,14 @@ def exterior_side(exterior: np.ndarray, exterior_2: np.ndarray) -> str:
+     return 'left' if _white_lean(exterior) > _white_lean(exterior_2) else 'right'
+ 
+ 
++def training_wording(task: str) -> str:
++    """The task in the wording of MolmoBot's pick-and-place training data, or the task as it is."""
++    match = _BOARD_PLACE_TASK.fullmatch(task.strip())
++    if match is None:
++        return task
++    return f'Pick up the {match["item"]} and place it in or on the {match["target"]}'
++
++
+ def limit_chunk(chunk: np.ndarray, joints: np.ndarray) -> np.ndarray:
+     """Scale each joint step to ``_MAX_JOINT_STEP`` and turn the gripper command into a closure of 0 or 1."""
+     out = np.asarray(chunk, dtype=np.float32).copy()
+@@ -125,13 +136,15 @@ class MolmoBotModel(Model):
+         skip_actions: int = 0,
+         camera: str = 'exterior',
+         grip_release_below: float | None = None,
++        training_wording: bool = False,
+     ):
+         """``skip_actions`` drops that many actions from the start of each chunk after a session's first one.
+ 
+         A schedule that requests the next chunk when the current one starts plays it one chunk after its
+         observation, so the robot has passed the chunk's first actions by then. ``camera`` is one of ``CAMERAS``;
+         a shoulder is picked once per session, from its first observation. With ``grip_release_below``, a closed
+-        gripper opens only when the model's gripper value is below it (the model's range is 0 to 255).
++        gripper opens only when the model's gripper value is below it (the model's range is 0 to 255). With
++        ``training_wording``, the model gets each task in the wording of its training data.
+         """
+         if camera not in CAMERAS:
+             raise ValueError(f'camera must be one of {CAMERAS}, got {camera!r}')
+@@ -149,6 +162,7 @@ class MolmoBotModel(Model):
+         self._skip_actions = skip_actions
+         self._camera = camera
+         self._grip_release_below = grip_release_below
++        self._training_wording = training_wording
+         self._infer_ms: list[float] = []
+         self._use_exterior_2: dict[str, bool] = {}
+         self._previous_images: dict[str, list[np.ndarray]] = {}
+@@ -169,10 +183,11 @@ class MolmoBotModel(Model):
+         state = np.asarray(obs[molmobot.STATE], dtype=np.float32)
+         joints = state[:_NUM_JOINTS]
+         model_state = np.append(joints, state[_NUM_JOINTS] * mapping.GRIPPER_QPOS_CLOSED).astype(np.float32)
++        task = obs.get(molmobot.TASK, '')
++        if self._training_wording:
++            task = training_wording(task)
+         start = time.perf_counter()
+-        chunk = self._agent.get_action_chunk(
+-            images=images, task_description=obs.get(molmobot.TASK, ''), state=model_state
+-        )
++        chunk = self._agent.get_action_chunk(images=images, task_description=task, state=model_state)
+         self._log_timing((time.perf_counter() - start) * 1000)
+         actions = limit_chunk(chunk, joints)
+         if self._grip_release_below is not None:
+diff --git a/positronic/vendors/molmobot/server.py b/positronic/vendors/molmobot/server.py
+index 4d710f90..c8502da0 100644
+--- a/positronic/vendors/molmobot/server.py
++++ b/positronic/vendors/molmobot/server.py
+@@ -23,9 +23,15 @@ DEFAULT_CHECKPOINT_DIR = '/opt/molmobot/MolmoBot-DROID'
+     skip_actions=0,
+     camera='exterior',
+     grip_release_below=None,
++    training_wording=False,
+ )
+ def molmobot_model(
+-    checkpoint_dir: str, num_flow_steps: int | None, skip_actions: int, camera: str, grip_release_below: float | None
++    checkpoint_dir: str,
++    num_flow_steps: int | None,
++    skip_actions: int,
++    camera: str,
++    grip_release_below: float | None,
++    training_wording: bool,
+ ) -> Model:
+     """One MolmoBot checkpoint directory (``config.yaml`` and ``model.pt``), in process."""
+     logger.info(f'Loading MolmoBot model {checkpoint_dir}')
+@@ -35,6 +41,7 @@ def molmobot_model(
+         skip_actions=skip_actions,
+         camera=camera,
+         grip_release_below=grip_release_below,
++        training_wording=training_wording,
+     )
+     warmup(policy, warm_observation())
+     return policy
+-- 
+2.43.0
+

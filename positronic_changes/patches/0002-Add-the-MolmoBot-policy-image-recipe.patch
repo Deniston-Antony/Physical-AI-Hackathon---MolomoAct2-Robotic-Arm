@@ -1,0 +1,292 @@
+From 14bbe1c8afff86181f1d5f9de345d433831c27b0 Mon Sep 17 00:00:00 2001
+From: denistonantony <deniston2k@gmail.com>
+Date: Thu, 5 Nov 2026 21:11:47 +0100
+Subject: [PATCH 2/3] Add the MolmoBot policy image recipe
+
+The checkpoint, the server command and the server flags are build arguments. `molmobot-constraints.txt` pins the extra packages of the MolmoBot code.
+---
+ .dockerignore                          |   1 +
+ docker/Dockerfile.serve-molmobot-droid | 107 ++++++++++++++++++
+ docker/molmobot-constraints.txt        | 144 +++++++++++++++++++++++++
+ 3 files changed, 252 insertions(+)
+ create mode 100644 docker/Dockerfile.serve-molmobot-droid
+ create mode 100644 docker/molmobot-constraints.txt
+
+diff --git a/.dockerignore b/.dockerignore
+index e123bdbc..99f811b0 100644
+--- a/.dockerignore
++++ b/.dockerignore
+@@ -40,6 +40,7 @@ htmlcov
+ docker/*
+ !docker/install-gr00t-server-deps.sh
+ !docker/run_molmospaces_eval.sh
++!docker/molmobot-constraints.txt
+ 
+ # Outputs and datasets (shouldn't be in source anyway)
+ outputs/
+diff --git a/docker/Dockerfile.serve-molmobot-droid b/docker/Dockerfile.serve-molmobot-droid
+new file mode 100644
+index 00000000..7b3aa2f3
+--- /dev/null
++++ b/docker/Dockerfile.serve-molmobot-droid
+@@ -0,0 +1,107 @@
++# syntax=docker/dockerfile:1.7
++# A policy image the platform can run: a MolmoBot checkpoint for DROID (Ai2), served through the MolmoBot code.
++# docs/submit-a-policy-image.md says what the platform requires of the image and how to test it.
++#
++# Usage (from the repository root). Two named build contexts supply what this repository does not hold:
++#   molmobot = the `MolmoBot` folder of a github.com/allenai/MolmoBot checkout at commit 33c0ca77
++#   weights  = a download of a MolmoBot checkpoint, for example allenai/MolmoBot-DROID at revision cbe6ec35 or
++#              allenai/MolmoBot-Img-DROID: `config.yaml` and `model.pt`. CHECKPOINT_NAME names its folder.
++#   docker buildx build --platform linux/amd64 --provenance=false --sbom=false \
++#       --build-context molmobot=<checkout>/MolmoBot --build-context weights=<weights folder> \
++#       -f docker/Dockerfile.serve-molmobot-droid -t docker.io/<you>/molmobot-droid:v1 .
++#   docker run --rm --network none docker.io/<you>/molmobot-droid:v1        # the offline pre-flight
++#
++# The base, the dependencies and the source match `Dockerfile.serve-molmoact2-droid`. The MolmoBot code needs
++# packages that no positronic extra holds; `molmobot-constraints.txt` pins them to the versions this image was
++# tested with.
++
++ARG BASE_IMAGE=ghcr.io/astral-sh/uv:python3.13-bookworm
++ARG TOKENIZER=Qwen/Qwen3-4B-Instruct-2507
++ARG TOKENIZER_REVISION=cdbee75f17c01a7cc42f958dc650907174af0554
++
++# The MolmoBot code loads its text tokenizer from the Hugging Face cache.
++FROM python:3.12-slim@sha256:05cda9777409a9c3ffddd94a4c476b79f0769a0b4857f0c7ed9226b6800b0d6f AS tokenizer
++ARG TOKENIZER TOKENIZER_REVISION
++ENV HF_HOME=/opt/hf
++RUN pip install --no-cache-dir huggingface_hub==0.35.3
++# A download by commit writes no `refs/main`, and the offline load of the default revision reads it.
++RUN hf download "$TOKENIZER" --revision "$TOKENIZER_REVISION" \
++      --include "tokenizer.json" "tokenizer_config.json" "vocab.json" "merges.txt" "config.json" > /dev/null \
++ && refs="$HF_HOME/hub/models--$(echo "$TOKENIZER" | sed 's|/|--|g')/refs" \
++ && mkdir -p "$refs" && printf %s "$TOKENIZER_REVISION" > "$refs/main"
++
++FROM ${BASE_IMAGE}
++# robosuite, a positronic dependency, pulls in opencv-python, and its cv2 loads libGL at import.
++RUN apt-get update && apt-get install -y --no-install-recommends libgl1 && rm -rf /var/lib/apt/lists/*
++
++ENV HF_HOME=/opt/hf \
++    PYTHONUNBUFFERED=1 \
++    PYTHONPATH=/positronic:/positronic/client:/positronic/wire:/positronic/model_server:/positronic/vocabulary:/positronic/evals:/opt/molmobot \
++    UV_PROJECT_ENVIRONMENT=/positronic/.venv \
++    VIRTUAL_ENV=/positronic/.venv \
++    UV_PYTHON_DOWNLOADS=never \
++    UV_LINK_MODE=copy \
++    UV_HTTP_TIMEOUT=600 \
++    PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \
++    NVIDIA_VISIBLE_DEVICES=all \
++    NVIDIA_DRIVER_CAPABILITIES=compute,utility
++
++WORKDIR /positronic
++COPY pyproject.toml uv.lock ./
++COPY client/pyproject.toml client/
++COPY wire/pyproject.toml wire/
++COPY model_server/pyproject.toml model_server/
++COPY vocabulary/pyproject.toml vocabulary/
++COPY evals/pyproject.toml evals/
++RUN uv sync --locked --python 3.13 --extra molmoact2 --no-dev --no-install-workspace && uv cache clean
++
++COPY README.md LICENSE ./
++COPY client/README.md client/
++COPY wire/README.md wire/
++COPY model_server/README.md model_server/
++COPY vocabulary/README.md vocabulary/
++COPY evals/README.md evals/
++COPY positronic/__init__.py positronic/
++COPY pimm/__init__.py pimm/
++COPY client/platform_client/py.typed client/platform_client/
++COPY wire/positronic_wire/py.typed wire/positronic_wire/
++COPY model_server/positronic_model_server/py.typed model_server/positronic_model_server/
++COPY vocabulary/eval_vocabulary/py.typed vocabulary/eval_vocabulary/
++COPY evals/positronic_evals/py.typed evals/positronic_evals/
++RUN uv sync --locked --python 3.13 --extra molmoact2 --no-dev && uv cache clean
++
++# After the last sync, which removes every package the lock does not name. `--no-config` drops the project's
++# `exclude-newer`, which hides some of the pinned versions.
++COPY docker/molmobot-constraints.txt /tmp/molmobot-constraints.txt
++RUN uv pip install --no-config --python /positronic/.venv/bin/python -c /tmp/molmobot-constraints.txt \
++      omegaconf einops einops-exts rich cached-path torchmetrics datasets decord huggingface-hub \
++ && uv cache clean && rm /tmp/molmobot-constraints.txt
++
++COPY --link . /positronic
++COPY --link --from=molmobot olmo /opt/molmobot/olmo
++COPY --link --from=molmobot LICENSE /opt/molmobot/LICENSE
++COPY --link --from=tokenizer /opt/hf /opt/hf
++ARG CHECKPOINT_NAME=MolmoBot-DROID
++COPY --link --from=weights config.yaml model.pt /opt/molmobot/${CHECKPOINT_NAME}/
++
++# A fetch the build did not make fails at once on the denied network.
++ENV HF_HUB_OFFLINE=1 \
++    TRANSFORMERS_OFFLINE=1 \
++    UV_OFFLINE=1 \
++    UV_NO_SYNC=1
++
++# After the weights, so another server command rebuilds no layer. `droid_half_overlap` requests the next chunk
++# while the robot plays the last actions of the current one.
++# SERVER_ARGS adds server flags, for example `--model.camera=left`.
++ARG SERVER_COMMAND=droid
++ARG SERVER_ARGS=
++ENV MOLMOBOT_COMMAND=${SERVER_COMMAND} \
++    MOLMOBOT_CHECKPOINT=/opt/molmobot/${CHECKPOINT_NAME} \
++    MOLMOBOT_ARGS=${SERVER_ARGS}
++
++EXPOSE 8000
++
++# `exec` makes the server pid 1, so it receives the stop signal.
++ENTRYPOINT ["/bin/sh", "-c", \
++  "exec /positronic/.venv/bin/python -m positronic.vendors.molmobot.server \"$MOLMOBOT_COMMAND\" \
++   --model.checkpoint_dir=\"$MOLMOBOT_CHECKPOINT\" $MOLMOBOT_ARGS \"$@\"", "--"]
+diff --git a/docker/molmobot-constraints.txt b/docker/molmobot-constraints.txt
+new file mode 100644
+index 00000000..02b73b5e
+--- /dev/null
++++ b/docker/molmobot-constraints.txt
+@@ -0,0 +1,144 @@
++absl-py==2.4.0
++accelerate==1.12.0
++aiohappyeyeballs==2.7.1
++aiohttp==3.14.5
++aiosignal==1.4.0
++annotated-doc==0.0.4
++annotated-types==0.7.0
++antlr4-python3-runtime==4.9.3
++anyio==4.12.1
++attrs==25.4.0
++av==16.1.0
++boto3==1.42.54
++botocore==1.42.54
++cached-path==1.8.10
++certifi==2026.1.4
++cffi==2.1.0
++charset-normalizer==3.4.4
++click==8.5.0
++coloredlogs==15.0.1
++configuronic==0.7.0
++cryptography==49.0.0
++cvxopt==1.3.3
++datasets==4.8.5
++dearpygui==2.2
++decord==0.6.0
++dill==0.4.1
++einops==0.8.2
++einops-exts==0.0.4
++etils==1.13.0
++fastapi==0.135.2
++filelock==3.24.3
++fire==0.7.1
++frozenlist==1.8.0
++fsspec==2025.3.0
++glfw==2.10.0
++google-api-core==2.30.3
++google-auth==2.56.0
++google-cloud-core==2.6.0
++google-cloud-storage==3.13.0
++google-crc32c==1.8.0
++google-resumable-media==2.10.0
++googleapis-common-protos==1.75.0
++grpcio==1.82.1
++h11==0.16.0
++h5py==3.16.0
++hf-xet==1.8.0
++httpcore==1.0.9
++httpcore2==2.16.0
++httptools==0.7.1
++httpx==0.28.1
++httpx2==2.16.0
++huggingface-hub==1.19.0
++humanfriendly==10.0
++idna==3.20
++importlib-resources==6.5.2
++jinja2==3.1.6
++jmespath==1.1.0
++lightning-utilities==0.15.3
++markdown-it-py==4.0.0
++markupsafe==3.0.3
++mdurl==0.1.2
++mpmath==1.3.0
++msgpack==1.1.2
++msgpack-numpy==0.4.8
++mujoco==3.5.0
++multidict==7.2.1
++multiprocess==0.70.19
++narwhals==2.16.0
++networkx==3.6.1
++numpy==2.3.5
++nvidia-cublas-cu12==12.8.3.14
++nvidia-cuda-cupti-cu12==12.8.57
++nvidia-cuda-nvrtc-cu12==12.8.61
++nvidia-cuda-runtime-cu12==12.8.57
++nvidia-cudnn-cu12==9.7.1.26
++nvidia-cufft-cu12==11.3.3.41
++nvidia-cufile-cu12==1.13.0.11
++nvidia-curand-cu12==10.3.9.55
++nvidia-cusolver-cu12==11.7.2.55
++nvidia-cusparse-cu12==12.5.7.53
++nvidia-cusparselt-cu12==0.6.3
++nvidia-nccl-cu12==2.26.2
++nvidia-nvjitlink-cu12==12.8.61
++nvidia-nvtx-cu12==12.8.55
++omegaconf==2.3.1
++opencv-python-headless==4.13.0.92
++opentelemetry-api==1.44.0
++packaging==26.0
++pandas==3.1.1
++pillow==12.1.1
++plotly==6.5.2
++pos3==0.3.1
++propcache==0.5.4
++proto-plus==1.28.1
++protobuf==7.35.1
++psutil==7.2.2
++pyarrow==26.0.1
++pyasn1==0.6.4
++pyasn1-modules==0.4.2
++pycparser==3.0
++pydantic==2.12.5
++pydantic-core==2.41.5
++pygments==2.19.2
++pyopengl==3.1.10
++python-dateutil==2.9.0.post0
++python-dotenv==1.2.1
++pyturbojpeg==1.8.3
++pyyaml==6.0.3
++pyzmq==27.1.0
++regex==2026.2.19
++requests==2.32.5
++rerun-sdk==0.30.0
++rich==13.9.4
++ruckig==0.15.3
++s3transfer==0.16.0
++safetensors==0.7.0
++scipy==1.17.1
++sentencepiece==0.2.1
++setuptools==82.0.0
++shellingham==1.5.4
++six==1.17.0
++starlette==1.0.0
++sympy==1.14.0
++termcolor==3.3.0
++tokenizers==0.22.2
++torch==2.7.1+cu128
++torchmetrics==1.9.0
++torchvision==0.22.1+cu128
++tqdm==4.67.3
++transformers==5.11.0
++triton==3.3.1
++truststore==0.10.5
++typer==0.24.1
++typing-extensions==4.15.0
++typing-inspection==0.4.2
++urllib3==2.6.3
++uvicorn==0.41.0
++uvloop==0.22.1
++watchfiles==1.1.1
++websockets==16.0
++xxhash==4.0.2
++yarl==1.25.1
++zipp==3.23.0
++zmq==0.0.0
+-- 
+2.43.0
+

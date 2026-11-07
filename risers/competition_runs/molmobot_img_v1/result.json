@@ -1,0 +1,2783 @@
+{
+  "artifact_location": "s3://pp-artifacts/users/2ba136d80490519a/submissions/30b01a00181a225/",
+  "attempt_location": "s3://pp-artifacts/users/2ba136d80490519a/submissions/30b01a00181a225/attempts/1/",
+  "error": null,
+  "reason_code": null,
+  "run_id": "7e0b7d710366f01e",
+  "scores": {
+    "episodes": 320,
+    "per_task": {
+      "Pick up the black digital music player and place it in or on the light blue bowl": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "Pick up the blue birthday card with fox and rabbit and place it in or on the green ashtray": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "Pick up the blue patterned cat and place it next to the gold pump bottle": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the curve and place it in or on the green dish": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the dark metal frying pan and place it next to the bulbous shiny gold metallic vase": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the dark wand with red crystal and place it in or on the light blue bowl": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "Pick up the denture and place it next to the red lighthouse with framework": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the garden hose nozzle and place it next to the bulbous shiny gold vase": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the glossy orange bell pepper with stem and place it next to the irish potato": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the gray dragon pipe with scales and place it in or on the purple bowl": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "Pick up the gray metal rod with perforated top and place it next to the angular dark stealth aircraft with wings": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the green gemstone and place it next to the red spaceship": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the green grenade with metal lever and base and place it next to the gray rectangular ethernet transceiver": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the hexagonal dark stone platform and place it next to the stylized orange butterfly with brown body": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the light wooden bridge with arches and place it next to the purple and yellow pixelated knife": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the lighter and place it in or on the white decorative box": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "Pick up the low-poly brown acorn and place it in or on the black bowl": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the medallion with crown and shields and place it next to the dark gray bowl": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the orange cylindrical medicine bottle with label and place it next to the octagonal translucent soap bottle": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the polished metal shuriken with four blades and place it in or on the blue bowl": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the red teardrop keychain holder with button and place it in or on the tan ceramic bowl": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the red wall-mounted fire connection with caps and place it in or on the blue decorative bowl": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the red white striped teacup and place it in or on the purple ceramic bowl": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "Pick up the reddish metal brooch with swirl and place it in or on the white decorative bowl": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "Pick up the root vegetable and place it next to the medium round red tomato with stem": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the sleek black spinning top and place it next to the gold metallic phone": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the smooth brown chicken egg and place it next to the transparent soap bottle with bronze pump": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the standard playing card with clubs and place it in or on the tan mug": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "Pick up the vintage bird-shaped metal nutcracker and place it in or on the blue bowl": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the wooden humanoid puzzle piece and place it next to the shiny gold vase": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "Pick up the worn white metal paint can and place it in or on the green bowl": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "Pick up the yellow flower with leaf and place it in or on the light yellow bowl": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "close the brown wooden desk.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 2
+      },
+      "close the cabinet.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.5,
+        "successes": 1,
+        "trials": 2
+      },
+      "close the dark dresser.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "close the desk.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "close the drawer.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.375,
+        "successes": 3,
+        "trials": 8
+      },
+      "close the dresser.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.6,
+        "successes": 3,
+        "trials": 5
+      },
+      "close the light brown table.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "close the oven.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "close the table.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.6666666666666666,
+        "successes": 4,
+        "trials": 6
+      },
+      "close the white dresser.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "close the white table.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "close the white wooden dresser.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "open the cabinet.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "open the dark fridge.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "open the dark table.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "open the desk.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.5,
+        "successes": 1,
+        "trials": 2
+      },
+      "open the dishwasher.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "open the drawer.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 5
+      },
+      "open the dresser.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.3333333333333333,
+        "successes": 2,
+        "trials": 6
+      },
+      "open the large wooden dresser.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "open the oven.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 2
+      },
+      "open the refrigerator.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.3333333333333333,
+        "successes": 1,
+        "trials": 3
+      },
+      "open the table.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 2
+      },
+      "open the tall dark refrigerator.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "open the tall wooden shelf.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "open the wooden table.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 3
+      },
+      "pick up the album.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the apple and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.3333333333333333,
+        "successes": 1,
+        "trials": 3
+      },
+      "pick up the apple.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.75,
+        "successes": 3,
+        "trials": 4
+      },
+      "pick up the bark and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the bee and place it on the gray bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the black moka.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the black ribbed cap.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the black webcam.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the blue die and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the blue pan.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the bottle and place it on the basin.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the bottle and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.5,
+        "successes": 4,
+        "trials": 8
+      },
+      "pick up the bottle and place it on the glossy white bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the bottle.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 10,
+        "trials": 10
+      },
+      "pick up the bowl and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the bowl and place it on the dish.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the bowl and place it on the mug.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 5,
+        "trials": 5
+      },
+      "pick up the box.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 5,
+        "trials": 5
+      },
+      "pick up the bridge.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the brown cat figurine and place it on the gray bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the brown egg.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the brown pinecone keychain.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the brown potato.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the brush and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the butter knife and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the butter knife.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the calculator and place it on the round gray bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the camcorder and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the candle and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the candle and place it on the gray bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the card and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the ceramic bowl and place it on the mug.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the colorful mosaic and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the comb.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the cream candle.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the croissant.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the cup and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.6666666666666666,
+        "successes": 2,
+        "trials": 3
+      },
+      "pick up the cup and place it on the container.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the cup.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.25,
+        "successes": 1,
+        "trials": 4
+      },
+      "pick up the digital wristband and place it on the round gray bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the dish.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the dog statue.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the egg and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.5,
+        "successes": 1,
+        "trials": 2
+      },
+      "pick up the egg.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the fork and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.6666666666666666,
+        "successes": 4,
+        "trials": 6
+      },
+      "pick up the fork and place it on the round blue bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the fork.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 4,
+        "trials": 4
+      },
+      "pick up the futuristic black key and place it on the tin.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the glossy golden musical note and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the goggles and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the gold watch and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the golden bottle and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the grapefruit and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the gray container.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the gray metal ring and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the gray shackle and place it on the pink geometric box.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the green battery.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the green floral invitation.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the green tissue and place it on the blue bottle.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the grenade.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the hammer.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the juicer.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the kettle.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 2,
+        "trials": 2
+      },
+      "pick up the kitchen spatula and place it on the rustic wooden bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the knife and place it on the ashtray.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the knife and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 3
+      },
+      "pick up the knife.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the ladle and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.5,
+        "successes": 1,
+        "trials": 2
+      },
+      "pick up the ladle.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 2,
+        "trials": 2
+      },
+      "pick up the leather-wrapped brass telescope and place it on the box.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the marble rook.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the mechanism.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the metal component and place it on the metal tin.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the metal fork.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the metallic multi-tool.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the metallic sleek blade.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the micrometer.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the mug and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 4,
+        "trials": 4
+      },
+      "pick up the mug and place it on the shallow green bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the mug.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the newspaper and place it on the white ceramic bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the notebook.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the onion and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the pan.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the pepper shaker and place it on the box.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the pepper.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the pin.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the plump red tomato.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the pointed metal awl and place it on the white bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the pot.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.75,
+        "successes": 3,
+        "trials": 4
+      },
+      "pick up the potato and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.6666666666666666,
+        "successes": 2,
+        "trials": 3
+      },
+      "pick up the potato.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the projector and place it on the pot.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the puck.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the purple bottle and place it on the ceramic bowl with rice.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the raw meat and place it on the pot.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the red apple and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the red apple.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 2
+      },
+      "pick up the red skull key.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the remote and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.5,
+        "successes": 1,
+        "trials": 2
+      },
+      "pick up the remote.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 4,
+        "trials": 4
+      },
+      "pick up the screwdriver and place it on the dark pot.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the screwdriver.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the shaker and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 4,
+        "trials": 4
+      },
+      "pick up the shaker.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 4,
+        "trials": 4
+      },
+      "pick up the shiny gold script.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the shiny golden chain and place it on the red container.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the silver kettle.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the small red potato and place it on the tan decorative bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the small red potato.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the smart speaker and place it on the rustic brown bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the smooth light blue dolphin.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the spatula and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 4,
+        "trials": 4
+      },
+      "pick up the spatula and place it on the dish.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the spatula.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 6,
+        "trials": 6
+      },
+      "pick up the spoon and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 3,
+        "trials": 3
+      },
+      "pick up the spoon and place it on the rustic clay bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the spoon.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 3,
+        "trials": 3
+      },
+      "pick up the tape and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the teal ruler.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the terminal and place it on the gray bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the tissue and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.75,
+        "successes": 3,
+        "trials": 4
+      },
+      "pick up the tissue.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 7,
+        "trials": 7
+      },
+      "pick up the toilet.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the tomato.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.5,
+        "successes": 1,
+        "trials": 2
+      },
+      "pick up the towel and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.75,
+        "successes": 3,
+        "trials": 4
+      },
+      "pick up the toy dog and place it on the dish.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the watch and place it on the wooden box.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the wheel.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the white mug and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the white stopwatch.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the wooden fan.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the wooden pencil and place it on the bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      },
+      "pick up the wooden stamp and place it on the tray.": {
+        "mean_subtask_score": null,
+        "success_rate": 1.0,
+        "successes": 1,
+        "trials": 1
+      },
+      "pick up the yellow wooden pencil and place it on the round wooden bowl.": {
+        "mean_subtask_score": null,
+        "success_rate": 0.0,
+        "successes": 0,
+        "trials": 1
+      }
+    },
+    "primary": 0.471875,
+    "sim_time": [
+      {
+        "limit_s": 31.03,
+        "sim_s": 7.656,
+        "task": "pick up the tissue."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 28.578,
+        "task": "pick up the spatula and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 15.972,
+        "task": "pick up the black moka."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the white mug and place it on the bowl."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "Pick up the red teardrop keychain holder with button and place it in or on the tan ceramic bowl"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "Pick up the garden hose nozzle and place it next to the bulbous shiny gold vase"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "close the drawer."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the drawer."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the dishwasher."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "close the cabinet."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 6.006,
+        "task": "pick up the tissue."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 45.012,
+        "task": "pick up the bottle and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the brown pinecone keychain."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the bowl and place it on the dish."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "Pick up the yellow flower with leaf and place it in or on the light yellow bowl"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "Pick up the blue patterned cat and place it next to the gold pump bottle"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 14.058,
+        "task": "close the drawer."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the drawer."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the refrigerator."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 19.734,
+        "task": "close the table."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 6.138,
+        "task": "pick up the bowl."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 19.404,
+        "task": "pick up the fork and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the cream candle."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the card and place it on the bowl."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "Pick up the red wall-mounted fire connection with caps and place it in or on the blue decorative bowl"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "Pick up the hexagonal dark stone platform and place it next to the stylized orange butterfly with brown body"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 2.574,
+        "task": "close the drawer."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the oven."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the wooden table."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "close the brown wooden desk."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 9.042,
+        "task": "pick up the apple."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 45.012,
+        "task": "pick up the knife and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the comb."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the gold watch and place it on the bowl."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "Pick up the vintage bird-shaped metal nutcracker and place it in or on the blue bowl"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "Pick up the wooden humanoid puzzle piece and place it next to the shiny gold vase"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "close the drawer."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 11.022,
+        "task": "open the desk."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the wooden table."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "close the oven."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 10.23,
+        "task": "pick up the spatula."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 23.232,
+        "task": "pick up the shaker and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the mechanism."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the brush and place it on the bowl."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 36.828,
+        "task": "Pick up the standard playing card with clubs and place it in or on the tan mug"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "Pick up the sleek black spinning top and place it next to the gold metallic phone"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 3.564,
+        "task": "close the drawer."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the oven."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the desk."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "close the brown wooden desk."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 4.356,
+        "task": "pick up the shaker."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 14.85,
+        "task": "pick up the shaker and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the toilet."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.732,
+        "task": "pick up the leather-wrapped brass telescope and place it on the box."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 33.264,
+        "task": "Pick up the reddish metal brooch with swirl and place it in or on the white decorative bowl"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "Pick up the orange cylindrical medicine bottle with label and place it next to the octagonal translucent soap bottle"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 3.828,
+        "task": "close the table."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 14.652,
+        "task": "open the dresser."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the dark table."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "close the white dresser."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 7.524,
+        "task": "pick up the shaker."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 45.012,
+        "task": "pick up the knife and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the wheel."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the brown cat figurine and place it on the gray bowl."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 31.482,
+        "task": "Pick up the gray dragon pipe with scales and place it in or on the purple bowl"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "Pick up the glossy orange bell pepper with stem and place it next to the irish potato"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "close the drawer."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the dresser."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the wooden table."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "close the desk."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 5.148,
+        "task": "pick up the shaker."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 27.918,
+        "task": "pick up the bottle and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the hammer."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the wooden pencil and place it on the bowl."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 25.146,
+        "task": "Pick up the red white striped teacup and place it in or on the purple ceramic bowl"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "Pick up the gray metal rod with perforated top and place it next to the angular dark stealth aircraft with wings"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "close the drawer."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the drawer."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the large wooden dresser."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "close the white table."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 2.904,
+        "task": "pick up the bottle."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 45.012,
+        "task": "pick up the egg and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the metallic multi-tool."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the metal component and place it on the metal tin."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "Pick up the curve and place it in or on the green dish"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "Pick up the green gemstone and place it next to the red spaceship"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 3.828,
+        "task": "close the cabinet."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the drawer."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the dark fridge."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "close the table."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "pick up the mug."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 19.074,
+        "task": "pick up the spatula and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the cup."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the pointed metal awl and place it on the white bowl."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 25.08,
+        "task": "Pick up the blue birthday card with fox and rabbit and place it in or on the green ashtray"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "Pick up the green grenade with metal lever and base and place it next to the gray rectangular ethernet transceiver"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 2.442,
+        "task": "close the dresser."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the cabinet."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the tall wooden shelf."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "close the light brown table."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 24.156,
+        "task": "pick up the bottle."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 23.496,
+        "task": "pick up the tissue and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the notebook."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 23.43,
+        "task": "pick up the purple bottle and place it on the ceramic bowl with rice."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "Pick up the polished metal shuriken with four blades and place it in or on the blue bowl"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "Pick up the light wooden bridge with arches and place it next to the purple and yellow pixelated knife"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "close the table."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 21.252,
+        "task": "open the dresser."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the tall dark refrigerator."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "close the dresser."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 11.022,
+        "task": "pick up the bottle."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 45.012,
+        "task": "pick up the bottle and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 17.82,
+        "task": "pick up the pot."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.798,
+        "task": "pick up the bowl and place it on the mug."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 25.938,
+        "task": "Pick up the dark wand with red crystal and place it in or on the light blue bowl"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "Pick up the root vegetable and place it next to the medium round red tomato with stem"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "close the drawer."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the dresser."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the table."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 3.564,
+        "task": "close the white wooden dresser."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 10.956,
+        "task": "pick up the box."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 19.338,
+        "task": "pick up the fork and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 17.952,
+        "task": "pick up the bottle."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the bottle and place it on the bowl."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 24.42,
+        "task": "Pick up the worn white metal paint can and place it in or on the green bowl"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "Pick up the dark metal frying pan and place it next to the bulbous shiny gold metallic vase"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 4.422,
+        "task": "close the table."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the table."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the dresser."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 18.678,
+        "task": "close the dresser."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 14.388,
+        "task": "pick up the tissue."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 16.104,
+        "task": "pick up the mug and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 10.494,
+        "task": "pick up the kettle."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the red apple and place it on the bowl."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "Pick up the low-poly brown acorn and place it in or on the black bowl"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "Pick up the denture and place it next to the red lighthouse with framework"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 4.158,
+        "task": "close the table."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the refrigerator."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 13.86,
+        "task": "open the refrigerator."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "close the dark dresser."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 8.052,
+        "task": "pick up the spoon."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 45.012,
+        "task": "pick up the apple and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the red apple."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the candle and place it on the gray bowl."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 4.752,
+        "task": "Pick up the lighter and place it in or on the white decorative box"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "Pick up the smooth brown chicken egg and place it next to the transparent soap bottle with bronze pump"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 3.96,
+        "task": "close the dresser."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the drawer."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "open the dresser."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "close the dresser."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 7.458,
+        "task": "pick up the cup."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 13.2,
+        "task": "pick up the apple and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the pan."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the spoon and place it on the rustic clay bowl."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 33.858,
+        "task": "Pick up the black digital music player and place it in or on the light blue bowl"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "Pick up the medallion with crown and shields and place it next to the dark gray bowl"
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 7.392,
+        "task": "pick up the remote."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 31.152,
+        "task": "pick up the bottle and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the red apple."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the butter knife and place it on the bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 6.204,
+        "task": "pick up the spoon."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 18.876,
+        "task": "pick up the towel and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the potato."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the green tissue and place it on the blue bottle."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 7.128,
+        "task": "pick up the tissue."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 16.236,
+        "task": "pick up the cup and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the plump red tomato."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 32.934,
+        "task": "pick up the mug and place it on the shallow green bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 3.168,
+        "task": "pick up the box."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 19.998,
+        "task": "pick up the spoon and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the silver kettle."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the fork and place it on the round blue bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 6.864,
+        "task": "pick up the bottle."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 25.014,
+        "task": "pick up the remote and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 14.916,
+        "task": "pick up the brown egg."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 25.938,
+        "task": "pick up the bottle and place it on the glossy white bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 14.124,
+        "task": "pick up the fork."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 20.196,
+        "task": "pick up the mug and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the cup."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 35.838,
+        "task": "pick up the knife and place it on the ashtray."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 20.79,
+        "task": "pick up the tissue."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 45.012,
+        "task": "pick up the fork and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the dog statue."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 38.346,
+        "task": "pick up the bottle and place it on the basin."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 8.184,
+        "task": "pick up the remote."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 23.628,
+        "task": "pick up the fork and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the butter knife."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 19.074,
+        "task": "pick up the mug and place it on the bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 6.468,
+        "task": "pick up the bottle."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 27.39,
+        "task": "pick up the egg and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the blue pan."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the bowl and place it on the bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 11.55,
+        "task": "pick up the bowl."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 27.522,
+        "task": "pick up the towel and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 16.83,
+        "task": "pick up the metal fork."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 14.718,
+        "task": "pick up the tissue and place it on the bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 4.224,
+        "task": "pick up the spatula."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 45.012,
+        "task": "pick up the knife and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the pin."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the gray metal ring and place it on the bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 17.82,
+        "task": "pick up the remote."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 17.49,
+        "task": "pick up the spoon and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the bridge."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the watch and place it on the wooden box."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 6.006,
+        "task": "pick up the ladle."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 21.252,
+        "task": "pick up the shaker and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 10.428,
+        "task": "pick up the box."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the camcorder and place it on the bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 12.21,
+        "task": "pick up the tomato."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 18.48,
+        "task": "pick up the shaker and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the black ribbed cap."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 36.762,
+        "task": "pick up the gray shackle and place it on the pink geometric box."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 6.468,
+        "task": "pick up the spatula."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 27.258,
+        "task": "pick up the bottle and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 17.094,
+        "task": "pick up the screwdriver."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the onion and place it on the bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 9.042,
+        "task": "pick up the fork."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 25.542,
+        "task": "pick up the spatula and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the egg."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the terminal and place it on the gray bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 12.012,
+        "task": "pick up the bottle."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 45.012,
+        "task": "pick up the ladle and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the album."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the bee and place it on the gray bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 21.384,
+        "task": "pick up the apple."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 45.012,
+        "task": "pick up the tissue and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the grenade."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the futuristic black key and place it on the tin."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 7.128,
+        "task": "pick up the bottle."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 16.038,
+        "task": "pick up the tissue and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 11.418,
+        "task": "pick up the green floral invitation."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 35.046,
+        "task": "pick up the screwdriver and place it on the dark pot."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 13.464,
+        "task": "pick up the tissue."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 45.012,
+        "task": "pick up the towel and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the juicer."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the raw meat and place it on the pot."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 13.002,
+        "task": "pick up the remote."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 17.028,
+        "task": "pick up the potato and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 12.342,
+        "task": "pick up the metallic sleek blade."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.336,
+        "task": "pick up the grapefruit and place it on the bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 5.016,
+        "task": "pick up the spoon."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 45.012,
+        "task": "pick up the remote and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the red skull key."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the goggles and place it on the bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 7.524,
+        "task": "pick up the bowl."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 45.012,
+        "task": "pick up the fork and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 16.17,
+        "task": "pick up the dish."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 27.72,
+        "task": "pick up the wooden stamp and place it on the tray."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 6.468,
+        "task": "pick up the fork."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 43.296,
+        "task": "pick up the potato and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the croissant."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the cup and place it on the container."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 7.458,
+        "task": "pick up the bottle."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 34.056,
+        "task": "pick up the towel and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the black webcam."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 35.442,
+        "task": "pick up the projector and place it on the pot."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 5.082,
+        "task": "pick up the fork."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 21.912,
+        "task": "pick up the spoon and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 16.434,
+        "task": "pick up the shiny gold script."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the yellow wooden pencil and place it on the round wooden bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 9.504,
+        "task": "pick up the spatula."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 21.384,
+        "task": "pick up the cup and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the green battery."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the bark and place it on the bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 6.204,
+        "task": "pick up the apple."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 16.434,
+        "task": "pick up the candle and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the puck."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the colorful mosaic and place it on the bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "pick up the cup."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 17.952,
+        "task": "pick up the bottle and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.338,
+        "task": "pick up the spatula."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.93,
+        "task": "pick up the ceramic bowl and place it on the mug."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 9.702,
+        "task": "pick up the kettle."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 41.25,
+        "task": "pick up the fork and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the brown potato."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the pepper shaker and place it on the box."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 16.038,
+        "task": "pick up the box."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 30.624,
+        "task": "pick up the spatula and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the teal ruler."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the smart speaker and place it on the rustic brown bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 8.052,
+        "task": "pick up the spatula."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 45.012,
+        "task": "pick up the potato and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the small red potato."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 20.064,
+        "task": "pick up the golden bottle and place it on the bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 8.052,
+        "task": "pick up the bowl."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 45.012,
+        "task": "pick up the apple and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the smooth light blue dolphin."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the tape and place it on the bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 5.61,
+        "task": "pick up the box."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 40.92,
+        "task": "pick up the ladle and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 15.18,
+        "task": "pick up the micrometer."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 33.264,
+        "task": "pick up the kitchen spatula and place it on the rustic wooden bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 12.408,
+        "task": "pick up the pot."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 11.418,
+        "task": "pick up the mug and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the wooden fan."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 25.806,
+        "task": "pick up the digital wristband and place it on the round gray bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 28.05,
+        "task": "pick up the pot."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 45.012,
+        "task": "pick up the bottle and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the white stopwatch."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the newspaper and place it on the white ceramic bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 6.864,
+        "task": "pick up the tissue."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 45.012,
+        "task": "pick up the cup and place it on the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the apple."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the toy dog and place it on the dish."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 7.194,
+        "task": "pick up the bottle."
+      },
+      {
+        "limit_s": 46.012,
+        "sim_s": 26.532,
+        "task": "pick up the spatula and place it on the dish."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the knife."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the small red potato and place it on the tan decorative bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 21.12,
+        "task": "pick up the shaker."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the pot."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the blue die and place it on the bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 30.03,
+        "task": "pick up the tomato."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the marble rook."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the calculator and place it on the round gray bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 3.96,
+        "task": "pick up the bowl."
+      },
+      {
+        "limit_s": 20.998,
+        "sim_s": 19.998,
+        "task": "pick up the gray container."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 39.996,
+        "task": "pick up the glossy golden musical note and place it on the bowl."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 5.346,
+        "task": "pick up the pepper."
+      },
+      {
+        "limit_s": 40.996,
+        "sim_s": 22.374,
+        "task": "pick up the shiny golden chain and place it on the red container."
+      },
+      {
+        "limit_s": 31.03,
+        "sim_s": 5.346,
+        "task": "pick up the ladle."
+      }
+    ],
+    "success_rate": 0.471875,
+    "unscored": 0
+  },
+  "started_at": "2026-11-05T19:39:21.890262Z",
+  "state": "succeeded"
+}

@@ -1,0 +1,26 @@
+2026-11-07 00:21 TESTS START
+2026-11-07 00:21 START frz_now: --model.camera=left --pipeline.horizon_sec=0.7667 --model.num_flow_steps=5
+2026-11-07 02:31 DONE frz_now: frz_now: 2/19 solved (pnp normal 2/11, pnp hard 0/8), frozen 14, robot waits 37%, inference p50 584 ms
+2026-11-07 02:31 START frz_both: --model.camera=left --pipeline.horizon_sec=0.7667 --model.num_flow_steps=3 --model.training_wording=True
+2026-11-07 04:39 DONE frz_both: frz_both: 2/19 solved (pnp normal 1/11, pnp hard 1/8), frozen 13, robot waits 30%, inference p50 479 ms
+2026-11-07 04:39 START hard_both: --model.camera=left --pipeline.horizon_sec=0.7667 --model.num_flow_steps=3 --model.training_wording=True
+2026-11-07 06:54 DONE hard_both: hard_both: 18/28 solved (pick hard 11/16, pnp hard 7/12), frozen 1, robot waits 42%, inference p50 723 ms
+2026-11-07 06:54 START frz_word: --model.camera=left --pipeline.horizon_sec=0.7667 --model.num_flow_steps=5 --model.training_wording=True
+2026-11-07 09:04 DONE frz_word: frz_word: 3/19 solved (pnp normal 2/11, pnp hard 1/8), frozen 15, robot waits 37%, inference p50 600 ms
+2026-11-07 09:04 ALL RUNS DONE
+2026-11-07 09:04 MORE TESTS START (3 flow steps, board wording)
+2026-11-07 09:04 START hard_flow3: --model.camera=left --pipeline.horizon_sec=0.7667 --model.num_flow_steps=3
+2026-11-07 11:25 DONE hard_flow3: hard_flow3: 17/28 solved (pick hard 10/16, pnp hard 7/12), frozen 1, robot waits 42%, inference p50 723 ms
+2026-11-07 11:25 START frz_flow3: --model.camera=left --pipeline.horizon_sec=0.7667 --model.num_flow_steps=3
+2026-11-07 13:28 DONE frz_flow3: frz_flow3: 4/19 solved (pnp normal 2/11, pnp hard 2/8), frozen 14, robot waits 30%, inference p50 483 ms
+2026-11-07 13:28 ALL RUNS DONE (with the 3-flow-step runs)
+2026-11-07 13:43 STILL-ARM TESTS START
+2026-11-07 13:43 START frz_still3: --model.camera=left --pipeline.horizon_sec=0.7667 --model.num_flow_steps=3 --model.still_calls=3
+2026-11-07 15:27 DONE frz_still3: frz_still3: 10/19 solved (pnp normal 8/11, pnp hard 2/8), frozen 0, robot waits 30%, inference p50 489 ms, rule used 15 times
+2026-11-07 15:27 START hard_still3: --model.camera=left --pipeline.horizon_sec=0.7667 --model.num_flow_steps=3 --model.still_calls=3
+2026-11-07 15:34 PAUSE for the v3 start test (1 hard_still3 episodes done)
+2026-11-07 15:37 RESUME after the v3 start test
+2026-11-07 15:37 STILL-ARM TESTS START
+2026-11-07 15:37 START hard_still3: --model.camera=left --pipeline.horizon_sec=0.7667 --model.num_flow_steps=3 --model.still_calls=3
+2026-11-07 17:52 DONE hard_still3: hard_still3: 17/28 solved (pick hard 9/16, pnp hard 8/12), frozen 0, robot waits 42%, inference p50 725 ms, rule used 0 times
+2026-11-07 17:52 ALL RUNS DONE (still-arm rule)

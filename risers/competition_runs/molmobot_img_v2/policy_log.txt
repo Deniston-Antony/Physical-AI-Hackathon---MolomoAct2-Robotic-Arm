@@ -1,0 +1,1353 @@
+INFO:     10.80.1.24:60646 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:40328 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:40330 - "POST /api/v1/keepalive HTTP/1.1" 200 OK
+INFO:     10.80.1.24:44826 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:60064 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:33052 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:57110 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:48810 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:41908 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:54034 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:50922 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:56140 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:54330 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:37458 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:58874 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:55526 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:58838 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36310 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:35136 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:42764 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:46476 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:53916 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:59564 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:44106 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:51002 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:33314 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:56890 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:45032 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:33476 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:40374 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:51204 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:34260 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:37412 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:48772 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:54476 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:57702 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:45996 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:57542 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:37290 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36116 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:47852 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:52840 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:35710 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:44388 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:33310 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:57626 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:46828 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:35058 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:40500 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36144 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:38914 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:39584 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:47926 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:48972 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:44194 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:47780 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36698 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:50364 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:49676 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:34074 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:54776 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:56506 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:38666 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:35508 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36862 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:47538 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:37470 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:60596 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:40272 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:59894 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:60026 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:59728 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:39516 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:38152 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:50552 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:43880 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:37940 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:39714 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:45414 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:39418 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:58156 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:42662 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:47784 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:60994 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:56206 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:32948 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:46324 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:41212 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:38728 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:35912 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:48364 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:48370 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:52838 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:47358 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:55576 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:37994 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:59104 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:54556 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36824 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:53222 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:33728 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:35288 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:56010 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:38024 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:33374 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:43250 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:56900 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:56992 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:37214 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:51742 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:50514 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:52856 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:51220 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:58100 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:33870 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:45278 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:60660 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:37090 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:34124 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:38742 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:57780 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:57862 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:51666 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:34382 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:43712 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:45978 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:34862 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:56554 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:46338 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:39060 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:49186 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:46926 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36614 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:34584 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36792 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:48006 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:60258 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:43182 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:45210 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:60492 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:45628 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:54206 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:50892 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:55366 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:38988 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:53210 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:48648 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:41262 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:60292 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:60254 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:42406 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:49598 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:49168 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:45648 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:33380 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:50340 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:55788 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:35466 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:51338 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:43088 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36214 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:40554 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:53736 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:46456 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:40028 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36630 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:51516 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:60282 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:59952 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:42420 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:51906 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:41878 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:56406 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:59062 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36568 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:45526 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:35970 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:57180 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:42898 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:38510 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:59908 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:58956 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36740 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:40534 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:51392 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:35906 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:38318 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:43026 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:59742 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:42012 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:35684 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:35162 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:39820 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:45010 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:57136 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:53966 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:35122 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:47600 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:57584 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:43724 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:38416 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:56944 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:48968 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:60254 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:54586 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:54550 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:34538 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:53220 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:34762 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:38172 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:33764 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:46648 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:46514 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:46048 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:58744 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:41514 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:40220 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:59476 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36472 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:57918 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:53372 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:48882 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:33744 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:45290 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:45238 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:58624 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:58562 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:52602 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:33576 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:48654 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:51118 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:48036 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36710 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:35836 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:48016 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:43552 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:58744 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:35012 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:45360 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:50014 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:58650 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:56416 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:33932 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:45290 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:37644 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36742 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:33058 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:46484 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:51326 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:46346 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:49090 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:55544 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:58450 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:44214 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:54936 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:60398 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:32972 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36256 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:49718 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:52624 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:56564 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:47352 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:51180 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36514 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36222 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:42942 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:35496 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:60156 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:40492 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:33408 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:45474 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:50392 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:37294 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:55100 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:42288 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:53518 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:48524 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:33522 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:43184 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:49910 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:47932 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:48832 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:54142 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:37248 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:45688 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:39538 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:60900 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:51756 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:38298 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:54086 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:33784 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:59686 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36394 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:53168 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:50140 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:37388 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:48842 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:36976 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:40752 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:40102 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:34002 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:50316 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:43086 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:50250 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:50174 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:46806 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:32878 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.1.24:56996 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+17:24:48.063 [INFO] (server.py:31) Loading MolmoBot model /opt/molmobot/MolmoBot-Img-DROID                         
+17:24:53.848 [INFO] (tokenizer.py:130) Padding tokenizer with 267 tokens                                               
+/opt/molmobot/olmo/data/video_loader.py:55: RuntimeWarning: Mean of empty slice.
+  return 1 / (self.timestamps[1:] - self.timestamps[:-1]).mean()
+/positronic/.venv/lib/python3.13/site-packages/numpy/_core/_methods.py:144: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+17:24:57.612 [INFO] (inference_wrapper.py:171) Built state preprocessor from checkpoint config                                 
+17:24:57.612 [INFO] (inference_wrapper.py:178) Built action postprocessor from checkpoint config                               
+17:24:57.612 [INFO] (inference_wrapper.py:179)   action_key: action                                                            
+17:24:57.612 [INFO] (inference_wrapper.py:180)   action_norm_mode: quantiles                                                   
+17:24:57.612 [INFO] (inference_wrapper.py:181)   repos with stats: ['synthmanip']                                              
+17:24:57.612 [INFO] (inference_wrapper.py:187)     synthmanip/observation.state/q01: len=8                                     
+17:24:57.612 [INFO] (inference_wrapper.py:187)     synthmanip/observation.state/q99: len=8                                     
+17:24:57.613 [INFO] (inference_wrapper.py:187)     synthmanip/action/q01: len=8                                                
+17:24:57.613 [INFO] (inference_wrapper.py:187)     synthmanip/action/q99: len=8                                                
+INFO:     Started server process [1]
+INFO:     ('10.80.1.16', 54018) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:26:57.184 [INFO] (server.py:205) Connected to ('10.80.1.16', 54018)                                              
+INFO:     ('10.80.1.16', 54004) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:26:57.186 [INFO] (server.py:205) Connected to ('10.80.1.16', 54004)                                              
+INFO:     ('10.80.1.16', 54030) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:26:57.218 [INFO] (server.py:205) Connected to ('10.80.1.16', 54030)                                              
+INFO:     ('10.80.1.16', 54036) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:26:57.262 [INFO] (server.py:205) Connected to ('10.80.1.16', 54036)                                              
+INFO:     ('10.80.1.16', 54042) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:26:57.268 [INFO] (server.py:205) Connected to ('10.80.1.16', 54042)                                              
+/opt/molmobot/olmo/preprocessing/image_preprocessor.py:270: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  image = torch.permute(torch.from_numpy(image), [2, 0, 1])
+INFO:     ('10.80.1.16', 54048) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:26:57.529 [INFO] (server.py:205) Connected to ('10.80.1.16', 54048)                                              
+INFO:     ('10.80.1.16', 54054) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:26:57.593 [INFO] (server.py:205) Connected to ('10.80.1.16', 54054)                                              
+INFO:     ('10.80.1.16', 54064) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:26:57.595 [INFO] (server.py:205) Connected to ('10.80.1.16', 54064)                                              
+INFO:     ('10.80.1.16', 38838) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:26:58.311 [INFO] (server.py:205) Connected to ('10.80.1.16', 38838)                                              
+INFO:     ('10.80.1.16', 38840) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:26:59.794 [INFO] (server.py:205) Connected to ('10.80.1.16', 38840)                                              
+INFO:     ('10.80.1.16', 38856) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:26:59.959 [INFO] (server.py:205) Connected to ('10.80.1.16', 38856)                                              
+INFO:     ('10.80.1.16', 38864) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:27:00.519 [INFO] (server.py:205) Connected to ('10.80.1.16', 38864)                                              
+INFO:     ('10.80.1.16', 38226) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:27:14.994 [INFO] (server.py:205) Connected to ('10.80.1.16', 38226)                                              
+INFO:     ('10.80.1.16', 45430) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:27:22.672 [INFO] (server.py:205) Connected to ('10.80.1.16', 45430)                                              
+INFO:     ('10.80.1.16', 45442) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:27:24.328 [INFO] (server.py:205) Connected to ('10.80.1.16', 45442)                                              
+17:27:31.804 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 266 ms, p95 282 ms                       
+INFO:     ('10.80.1.16', 45962) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:27:40.875 [INFO] (server.py:205) Connected to ('10.80.1.16', 45962)                                              
+INFO:     ('10.80.1.16', 60952) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:27:55.628 [INFO] (server.py:205) Connected to ('10.80.1.16', 60952)                                              
+INFO:     ('10.80.1.16', 56608) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:28:06.503 [INFO] (server.py:205) Connected to ('10.80.1.16', 56608)                                              
+17:28:06.964 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 262 ms, p95 280 ms                       
+INFO:     ('10.80.1.16', 44444) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:28:11.487 [INFO] (server.py:205) Connected to ('10.80.1.16', 44444)                                              
+INFO:     ('10.80.1.16', 44452) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:28:14.429 [INFO] (server.py:205) Connected to ('10.80.1.16', 44452)                                              
+INFO:     ('10.80.1.16', 53338) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:28:20.341 [INFO] (server.py:205) Connected to ('10.80.1.16', 53338)                                              
+INFO:     ('10.80.1.16', 57282) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:28:30.091 [INFO] (server.py:205) Connected to ('10.80.1.16', 57282)                                              
+INFO:     ('10.80.1.16', 40892) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:28:38.797 [INFO] (server.py:205) Connected to ('10.80.1.16', 40892)                                              
+INFO:     ('10.80.1.16', 40898) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:28:40.484 [INFO] (server.py:205) Connected to ('10.80.1.16', 40898)                                              
+INFO:     ('10.80.1.16', 40914) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:28:43.646 [INFO] (server.py:205) Connected to ('10.80.1.16', 40914)                                              
+17:28:44.017 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 261 ms, p95 276 ms                       
+INFO:     ('10.80.1.16', 38030) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:28:57.454 [INFO] (server.py:205) Connected to ('10.80.1.16', 38030)                                              
+INFO:     ('10.80.1.16', 40480) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:28:58.319 [INFO] (server.py:205) Connected to ('10.80.1.16', 40480)                                              
+INFO:     ('10.80.1.16', 40492) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:29:03.042 [INFO] (server.py:205) Connected to ('10.80.1.16', 40492)                                              
+INFO:     ('10.80.1.16', 58458) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:29:20.641 [INFO] (server.py:205) Connected to ('10.80.1.16', 58458)                                              
+INFO:     ('10.80.1.16', 58474) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:29:21.899 [INFO] (server.py:205) Connected to ('10.80.1.16', 58474)                                              
+17:29:21.949 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 258 ms, p95 273 ms                       
+INFO:     ('10.80.1.16', 42068) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:29:45.974 [INFO] (server.py:205) Connected to ('10.80.1.16', 42068)                                              
+INFO:     ('10.80.1.16', 42084) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:29:46.910 [INFO] (server.py:205) Connected to ('10.80.1.16', 42084)                                              
+17:30:02.300 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 246 ms, p95 268 ms                       
+INFO:     ('10.80.1.16', 38726) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:30:10.906 [INFO] (server.py:205) Connected to ('10.80.1.16', 38726)                                              
+INFO:     ('10.80.1.16', 38734) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:30:11.737 [INFO] (server.py:205) Connected to ('10.80.1.16', 38734)                                              
+INFO:     ('10.80.1.16', 58386) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:30:23.541 [INFO] (server.py:205) Connected to ('10.80.1.16', 58386)                                              
+INFO:     ('10.80.1.16', 58398) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:30:25.486 [INFO] (server.py:205) Connected to ('10.80.1.16', 58398)                                              
+INFO:     ('10.80.1.16', 58414) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:30:26.645 [INFO] (server.py:205) Connected to ('10.80.1.16', 58414)                                              
+INFO:     ('10.80.1.16', 59556) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:30:31.019 [INFO] (server.py:205) Connected to ('10.80.1.16', 59556)                                              
+INFO:     ('10.80.1.16', 59566) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:30:37.002 [INFO] (server.py:205) Connected to ('10.80.1.16', 59566)                                              
+INFO:     ('10.80.1.16', 52556) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:30:43.448 [INFO] (server.py:205) Connected to ('10.80.1.16', 52556)                                              
+17:30:43.841 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 246 ms, p95 261 ms                       
+INFO:     ('10.80.1.16', 36686) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:30:50.043 [INFO] (server.py:205) Connected to ('10.80.1.16', 36686)                                              
+INFO:     ('10.80.1.16', 36696) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:30:56.010 [INFO] (server.py:205) Connected to ('10.80.1.16', 36696)                                              
+INFO:     ('10.80.1.16', 42608) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:31:01.686 [INFO] (server.py:205) Connected to ('10.80.1.16', 42608)                                              
+17:31:23.053 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 243 ms, p95 262 ms                       
+INFO:     ('10.80.1.16', 58670) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:31:23.807 [INFO] (server.py:205) Connected to ('10.80.1.16', 58670)                                              
+INFO:     ('10.80.1.16', 39688) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:31:29.173 [INFO] (server.py:205) Connected to ('10.80.1.16', 39688)                                              
+INFO:     ('10.80.1.16', 39698) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:31:34.995 [INFO] (server.py:205) Connected to ('10.80.1.16', 39698)                                              
+INFO:     ('10.80.1.16', 39714) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:31:37.250 [INFO] (server.py:205) Connected to ('10.80.1.16', 39714)                                              
+INFO:     ('10.80.1.16', 47774) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:31:39.247 [INFO] (server.py:205) Connected to ('10.80.1.16', 47774)                                              
+INFO:     ('10.80.1.16', 46272) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:31:48.797 [INFO] (server.py:205) Connected to ('10.80.1.16', 46272)                                              
+17:32:02.516 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 242 ms, p95 259 ms                       
+INFO:     ('10.80.1.16', 49728) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:32:08.764 [INFO] (server.py:205) Connected to ('10.80.1.16', 49728)                                              
+17:32:47.214 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 245 ms, p95 262 ms                       
+INFO:     ('10.80.1.16', 43370) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:33:02.499 [INFO] (server.py:205) Connected to ('10.80.1.16', 43370)                                              
+INFO:     ('10.80.1.16', 43382) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:33:04.193 [INFO] (server.py:205) Connected to ('10.80.1.16', 43382)                                              
+INFO:     ('10.80.1.16', 37848) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:33:13.583 [INFO] (server.py:205) Connected to ('10.80.1.16', 37848)                                              
+INFO:     ('10.80.1.16', 41172) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:33:26.374 [INFO] (server.py:205) Connected to ('10.80.1.16', 41172)                                              
+17:33:32.355 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 244 ms, p95 261 ms                       
+INFO:     ('10.80.1.16', 60564) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:33:35.968 [INFO] (server.py:205) Connected to ('10.80.1.16', 60564)                                              
+INFO:     ('10.80.1.16', 45980) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:33:45.661 [INFO] (server.py:205) Connected to ('10.80.1.16', 45980)                                              
+INFO:     ('10.80.1.16', 41828) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:33:54.035 [INFO] (server.py:205) Connected to ('10.80.1.16', 41828)                                              
+INFO:     ('10.80.1.16', 43088) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:34:08.472 [INFO] (server.py:205) Connected to ('10.80.1.16', 43088)                                              
+INFO:     ('10.80.1.16', 43092) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:34:08.647 [INFO] (server.py:205) Connected to ('10.80.1.16', 43092)                                              
+17:34:12.267 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 243 ms, p95 257 ms                       
+INFO:     ('10.80.1.16', 48166) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:34:19.452 [INFO] (server.py:205) Connected to ('10.80.1.16', 48166)                                              
+INFO:     ('10.80.1.16', 48172) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:34:20.683 [INFO] (server.py:205) Connected to ('10.80.1.16', 48172)                                              
+INFO:     ('10.80.1.16', 48186) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:34:24.449 [INFO] (server.py:205) Connected to ('10.80.1.16', 48186)                                              
+INFO:     ('10.80.1.16', 48198) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:34:25.139 [INFO] (server.py:205) Connected to ('10.80.1.16', 48198)                                              
+INFO:     ('10.80.1.16', 46432) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:34:48.366 [INFO] (server.py:205) Connected to ('10.80.1.16', 46432)                                              
+17:34:55.644 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 243 ms, p95 256 ms                       
+INFO:     ('10.80.1.16', 60654) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:35:00.324 [INFO] (server.py:205) Connected to ('10.80.1.16', 60654)                                              
+INFO:     ('10.80.1.16', 60656) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:35:01.946 [INFO] (server.py:205) Connected to ('10.80.1.16', 60656)                                              
+INFO:     ('10.80.1.16', 41680) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:35:32.094 [INFO] (server.py:205) Connected to ('10.80.1.16', 41680)                                              
+INFO:     ('10.80.1.16', 42716) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:35:38.347 [INFO] (server.py:205) Connected to ('10.80.1.16', 42716)                                              
+17:35:44.847 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 242 ms, p95 259 ms                       
+INFO:     ('10.80.1.16', 42724) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:35:47.126 [INFO] (server.py:205) Connected to ('10.80.1.16', 42724)                                              
+INFO:     ('10.80.1.16', 42732) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:35:47.435 [INFO] (server.py:205) Connected to ('10.80.1.16', 42732)                                              
+INFO:     ('10.80.1.16', 33164) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:35:50.953 [INFO] (server.py:205) Connected to ('10.80.1.16', 33164)                                              
+INFO:     ('10.80.1.16', 33172) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:35:53.528 [INFO] (server.py:205) Connected to ('10.80.1.16', 33172)                                              
+INFO:     ('10.80.1.16', 44636) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:36:03.889 [INFO] (server.py:205) Connected to ('10.80.1.16', 44636)                                              
+INFO:     ('10.80.1.16', 44646) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:36:06.103 [INFO] (server.py:205) Connected to ('10.80.1.16', 44646)                                              
+INFO:     ('10.80.1.16', 57948) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:36:09.872 [INFO] (server.py:205) Connected to ('10.80.1.16', 57948)                                              
+INFO:     ('10.80.1.16', 57952) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:36:11.846 [INFO] (server.py:205) Connected to ('10.80.1.16', 57952)                                              
+INFO:     ('10.80.1.16', 57966) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:36:15.287 [INFO] (server.py:205) Connected to ('10.80.1.16', 57966)                                              
+17:36:27.007 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 243 ms, p95 263 ms                       
+INFO:     ('10.80.1.16', 51956) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:36:52.835 [INFO] (server.py:205) Connected to ('10.80.1.16', 51956)                                              
+INFO:     ('10.80.1.16', 58094) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:37:02.646 [INFO] (server.py:205) Connected to ('10.80.1.16', 58094)                                              
+INFO:     ('10.80.1.16', 42734) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:37:09.773 [INFO] (server.py:205) Connected to ('10.80.1.16', 42734)                                              
+INFO:     ('10.80.1.16', 42748) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:37:11.310 [INFO] (server.py:205) Connected to ('10.80.1.16', 42748)                                              
+17:37:11.625 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 245 ms, p95 267 ms                       
+INFO:     ('10.80.1.16', 42750) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:37:14.248 [INFO] (server.py:205) Connected to ('10.80.1.16', 42750)                                              
+INFO:     ('10.80.1.16', 37370) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:37:24.255 [INFO] (server.py:205) Connected to ('10.80.1.16', 37370)                                              
+INFO:     ('10.80.1.16', 55808) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:37:50.109 [INFO] (server.py:205) Connected to ('10.80.1.16', 55808)                                              
+17:37:52.634 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 246 ms, p95 258 ms                       
+INFO:     ('10.80.1.16', 55822) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:37:52.740 [INFO] (server.py:205) Connected to ('10.80.1.16', 55822)                                              
+INFO:     ('10.80.1.16', 55838) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:37:57.522 [INFO] (server.py:205) Connected to ('10.80.1.16', 55838)                                              
+INFO:     ('10.80.1.16', 55840) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:37:57.583 [INFO] (server.py:205) Connected to ('10.80.1.16', 55840)                                              
+INFO:     ('10.80.1.16', 50710) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:38:07.457 [INFO] (server.py:205) Connected to ('10.80.1.16', 50710)                                              
+INFO:     ('10.80.1.16', 33702) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:38:09.009 [INFO] (server.py:205) Connected to ('10.80.1.16', 33702)                                              
+INFO:     ('10.80.1.16', 33716) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:38:09.087 [INFO] (server.py:205) Connected to ('10.80.1.16', 33716)                                              
+INFO:     ('10.80.1.16', 33732) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:38:17.198 [INFO] (server.py:205) Connected to ('10.80.1.16', 33732)                                              
+INFO:     ('10.80.1.16', 38384) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:38:25.278 [INFO] (server.py:205) Connected to ('10.80.1.16', 38384)                                              
+17:38:29.535 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 245 ms, p95 264 ms                       
+INFO:     ('10.80.1.16', 55282) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:38:31.942 [INFO] (server.py:205) Connected to ('10.80.1.16', 55282)                                              
+INFO:     ('10.80.1.16', 46016) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:38:40.658 [INFO] (server.py:205) Connected to ('10.80.1.16', 46016)                                              
+17:39:04.720 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 246 ms, p95 263 ms                       
+INFO:     ('10.80.1.16', 54474) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:39:13.963 [INFO] (server.py:205) Connected to ('10.80.1.16', 54474)                                              
+INFO:     ('10.80.1.16', 54486) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:39:15.145 [INFO] (server.py:205) Connected to ('10.80.1.16', 54486)                                              
+INFO:     ('10.80.1.16', 60412) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:39:19.702 [INFO] (server.py:205) Connected to ('10.80.1.16', 60412)                                              
+INFO:     ('10.80.1.16', 60420) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:39:24.217 [INFO] (server.py:205) Connected to ('10.80.1.16', 60420)                                              
+INFO:     ('10.80.1.16', 60428) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:39:27.549 [INFO] (server.py:205) Connected to ('10.80.1.16', 60428)                                              
+INFO:     ('10.80.1.16', 38828) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:39:30.869 [INFO] (server.py:205) Connected to ('10.80.1.16', 38828)                                              
+INFO:     ('10.80.1.16', 49960) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:39:40.307 [INFO] (server.py:205) Connected to ('10.80.1.16', 49960)                                              
+INFO:     ('10.80.1.16', 57506) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:39:49.630 [INFO] (server.py:205) Connected to ('10.80.1.16', 57506)                                              
+17:39:49.939 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 245 ms, p95 264 ms                       
+INFO:     ('10.80.1.16', 56310) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:40:10.154 [INFO] (server.py:205) Connected to ('10.80.1.16', 56310)                                              
+INFO:     ('10.80.1.16', 37224) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:40:20.023 [INFO] (server.py:205) Connected to ('10.80.1.16', 37224)                                              
+17:40:31.528 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 244 ms, p95 261 ms                       
+INFO:     ('10.80.1.16', 42010) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:40:33.523 [INFO] (server.py:205) Connected to ('10.80.1.16', 42010)                                              
+INFO:     ('10.80.1.16', 40094) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:41:02.774 [INFO] (server.py:205) Connected to ('10.80.1.16', 40094)                                              
+INFO:     ('10.80.1.16', 40108) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:41:03.896 [INFO] (server.py:205) Connected to ('10.80.1.16', 40108)                                              
+17:41:08.649 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 242 ms, p95 259 ms                       
+INFO:     ('10.80.1.16', 57510) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:41:22.231 [INFO] (server.py:205) Connected to ('10.80.1.16', 57510)                                              
+INFO:     ('10.80.1.16', 57526) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:41:23.049 [INFO] (server.py:205) Connected to ('10.80.1.16', 57526)                                              
+INFO:     ('10.80.1.16', 52442) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:41:34.037 [INFO] (server.py:205) Connected to ('10.80.1.16', 52442)                                              
+INFO:     ('10.80.1.16', 39930) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:41:45.712 [INFO] (server.py:205) Connected to ('10.80.1.16', 39930)                                              
+17:41:46.539 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 244 ms, p95 267 ms                       
+INFO:     ('10.80.1.16', 36172) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:41:50.058 [INFO] (server.py:205) Connected to ('10.80.1.16', 36172)                                              
+INFO:     ('10.80.1.16', 43208) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:42:00.129 [INFO] (server.py:205) Connected to ('10.80.1.16', 43208)                                              
+INFO:     ('10.80.1.16', 40300) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:42:12.170 [INFO] (server.py:205) Connected to ('10.80.1.16', 40300)                                              
+INFO:     ('10.80.1.16', 40306) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:42:15.353 [INFO] (server.py:205) Connected to ('10.80.1.16', 40306)                                              
+INFO:     ('10.80.1.16', 51472) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:42:17.995 [INFO] (server.py:205) Connected to ('10.80.1.16', 51472)                                              
+INFO:     ('10.80.1.16', 51488) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:42:20.928 [INFO] (server.py:205) Connected to ('10.80.1.16', 51488)                                              
+17:42:23.062 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 245 ms, p95 264 ms                       
+INFO:     ('10.80.1.16', 51500) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:42:23.333 [INFO] (server.py:205) Connected to ('10.80.1.16', 51500)                                              
+INFO:     ('10.80.1.16', 40190) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:42:34.671 [INFO] (server.py:205) Connected to ('10.80.1.16', 40190)                                              
+INFO:     ('10.80.1.16', 58908) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:42:40.723 [INFO] (server.py:205) Connected to ('10.80.1.16', 58908)                                              
+17:43:01.458 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 242 ms, p95 267 ms                       
+INFO:     ('10.80.1.16', 53614) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:43:05.870 [INFO] (server.py:205) Connected to ('10.80.1.16', 53614)                                              
+INFO:     ('10.80.1.16', 43636) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:43:20.222 [INFO] (server.py:205) Connected to ('10.80.1.16', 43636)                                              
+INFO:     ('10.80.1.16', 56166) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:43:31.132 [INFO] (server.py:205) Connected to ('10.80.1.16', 56166)                                              
+INFO:     ('10.80.1.16', 56168) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:43:35.970 [INFO] (server.py:205) Connected to ('10.80.1.16', 56168)                                              
+17:43:42.433 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 243 ms, p95 257 ms                       
+INFO:     ('10.80.1.16', 54292) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:43:43.352 [INFO] (server.py:205) Connected to ('10.80.1.16', 54292)                                              
+INFO:     ('10.80.1.16', 38764) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:43:56.763 [INFO] (server.py:205) Connected to ('10.80.1.16', 38764)                                              
+17:44:20.900 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 255 ms, p95 275 ms                       
+INFO:     ('10.80.1.16', 51804) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:44:38.815 [INFO] (server.py:205) Connected to ('10.80.1.16', 51804)                                              
+INFO:     ('10.80.1.16', 51812) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:44:44.798 [INFO] (server.py:205) Connected to ('10.80.1.16', 51812)                                              
+INFO:     ('10.80.1.16', 51824) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:44:47.147 [INFO] (server.py:205) Connected to ('10.80.1.16', 51824)                                              
+INFO:     ('10.80.1.16', 45914) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:44:51.986 [INFO] (server.py:205) Connected to ('10.80.1.16', 45914)                                              
+17:45:01.479 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 264 ms, p95 275 ms                       
+INFO:     ('10.80.1.16', 42756) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:45:03.721 [INFO] (server.py:205) Connected to ('10.80.1.16', 42756)                                              
+INFO:     ('10.80.1.16', 42760) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:45:05.421 [INFO] (server.py:205) Connected to ('10.80.1.16', 42760)                                              
+INFO:     ('10.80.1.16', 58258) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:45:17.463 [INFO] (server.py:205) Connected to ('10.80.1.16', 58258)                                              
+INFO:     ('10.80.1.16', 56618) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:45:39.703 [INFO] (server.py:205) Connected to ('10.80.1.16', 56618)                                              
+INFO:     ('10.80.1.16', 56628) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:45:40.409 [INFO] (server.py:205) Connected to ('10.80.1.16', 56628)                                              
+17:45:44.941 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 258 ms, p95 274 ms                       
+INFO:     ('10.80.1.16', 48160) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:45:51.117 [INFO] (server.py:205) Connected to ('10.80.1.16', 48160)                                              
+INFO:     ('10.80.1.16', 60542) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:45:58.195 [INFO] (server.py:205) Connected to ('10.80.1.16', 60542)                                              
+INFO:     ('10.80.1.16', 60552) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:46:01.212 [INFO] (server.py:205) Connected to ('10.80.1.16', 60552)                                              
+INFO:     ('10.80.1.16', 60564) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:46:04.214 [INFO] (server.py:205) Connected to ('10.80.1.16', 60564)                                              
+INFO:     ('10.80.1.16', 43400) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:46:08.165 [INFO] (server.py:205) Connected to ('10.80.1.16', 43400)                                              
+INFO:     ('10.80.1.16', 43408) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:46:15.034 [INFO] (server.py:205) Connected to ('10.80.1.16', 43408)                                              
+INFO:     ('10.80.1.16', 43416) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:46:16.020 [INFO] (server.py:205) Connected to ('10.80.1.16', 43416)                                              
+INFO:     ('10.80.1.16', 42128) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:46:20.533 [INFO] (server.py:205) Connected to ('10.80.1.16', 42128)                                              
+INFO:     ('10.80.1.16', 42144) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:46:26.691 [INFO] (server.py:205) Connected to ('10.80.1.16', 42144)                                              
+17:46:27.574 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 260 ms, p95 271 ms                       
+INFO:     ('10.80.1.16', 42160) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:46:27.854 [INFO] (server.py:205) Connected to ('10.80.1.16', 42160)                                              
+INFO:     ('10.80.1.16', 42116) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:46:40.108 [INFO] (server.py:205) Connected to ('10.80.1.16', 42116)                                              
+INFO:     ('10.80.1.16', 42130) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:46:46.737 [INFO] (server.py:205) Connected to ('10.80.1.16', 42130)                                              
+17:47:05.626 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 260 ms, p95 272 ms                       
+INFO:     ('10.80.1.16', 55846) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:47:17.142 [INFO] (server.py:205) Connected to ('10.80.1.16', 55846)                                              
+INFO:     ('10.80.1.16', 59706) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:47:18.081 [INFO] (server.py:205) Connected to ('10.80.1.16', 59706)                                              
+INFO:     ('10.80.1.16', 59714) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:47:20.077 [INFO] (server.py:205) Connected to ('10.80.1.16', 59714)                                              
+17:47:45.900 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 261 ms, p95 274 ms                       
+INFO:     ('10.80.1.16', 38144) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:47:47.550 [INFO] (server.py:205) Connected to ('10.80.1.16', 38144)                                              
+INFO:     ('10.80.1.16', 49916) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:47:48.940 [INFO] (server.py:205) Connected to ('10.80.1.16', 49916)                                              
+INFO:     ('10.80.1.16', 49918) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:47:53.880 [INFO] (server.py:205) Connected to ('10.80.1.16', 49918)                                              
+INFO:     ('10.80.1.16', 46232) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:48:03.304 [INFO] (server.py:205) Connected to ('10.80.1.16', 46232)                                              
+INFO:     ('10.80.1.16', 51546) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:48:13.356 [INFO] (server.py:205) Connected to ('10.80.1.16', 51546)                                              
+INFO:     ('10.80.1.16', 46860) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:48:18.828 [INFO] (server.py:205) Connected to ('10.80.1.16', 46860)                                              
+17:48:27.919 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 251 ms, p95 266 ms                       
+INFO:     ('10.80.1.16', 48970) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:48:49.866 [INFO] (server.py:205) Connected to ('10.80.1.16', 48970)                                              
+INFO:     ('10.80.1.16', 43700) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:49:02.758 [INFO] (server.py:205) Connected to ('10.80.1.16', 43700)                                              
+INFO:     ('10.80.1.16', 43716) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:49:02.913 [INFO] (server.py:205) Connected to ('10.80.1.16', 43716)                                              
+INFO:     ('10.80.1.16', 43730) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:49:05.390 [INFO] (server.py:205) Connected to ('10.80.1.16', 43730)                                              
+INFO:     ('10.80.1.16', 52674) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:49:10.841 [INFO] (server.py:205) Connected to ('10.80.1.16', 52674)                                              
+INFO:     ('10.80.1.16', 52690) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:49:11.776 [INFO] (server.py:205) Connected to ('10.80.1.16', 52690)                                              
+17:49:12.346 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 250 ms, p95 264 ms                       
+INFO:     ('10.80.1.16', 52692) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:49:17.840 [INFO] (server.py:205) Connected to ('10.80.1.16', 52692)                                              
+INFO:     ('10.80.1.16', 33536) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:49:24.304 [INFO] (server.py:205) Connected to ('10.80.1.16', 33536)                                              
+INFO:     ('10.80.1.16', 58882) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:49:43.289 [INFO] (server.py:205) Connected to ('10.80.1.16', 58882)                                              
+INFO:     ('10.80.1.16', 50122) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:49:48.319 [INFO] (server.py:205) Connected to ('10.80.1.16', 50122)                                              
+INFO:     ('10.80.1.16', 50126) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:49:49.126 [INFO] (server.py:205) Connected to ('10.80.1.16', 50126)                                              
+17:49:52.263 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 249 ms, p95 267 ms                       
+INFO:     ('10.80.1.16', 50140) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:49:53.371 [INFO] (server.py:205) Connected to ('10.80.1.16', 50140)                                              
+INFO:     ('10.80.1.16', 34722) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:50:01.525 [INFO] (server.py:205) Connected to ('10.80.1.16', 34722)                                              
+INFO:     ('10.80.1.16', 34730) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:50:05.058 [INFO] (server.py:205) Connected to ('10.80.1.16', 34730)                                              
+INFO:     ('10.80.1.16', 37368) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:50:19.032 [INFO] (server.py:205) Connected to ('10.80.1.16', 37368)                                              
+INFO:     ('10.80.1.16', 37380) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:50:23.231 [INFO] (server.py:205) Connected to ('10.80.1.16', 37380)                                              
+INFO:     ('10.80.1.16', 44084) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:50:31.897 [INFO] (server.py:205) Connected to ('10.80.1.16', 44084)                                              
+17:50:37.044 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 249 ms, p95 265 ms                       
+INFO:     ('10.80.1.16', 48008) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:50:38.399 [INFO] (server.py:205) Connected to ('10.80.1.16', 48008)                                              
+INFO:     ('10.80.1.16', 45482) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:50:59.287 [INFO] (server.py:205) Connected to ('10.80.1.16', 45482)                                              
+INFO:     ('10.80.1.16', 45498) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:51:00.181 [INFO] (server.py:205) Connected to ('10.80.1.16', 45498)                                              
+INFO:     ('10.80.1.16', 45502) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:51:07.653 [INFO] (server.py:205) Connected to ('10.80.1.16', 45502)                                              
+17:51:19.454 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 248 ms, p95 267 ms                       
+INFO:     ('10.80.1.16', 34256) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:51:20.501 [INFO] (server.py:205) Connected to ('10.80.1.16', 34256)                                              
+INFO:     ('10.80.1.16', 39762) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:51:28.525 [INFO] (server.py:205) Connected to ('10.80.1.16', 39762)                                              
+INFO:     ('10.80.1.16', 39772) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:51:34.746 [INFO] (server.py:205) Connected to ('10.80.1.16', 39772)                                              
+INFO:     ('10.80.1.16', 39722) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:51:38.259 [INFO] (server.py:205) Connected to ('10.80.1.16', 39722)                                              
+INFO:     ('10.80.1.16', 34934) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:51:50.362 [INFO] (server.py:205) Connected to ('10.80.1.16', 34934)                                              
+INFO:     ('10.80.1.16', 34944) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:51:55.319 [INFO] (server.py:205) Connected to ('10.80.1.16', 34944)                                              
+INFO:     ('10.80.1.16', 34952) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:51:55.322 [INFO] (server.py:205) Connected to ('10.80.1.16', 34952)                                              
+17:51:58.735 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 250 ms, p95 268 ms                       
+INFO:     ('10.80.1.16', 47176) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:52:08.797 [INFO] (server.py:205) Connected to ('10.80.1.16', 47176)                                              
+INFO:     ('10.80.1.16', 46920) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:52:19.799 [INFO] (server.py:205) Connected to ('10.80.1.16', 46920)                                              
+INFO:     ('10.80.1.16', 46932) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:52:26.512 [INFO] (server.py:205) Connected to ('10.80.1.16', 46932)                                              
+INFO:     ('10.80.1.16', 52204) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:52:32.486 [INFO] (server.py:205) Connected to ('10.80.1.16', 52204)                                              
+INFO:     ('10.80.1.16', 34288) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:52:39.251 [INFO] (server.py:205) Connected to ('10.80.1.16', 34288)                                              
+17:52:42.212 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 252 ms, p95 267 ms                       
+INFO:     ('10.80.1.16', 38956) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:52:50.504 [INFO] (server.py:205) Connected to ('10.80.1.16', 38956)                                              
+INFO:     ('10.80.1.16', 40708) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:53:08.888 [INFO] (server.py:205) Connected to ('10.80.1.16', 40708)                                              
+17:53:31.022 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 252 ms, p95 265 ms                       
+INFO:     ('10.80.1.16', 57150) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:53:43.441 [INFO] (server.py:205) Connected to ('10.80.1.16', 57150)                                              
+INFO:     ('10.80.1.16', 57156) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:53:46.939 [INFO] (server.py:205) Connected to ('10.80.1.16', 57156)                                              
+INFO:     ('10.80.1.16', 44972) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:53:54.798 [INFO] (server.py:205) Connected to ('10.80.1.16', 44972)                                              
+INFO:     ('10.80.1.16', 58420) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:54:01.953 [INFO] (server.py:205) Connected to ('10.80.1.16', 58420)                                              
+17:54:15.589 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 246 ms, p95 267 ms                       
+INFO:     ('10.80.1.16', 32990) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:54:29.883 [INFO] (server.py:205) Connected to ('10.80.1.16', 32990)                                              
+INFO:     ('10.80.1.16', 49270) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:54:39.181 [INFO] (server.py:205) Connected to ('10.80.1.16', 49270)                                              
+INFO:     ('10.80.1.16', 49278) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:54:43.759 [INFO] (server.py:205) Connected to ('10.80.1.16', 49278)                                              
+INFO:     ('10.80.1.16', 43720) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:54:53.717 [INFO] (server.py:205) Connected to ('10.80.1.16', 43720)                                              
+INFO:     ('10.80.1.16', 43726) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:54:57.204 [INFO] (server.py:205) Connected to ('10.80.1.16', 43726)                                              
+INFO:     ('10.80.1.16', 39300) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:54:58.889 [INFO] (server.py:205) Connected to ('10.80.1.16', 39300)                                              
+17:55:00.280 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 243 ms, p95 265 ms                       
+INFO:     ('10.80.1.16', 39312) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:55:07.118 [INFO] (server.py:205) Connected to ('10.80.1.16', 39312)                                              
+INFO:     ('10.80.1.16', 39328) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:55:07.408 [INFO] (server.py:205) Connected to ('10.80.1.16', 39328)                                              
+INFO:     ('10.80.1.16', 49804) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:55:14.836 [INFO] (server.py:205) Connected to ('10.80.1.16', 49804)                                              
+INFO:     ('10.80.1.16', 49816) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:55:17.489 [INFO] (server.py:205) Connected to ('10.80.1.16', 49816)                                              
+INFO:     ('10.80.1.16', 34086) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:55:20.672 [INFO] (server.py:205) Connected to ('10.80.1.16', 34086)                                              
+INFO:     ('10.80.1.16', 55258) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:55:31.591 [INFO] (server.py:205) Connected to ('10.80.1.16', 55258)                                              
+INFO:     ('10.80.1.16', 55268) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:55:33.377 [INFO] (server.py:205) Connected to ('10.80.1.16', 55268)                                              
+INFO:     ('10.80.1.16', 36516) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:55:40.608 [INFO] (server.py:205) Connected to ('10.80.1.16', 36516)                                              
+17:55:45.057 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 245 ms, p95 262 ms                       
+INFO:     ('10.80.1.16', 59930) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:56:12.422 [INFO] (server.py:205) Connected to ('10.80.1.16', 59930)                                              
+INFO:     ('10.80.1.16', 59946) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:56:15.426 [INFO] (server.py:205) Connected to ('10.80.1.16', 59946)                                              
+17:56:29.729 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 247 ms, p95 268 ms                       
+INFO:     ('10.80.1.16', 49016) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:56:42.909 [INFO] (server.py:205) Connected to ('10.80.1.16', 49016)                                              
+INFO:     ('10.80.1.16', 56952) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:57:04.479 [INFO] (server.py:205) Connected to ('10.80.1.16', 56952)                                              
+INFO:     ('10.80.1.16', 56956) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:57:05.490 [INFO] (server.py:205) Connected to ('10.80.1.16', 56956)                                              
+17:57:09.858 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 243 ms, p95 267 ms                       
+INFO:     ('10.80.1.16', 57380) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:57:15.168 [INFO] (server.py:205) Connected to ('10.80.1.16', 57380)                                              
+INFO:     ('10.80.1.16', 57396) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:57:17.406 [INFO] (server.py:205) Connected to ('10.80.1.16', 57396)                                              
+INFO:     ('10.80.1.16', 57794) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:57:43.782 [INFO] (server.py:205) Connected to ('10.80.1.16', 57794)                                              
+17:57:48.425 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 243 ms, p95 258 ms                       
+INFO:     ('10.80.1.16', 34676) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:57:53.130 [INFO] (server.py:205) Connected to ('10.80.1.16', 34676)                                              
+INFO:     ('10.80.1.16', 55028) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:58:03.135 [INFO] (server.py:205) Connected to ('10.80.1.16', 55028)                                              
+INFO:     ('10.80.1.16', 55036) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:58:04.593 [INFO] (server.py:205) Connected to ('10.80.1.16', 55036)                                              
+INFO:     ('10.80.1.16', 58864) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:58:09.182 [INFO] (server.py:205) Connected to ('10.80.1.16', 58864)                                              
+INFO:     ('10.80.1.16', 58878) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:58:12.305 [INFO] (server.py:205) Connected to ('10.80.1.16', 58878)                                              
+INFO:     ('10.80.1.16', 57952) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:58:22.275 [INFO] (server.py:205) Connected to ('10.80.1.16', 57952)                                              
+INFO:     ('10.80.1.16', 57954) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:58:23.875 [INFO] (server.py:205) Connected to ('10.80.1.16', 57954)                                              
+17:58:30.054 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 243 ms, p95 262 ms                       
+INFO:     ('10.80.1.16', 33150) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:58:33.147 [INFO] (server.py:205) Connected to ('10.80.1.16', 33150)                                              
+INFO:     ('10.80.1.16', 49054) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:58:44.931 [INFO] (server.py:205) Connected to ('10.80.1.16', 49054)                                              
+INFO:     ('10.80.1.16', 49060) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:58:46.412 [INFO] (server.py:205) Connected to ('10.80.1.16', 49060)                                              
+INFO:     ('10.80.1.16', 33204) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:58:54.161 [INFO] (server.py:205) Connected to ('10.80.1.16', 33204)                                              
+INFO:     ('10.80.1.16', 45354) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:59:00.017 [INFO] (server.py:205) Connected to ('10.80.1.16', 45354)                                              
+INFO:     ('10.80.1.16', 43912) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:59:09.236 [INFO] (server.py:205) Connected to ('10.80.1.16', 43912)                                              
+17:59:14.128 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 244 ms, p95 266 ms                       
+INFO:     ('10.80.1.16', 43918) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:59:16.379 [INFO] (server.py:205) Connected to ('10.80.1.16', 43918)                                              
+INFO:     ('10.80.1.16', 39310) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:59:26.932 [INFO] (server.py:205) Connected to ('10.80.1.16', 39310)                                              
+INFO:     ('10.80.1.16', 53716) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:59:32.608 [INFO] (server.py:205) Connected to ('10.80.1.16', 53716)                                              
+INFO:     ('10.80.1.16', 53730) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:59:36.562 [INFO] (server.py:205) Connected to ('10.80.1.16', 53730)                                              
+INFO:     ('10.80.1.16', 34734) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+17:59:46.283 [INFO] (server.py:205) Connected to ('10.80.1.16', 34734)                                              
+17:59:58.569 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 242 ms, p95 259 ms                       
+INFO:     ('10.80.1.16', 55536) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:00:10.316 [INFO] (server.py:205) Connected to ('10.80.1.16', 55536)                                              
+INFO:     ('10.80.1.16', 55552) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:00:15.169 [INFO] (server.py:205) Connected to ('10.80.1.16', 55552)                                              
+INFO:     ('10.80.1.16', 39530) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:00:21.329 [INFO] (server.py:205) Connected to ('10.80.1.16', 39530)                                              
+INFO:     ('10.80.1.16', 54442) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:00:42.270 [INFO] (server.py:205) Connected to ('10.80.1.16', 54442)                                              
+18:00:44.584 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 245 ms, p95 265 ms                       
+INFO:     ('10.80.1.16', 47262) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:00:49.814 [INFO] (server.py:205) Connected to ('10.80.1.16', 47262)                                              
+INFO:     ('10.80.1.16', 47268) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:00:52.807 [INFO] (server.py:205) Connected to ('10.80.1.16', 47268)                                              
+INFO:     ('10.80.1.16', 48628) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:01:05.217 [INFO] (server.py:205) Connected to ('10.80.1.16', 48628)                                              
+INFO:     ('10.80.1.16', 43074) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:01:13.946 [INFO] (server.py:205) Connected to ('10.80.1.16', 43074)                                              
+INFO:     ('10.80.1.16', 46006) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:01:25.855 [INFO] (server.py:205) Connected to ('10.80.1.16', 46006)                                              
+18:01:30.724 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 244 ms, p95 271 ms                       
+INFO:     ('10.80.1.16', 40352) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:01:41.327 [INFO] (server.py:205) Connected to ('10.80.1.16', 40352)                                              
+INFO:     ('10.80.1.16', 52052) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:01:58.853 [INFO] (server.py:205) Connected to ('10.80.1.16', 52052)                                              
+INFO:     ('10.80.1.16', 52054) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:02:00.282 [INFO] (server.py:205) Connected to ('10.80.1.16', 52054)                                              
+INFO:     ('10.80.1.16', 37088) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:02:11.114 [INFO] (server.py:205) Connected to ('10.80.1.16', 37088)                                              
+INFO:     ('10.80.1.16', 37098) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:02:13.112 [INFO] (server.py:205) Connected to ('10.80.1.16', 37098)                                              
+INFO:     ('10.80.1.16', 37114) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:02:15.468 [INFO] (server.py:205) Connected to ('10.80.1.16', 37114)                                              
+18:02:15.708 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 246 ms, p95 267 ms                       
+INFO:     ('10.80.1.16', 33094) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:02:38.349 [INFO] (server.py:205) Connected to ('10.80.1.16', 33094)                                              
+INFO:     ('10.80.1.16', 33100) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:02:41.929 [INFO] (server.py:205) Connected to ('10.80.1.16', 33100)                                              
+INFO:     ('10.80.1.16', 33112) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:02:43.693 [INFO] (server.py:205) Connected to ('10.80.1.16', 33112)                                              
+INFO:     ('10.80.1.16', 33116) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:02:44.462 [INFO] (server.py:205) Connected to ('10.80.1.16', 33116)                                              
+18:03:02.514 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 243 ms, p95 271 ms                       
+INFO:     ('10.80.1.16', 48796) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:03:04.409 [INFO] (server.py:205) Connected to ('10.80.1.16', 48796)                                              
+INFO:     ('10.80.1.16', 48812) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:03:04.616 [INFO] (server.py:205) Connected to ('10.80.1.16', 48812)                                              
+INFO:     ('10.80.1.16', 39652) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:03:20.278 [INFO] (server.py:205) Connected to ('10.80.1.16', 39652)                                              
+INFO:     ('10.80.1.16', 36406) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:03:28.078 [INFO] (server.py:205) Connected to ('10.80.1.16', 36406)                                              
+INFO:     ('10.80.1.16', 36420) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:03:31.033 [INFO] (server.py:205) Connected to ('10.80.1.16', 36420)                                              
+INFO:     ('10.80.1.16', 52948) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:03:44.460 [INFO] (server.py:205) Connected to ('10.80.1.16', 52948)                                              
+INFO:     ('10.80.1.16', 52962) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:03:47.495 [INFO] (server.py:205) Connected to ('10.80.1.16', 52962)                                              
+18:03:48.049 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 245 ms, p95 269 ms                       
+INFO:     ('10.80.1.16', 39928) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:04:02.614 [INFO] (server.py:205) Connected to ('10.80.1.16', 39928)                                              
+INFO:     ('10.80.1.16', 39932) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:04:04.493 [INFO] (server.py:205) Connected to ('10.80.1.16', 39932)                                              
+INFO:     ('10.80.1.16', 39946) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:04:07.501 [INFO] (server.py:205) Connected to ('10.80.1.16', 39946)                                              
+INFO:     ('10.80.1.16', 43924) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:04:16.601 [INFO] (server.py:205) Connected to ('10.80.1.16', 43924)                                              
+INFO:     ('10.80.1.16', 54566) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:04:18.457 [INFO] (server.py:205) Connected to ('10.80.1.16', 54566)                                              
+INFO:     ('10.80.1.16', 54578) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:04:24.606 [INFO] (server.py:205) Connected to ('10.80.1.16', 54578)                                              
+18:04:35.975 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 251 ms, p95 270 ms                       
+INFO:     ('10.80.1.16', 45688) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:04:48.854 [INFO] (server.py:205) Connected to ('10.80.1.16', 45688)                                              
+INFO:     ('10.80.1.16', 45692) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:04:53.598 [INFO] (server.py:205) Connected to ('10.80.1.16', 45692)                                              
+INFO:     ('10.80.1.16', 45704) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:04:56.438 [INFO] (server.py:205) Connected to ('10.80.1.16', 45704)                                              
+INFO:     ('10.80.1.16', 40518) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:05:12.823 [INFO] (server.py:205) Connected to ('10.80.1.16', 40518)                                              
+18:05:22.083 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 249 ms, p95 271 ms                       
+INFO:     ('10.80.1.16', 41628) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:05:26.761 [INFO] (server.py:205) Connected to ('10.80.1.16', 41628)                                              
+INFO:     ('10.80.1.16', 35372) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:05:42.635 [INFO] (server.py:205) Connected to ('10.80.1.16', 35372)                                              
+INFO:     ('10.80.1.16', 38350) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:05:52.102 [INFO] (server.py:205) Connected to ('10.80.1.16', 38350)                                              
+INFO:     ('10.80.1.16', 38358) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:05:52.913 [INFO] (server.py:205) Connected to ('10.80.1.16', 38358)                                              
+INFO:     ('10.80.1.16', 38366) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:05:55.586 [INFO] (server.py:205) Connected to ('10.80.1.16', 38366)                                              
+18:06:10.846 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 248 ms, p95 269 ms                       
+INFO:     ('10.80.1.16', 36506) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:06:13.278 [INFO] (server.py:205) Connected to ('10.80.1.16', 36506)                                              
+INFO:     ('10.80.1.16', 36516) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:06:13.968 [INFO] (server.py:205) Connected to ('10.80.1.16', 36516)                                              
+INFO:     ('10.80.1.16', 57530) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:06:48.856 [INFO] (server.py:205) Connected to ('10.80.1.16', 57530)                                              
+INFO:     ('10.80.1.16', 57546) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:06:53.911 [INFO] (server.py:205) Connected to ('10.80.1.16', 57546)                                              
+18:06:55.465 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 244 ms, p95 264 ms                       
+INFO:     ('10.80.1.16', 38968) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:06:58.892 [INFO] (server.py:205) Connected to ('10.80.1.16', 38968)                                              
+INFO:     ('10.80.1.16', 38984) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:07:06.121 [INFO] (server.py:205) Connected to ('10.80.1.16', 38984)                                              
+INFO:     ('10.80.1.16', 52048) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:07:13.875 [INFO] (server.py:205) Connected to ('10.80.1.16', 52048)                                              
+INFO:     ('10.80.1.16', 55252) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:07:33.662 [INFO] (server.py:205) Connected to ('10.80.1.16', 55252)                                              
+18:07:42.701 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 244 ms, p95 269 ms                       
+INFO:     ('10.80.1.16', 56516) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:07:43.354 [INFO] (server.py:205) Connected to ('10.80.1.16', 56516)                                              
+INFO:     ('10.80.1.16', 47770) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:07:48.216 [INFO] (server.py:205) Connected to ('10.80.1.16', 47770)                                              
+INFO:     ('10.80.1.16', 47786) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:07:51.880 [INFO] (server.py:205) Connected to ('10.80.1.16', 47786)                                              
+INFO:     ('10.80.1.16', 51318) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:08:13.238 [INFO] (server.py:205) Connected to ('10.80.1.16', 51318)                                              
+INFO:     ('10.80.1.16', 42738) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:08:27.337 [INFO] (server.py:205) Connected to ('10.80.1.16', 42738)                                              
+INFO:     ('10.80.1.16', 52108) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:08:28.868 [INFO] (server.py:205) Connected to ('10.80.1.16', 52108)                                              
+INFO:     ('10.80.1.16', 52114) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:08:29.759 [INFO] (server.py:205) Connected to ('10.80.1.16', 52114)                                              
+18:08:32.946 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 243 ms, p95 263 ms                       
+INFO:     ('10.80.1.16', 49528) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:08:51.197 [INFO] (server.py:205) Connected to ('10.80.1.16', 49528)                                              
+INFO:     ('10.80.1.16', 49536) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:08:52.838 [INFO] (server.py:205) Connected to ('10.80.1.16', 49536)                                              
+INFO:     ('10.80.1.16', 57482) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:09:05.939 [INFO] (server.py:205) Connected to ('10.80.1.16', 57482)                                              
+INFO:     ('10.80.1.16', 57492) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:09:07.715 [INFO] (server.py:205) Connected to ('10.80.1.16', 57492)                                              
+INFO:     ('10.80.1.16', 44004) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:09:15.071 [INFO] (server.py:205) Connected to ('10.80.1.16', 44004)                                              
+18:09:19.661 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 243 ms, p95 267 ms                       
+INFO:     ('10.80.1.16', 59960) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:09:31.530 [INFO] (server.py:205) Connected to ('10.80.1.16', 59960)                                              
+INFO:     ('10.80.1.16', 33056) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:09:54.106 [INFO] (server.py:205) Connected to ('10.80.1.16', 33056)                                              
+INFO:     ('10.80.1.16', 59710) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:10:20.869 [INFO] (server.py:205) Connected to ('10.80.1.16', 59710)                                              
+18:10:23.061 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 245 ms, p95 266 ms                       
+INFO:     ('10.80.1.16', 45460) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:10:30.043 [INFO] (server.py:205) Connected to ('10.80.1.16', 45460)                                              
+INFO:     ('10.80.1.16', 36478) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:11:15.313 [INFO] (server.py:205) Connected to ('10.80.1.16', 36478)                                              
+INFO:     ('10.80.1.16', 35662) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:11:23.246 [INFO] (server.py:205) Connected to ('10.80.1.16', 35662)                                              
+18:11:31.352 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 246 ms, p95 266 ms                       
+INFO:     ('10.80.1.16', 39786) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:11:40.676 [INFO] (server.py:205) Connected to ('10.80.1.16', 39786)                                              
+INFO:     ('10.80.1.16', 41888) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:11:47.955 [INFO] (server.py:205) Connected to ('10.80.1.16', 41888)                                              
+INFO:     ('10.80.1.16', 41904) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:11:51.893 [INFO] (server.py:205) Connected to ('10.80.1.16', 41904)                                              
+INFO:     ('10.80.1.16', 50936) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:12:01.747 [INFO] (server.py:205) Connected to ('10.80.1.16', 50936)                                              
+18:12:37.129 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 245 ms, p95 265 ms                       
+INFO:     ('10.80.1.16', 51836) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:12:51.232 [INFO] (server.py:205) Connected to ('10.80.1.16', 51836)                                              
+INFO:     ('10.80.1.16', 51848) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:12:55.107 [INFO] (server.py:205) Connected to ('10.80.1.16', 51848)                                              
+INFO:     ('10.80.1.16', 39846) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:13:02.179 [INFO] (server.py:205) Connected to ('10.80.1.16', 39846)                                              
+INFO:     ('10.80.1.16', 35282) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:13:22.819 [INFO] (server.py:205) Connected to ('10.80.1.16', 35282)                                              
+18:13:52.848 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 245 ms, p95 266 ms                       
+INFO:     ('10.80.1.16', 35302) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:14:41.344 [INFO] (server.py:205) Connected to ('10.80.1.16', 35302)                                              
+INFO:     ('10.80.1.16', 37516) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:14:58.982 [INFO] (server.py:205) Connected to ('10.80.1.16', 37516)                                              
+INFO:     ('10.80.1.16', 45284) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:15:17.562 [INFO] (server.py:205) Connected to ('10.80.1.16', 45284)                                              
+18:15:32.035 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 246 ms, p95 266 ms                       
+INFO:     ('10.80.1.16', 55350) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:16:59.305 [INFO] (server.py:205) Connected to ('10.80.1.16', 55350)                                              
+INFO:     ('10.80.1.16', 55354) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:17:07.384 [INFO] (server.py:205) Connected to ('10.80.1.16', 55354)                                              
+INFO:     ('10.80.1.16', 41512) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:17:08.329 [INFO] (server.py:205) Connected to ('10.80.1.16', 41512)                                              
+18:17:51.772 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 244 ms, p95 263 ms                       
+INFO:     ('10.80.1.16', 52960) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:18:08.111 [INFO] (server.py:205) Connected to ('10.80.1.16', 52960)                                              
+INFO:     ('10.80.1.16', 57780) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:18:56.652 [INFO] (server.py:205) Connected to ('10.80.1.16', 57780)                                              
+INFO:     ('10.80.1.16', 59460) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:20:19.823 [INFO] (server.py:205) Connected to ('10.80.1.16', 59460)                                              
+18:21:20.738 [INFO] (policy.py:189) MolmoBot inference over 100 calls: p50 243 ms, p95 264 ms                       
+INFO:     ('10.80.1.16', 57084) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+18:21:57.675 [INFO] (server.py:205) Connected to ('10.80.1.16', 57084)                                              
