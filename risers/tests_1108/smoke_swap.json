@@ -1,0 +1,21 @@
+[
+ {
+  "set": "FrankaOpenDataGenConfig",
+  "group": "open datagen",
+  "board_index": 107,
+  "path": "molmospaces-bench-v1/ithor/FrankaOpenDataGenConfig/FrankaOpenDataGenConfig_20260123_json_benchmark/754",
+  "task": "open the dresser.",
+  "limit_s": 31.03,
+  "v3_ok": true,
+  "top7_solved": 6,
+  "kind": "slide"
+ },
+ {
+  "set": "FrankaPickDroidMiniBench",
+  "group": "pick",
+  "board_index": 0,
+  "task": "pick up the tissue.",
+  "limit_s": 31.03,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickDroidMiniBench/FrankaPickDroidMiniBench_json_benchmark_20251231/11"
+ }
+]

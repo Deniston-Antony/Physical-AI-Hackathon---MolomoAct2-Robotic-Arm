@@ -1,0 +1,314 @@
+From 7d0cf9ccd20ac21e2a9968357a0148d1eb89bc00 Mon Sep 17 00:00:00 2001
+From: Deniston_Antony <deniston2k@gmail.com>
+Date: Sat, 7 Nov 2026 18:46:15 +0100
+Subject: [PATCH 07/10] Add MolmoBot options for a blocked camera and a pushed
+ close
+
+`camera_fallback` uses the other shoulder camera when the picked one sees almost nothing. `close_push_after` gives a close task straight pushes of the closed gripper when the arm is slow after that many calls. `arm.py` holds the FR3 kinematics for the push.
+---
+ positronic/vendors/molmobot/arm.py    |  66 ++++++++++++++++
+ positronic/vendors/molmobot/policy.py | 109 ++++++++++++++++++++++++--
+ positronic/vendors/molmobot/server.py |   6 ++
+ 3 files changed, 176 insertions(+), 5 deletions(-)
+ create mode 100644 positronic/vendors/molmobot/arm.py
+
+diff --git a/positronic/vendors/molmobot/arm.py b/positronic/vendors/molmobot/arm.py
+new file mode 100644
+index 00000000..de4c2862
+--- /dev/null
++++ b/positronic/vendors/molmobot/arm.py
+@@ -0,0 +1,66 @@
++"""Kinematics of the Franka FR3 arm of `franka_droid`: the gripper pose and straight gripper moves in joint space."""
++
++import numpy as np
++
++# Modified DH parameters (a, d, alpha) of joints 1-7, then the flange.
++_DH = (
++    (0.0, 0.333, 0.0),
++    (0.0, 0.0, -np.pi / 2),
++    (0.0, 0.316, np.pi / 2),
++    (0.0825, 0.0, np.pi / 2),
++    (-0.0825, 0.384, -np.pi / 2),
++    (0.0, 0.0, np.pi / 2),
++    (0.088, 0.0, np.pi / 2),
++)
++_FLANGE_D = 0.107
++# The `gripper` site of franka_droid is this far along the flange z axis (checked against recorded ee poses).
++_GRIPPER_D = 0.155
++JOINT_LIMITS = np.array([
++    (-2.7437, 2.7437),
++    (-1.7837, 1.7837),
++    (-2.9007, 2.9007),
++    (-3.0421, -0.1518),
++    (-2.8065, 2.8065),
++    (0.5445, 4.5169),
++    (-3.0159, 3.0159),
++])
++
++
++def _dh(a: float, d: float, alpha: float, theta: float) -> np.ndarray:
++    ca, sa, ct, st = np.cos(alpha), np.sin(alpha), np.cos(theta), np.sin(theta)
++    return np.array([[ct, -st, 0, a], [st * ca, ct * ca, -sa, -d * sa], [st * sa, ct * sa, ca, d * ca], [0, 0, 0, 1]])
++
++
++def gripper_pose(joints: np.ndarray) -> np.ndarray:
++    """The 4x4 pose of the gripper site in the robot base frame. Its z axis points from the wrist to the fingers."""
++    pose = np.eye(4)
++    for (a, d, alpha), theta in zip(_DH, np.asarray(joints, dtype=np.float64), strict=True):
++        pose = pose @ _dh(a, d, alpha, theta)
++    return pose @ _dh(0.0, _FLANGE_D + _GRIPPER_D, 0.0, 0.0)
++
++
++def _jacobian(joints: np.ndarray, eps: float = 1e-6) -> np.ndarray:
++    """6x7: the gripper's linear velocity and its rotation (small-angle vector) per joint."""
++    base = gripper_pose(joints)
++    jac = np.zeros((6, 7))
++    for i in range(7):
++        q = np.array(joints, dtype=np.float64)
++        q[i] += eps
++        moved = gripper_pose(q)
++        jac[:3, i] = (moved[:3, 3] - base[:3, 3]) / eps
++        rot = moved[:3, :3] @ base[:3, :3].T
++        jac[3:, i] = np.array([rot[2, 1] - rot[1, 2], rot[0, 2] - rot[2, 0], rot[1, 0] - rot[0, 1]]) / (2 * eps)
++    return jac
++
++
++def straight_move(joints: np.ndarray, step: np.ndarray, count: int, damping: float = 0.02) -> np.ndarray:
++    """``count`` joint positions that move the gripper by ``step`` (m, base frame) each, with its rotation kept."""
++    q = np.array(joints, dtype=np.float64)
++    out = np.empty((count, 7))
++    twist = np.concatenate([np.asarray(step, dtype=np.float64), np.zeros(3)])
++    for k in range(count):
++        jac = _jacobian(q)
++        dq = jac.T @ np.linalg.solve(jac @ jac.T + damping**2 * np.eye(6), twist)
++        q = np.clip(q + dq, JOINT_LIMITS[:, 0], JOINT_LIMITS[:, 1])
++        out[k] = q
++    return out
+diff --git a/positronic/vendors/molmobot/policy.py b/positronic/vendors/molmobot/policy.py
+index 336297ee..9a224d0a 100644
+--- a/positronic/vendors/molmobot/policy.py
++++ b/positronic/vendors/molmobot/policy.py
+@@ -16,6 +16,7 @@ from positronic.policy.base import Obs
+ from positronic.policy.codecs import ACTION
+ from positronic.simulator.molmo_spaces import mapping
+ from positronic.vendors import molmobot
++from positronic.vendors.molmobot import arm
+ 
+ logger = logging.getLogger(__name__)
+ 
+@@ -37,6 +38,20 @@ _BOARD_PLACE_TASK = re.compile(r'pick up the (?P<item>.+) and place it on the (?
+ _PLACE_TASK = re.compile(r'pick up the (?P<item>.+?) and place it (?:on|in or on|next to) the .+', re.IGNORECASE)
+ # An arm whose joints stay in a range this small (rad) over the observations of `still_calls` calls is still.
+ _STILL_RAD = 0.02
++# A shoulder camera is blocked when its detail (mean grey gradient) is below this and the other camera has at least
++# `_BLOCKED_RATIO` times as much.
++_BLOCKED_DETAIL = 0.6
++_BLOCKED_RATIO = 1.5
++# Close tasks: the push starts when the gripper stays in this range (m) over the last `_SLOW_CALLS` + 1 observations.
++_SLOW_M = 0.05
++_SLOW_CALLS = 3
++# Each push moves the closed gripper this far per action (m), for this many calls, then the model gets this many calls.
++_PUSH_STEP_M = 0.008
++_PUSH_CALLS = 3
++_REST_CALLS = 4
++_PUSH_ATTEMPTS = 3
++# The gripper axis gives the push direction while its height part is below this; else the push goes away from the base.
++_STEEP_AXIS = 0.7
+ 
+ 
+ def warm_observation() -> dict[str, Any]:
+@@ -100,6 +115,22 @@ def training_wording(task: str) -> str:
+     return f'Pick up the {match["item"]} and place it in or on the {match["target"]}'
+ 
+ 
++def detail(img: np.ndarray) -> float:
++    """The mean grey gradient of an image: low for a camera that faces a wall or a dark corner."""
++    grey = np.asarray(img, dtype=np.float32).mean(axis=2)
++    return float((np.abs(np.diff(grey, axis=0)).mean() + np.abs(np.diff(grey, axis=1)).mean()) / 2)
++
++
++def push_direction(joints: np.ndarray, attempt: int) -> np.ndarray:
++    """A level unit push direction in the base frame: the gripper axis, or away from the base on odd attempts."""
++    pose = arm.gripper_pose(joints)
++    axis, away = pose[:3, 2].copy(), pose[:3, 3].copy()
++    use_axis = attempt % 2 == 0 and abs(axis[2]) < _STEEP_AXIS
++    direction = axis if use_axis else away
++    direction[2] = 0.0
++    return direction / max(float(np.linalg.norm(direction)), 1e-6)
++
++
+ def pick_part(task: str) -> str | None:
+     """The pick part of a pick-and-place task in the wording of a pick task, or None for other tasks."""
+     match = _PLACE_TASK.fullmatch(task.strip())
+@@ -149,6 +180,8 @@ class MolmoBotModel(Model):
+         grip_release_below: float | None = None,
+         training_wording: bool = False,
+         still_calls: int | None = None,
++        camera_fallback: bool = False,
++        close_push_after: int | None = None,
+     ):
+         """``skip_actions`` drops that many actions from the start of each chunk after a session's first one.
+ 
+@@ -158,7 +191,9 @@ class MolmoBotModel(Model):
+         gripper opens only when the model's gripper value is below it (the model's range is 0 to 255). With
+         ``training_wording``, the model gets each task in the wording of its training data. With ``still_calls``,
+         the model gets only the pick part of a pick-and-place task while the gripper is open, from the call where
+-        the arm has been still for ``still_calls`` calls.
++        the arm has been still for ``still_calls`` calls. With ``camera_fallback``, a blocked shoulder camera gives
++        way to the other one. With ``close_push_after``, a close task whose arm is slow after that many calls gets
++        straight pushes of the closed gripper instead of model actions.
+         """
+         if camera not in CAMERAS:
+             raise ValueError(f'camera must be one of {CAMERAS}, got {camera!r}')
+@@ -166,6 +201,8 @@ class MolmoBotModel(Model):
+             raise ValueError(f'grip_release_below must be in [0, {_GRIP_THRESHOLD}), got {grip_release_below}')
+         if still_calls is not None and still_calls < 1:
+             raise ValueError(f'still_calls must be at least 1, got {still_calls}')
++        if close_push_after is not None and close_push_after < _SLOW_CALLS:
++            raise ValueError(f'close_push_after must be at least {_SLOW_CALLS}, got {close_push_after}')
+         if not torch.cuda.is_available():
+             raise RuntimeError('MolmoBot found no CUDA GPU.')
+         self._agent = _MmapCheckpointWrapper(checkpoint_dir, num_flow_steps=num_flow_steps, states_mode='cross_attn')
+@@ -182,6 +219,9 @@ class MolmoBotModel(Model):
+         self._still_calls = still_calls
+         self._recent_joints: dict[str, deque[np.ndarray]] = {}
+         self._picking: set[str] = set()
++        self._camera_fallback = camera_fallback
++        self._close_push_after = close_push_after
++        self._close: dict[str, _ClosePlan] = {}
+         self._infer_ms: list[float] = []
+         self._use_exterior_2: dict[str, bool] = {}
+         self._previous_images: dict[str, list[np.ndarray]] = {}
+@@ -191,9 +231,7 @@ class MolmoBotModel(Model):
+     def __call__(self, obs: Obs, *, session_id: str) -> list[dict[str, Any]]:
+         exterior, exterior_2, wrist = obs[molmobot.IMAGES]
+         if session_id not in self._use_exterior_2:
+-            self._use_exterior_2[session_id] = (
+-                self._camera != 'exterior' and exterior_side(exterior, exterior_2) != self._camera
+-            )
++            self._use_exterior_2[session_id] = self._pick_exterior_2(exterior, exterior_2, session_id)
+         images = [exterior_2 if self._use_exterior_2[session_id] else exterior, wrist]
+         previous = self._previous_images.get(session_id)
+         self._previous_images[session_id] = images
+@@ -203,7 +241,15 @@ class MolmoBotModel(Model):
+         joints = state[:_NUM_JOINTS]
+         model_state = np.append(joints, state[_NUM_JOINTS] * mapping.GRIPPER_QPOS_CLOSED).astype(np.float32)
+         closed = state[_NUM_JOINTS] > _GRIP_CLOSED_OBS
+-        task = self._task(obs.get(molmobot.TASK, ''), joints, closed, session_id)
++        raw_task = obs.get(molmobot.TASK, '')
++        if self._close_push_after is not None and raw_task.strip().lower().startswith('close the'):
++            plan = self._close.setdefault(session_id, _ClosePlan(self._close_push_after))
++            pushed = plan.next_chunk(joints, self._agent.action_horizon, session_id)
++            if pushed is not None:
++                if previous is not None:
++                    pushed = pushed[self._skip_actions :]
++                return [{ACTION: action} for action in pushed]
++        task = self._task(raw_task, joints, closed, session_id)
+         start = time.perf_counter()
+         chunk = self._agent.get_action_chunk(images=images, task_description=task, state=model_state)
+         self._log_timing((time.perf_counter() - start) * 1000)
+@@ -214,6 +260,20 @@ class MolmoBotModel(Model):
+             actions = actions[self._skip_actions :]
+         return [{ACTION: action} for action in actions]
+ 
++    def _pick_exterior_2(self, exterior: np.ndarray, exterior_2: np.ndarray, session_id: str) -> bool:
++        if self._camera == 'exterior':
++            return False
++        use_2 = exterior_side(exterior, exterior_2) != self._camera
++        if self._camera_fallback:
++            picked, other = (detail(exterior_2), detail(exterior)) if use_2 else (detail(exterior), detail(exterior_2))
++            if picked < _BLOCKED_DETAIL and other >= _BLOCKED_RATIO * picked:
++                use_2 = not use_2
++                logger.info(
++                    f'Session {session_id}: the {self._camera} camera is blocked (detail {picked:.2f}, other '
++                    f'{other:.2f}), the model uses the other shoulder camera'
++                )
++        return use_2
++
+     def _task(self, task: str, joints: np.ndarray, closed: bool, session_id: str) -> str:
+         pick = pick_part(task) if self._still_calls is not None else None
+         if pick is not None:
+@@ -241,6 +301,7 @@ class MolmoBotModel(Model):
+         self._use_exterior_2.pop(session_id, None)
+         self._recent_joints.pop(session_id, None)
+         self._picking.discard(session_id)
++        self._close.pop(session_id, None)
+ 
+     def meta(self) -> dict[str, Any]:
+         return self._meta
+@@ -250,3 +311,41 @@ class MolmoBotModel(Model):
+             del self._agent
+             self._agent = None
+             torch.cuda.empty_cache()
++
++
++class _ClosePlan:
++    """The push schedule of one close-task session: model calls, then pushes when the arm is slow."""
++
++    def __init__(self, push_after: int):
++        self._push_after = push_after
++        self._calls = 0
++        self._recent: deque[np.ndarray] = deque(maxlen=_SLOW_CALLS + 1)
++        self._push_left = 0
++        self._rest_left = 0
++        self._attempt = 0
++        self._direction = np.zeros(3)
++
++    def next_chunk(self, joints: np.ndarray, horizon: int, session_id: str) -> np.ndarray | None:
++        """The pushed actions (joints and a closed gripper) for this call, or None when the model acts."""
++        self._calls += 1
++        self._recent.append(arm.gripper_pose(joints)[:3, 3])
++        if self._push_left == 0:
++            if self._rest_left > 0:
++                self._rest_left -= 1
++                return None
++            slow = len(self._recent) == self._recent.maxlen and np.ptp(np.stack(self._recent), axis=0).max() < _SLOW_M
++            if self._calls <= self._push_after or self._attempt >= _PUSH_ATTEMPTS or not slow:
++                return None
++            self._direction = push_direction(joints, self._attempt)
++            self._attempt += 1
++            self._push_left = _PUSH_CALLS
++            logger.info(
++                f'Session {session_id}: close push starts (attempt {self._attempt}, call {self._calls}, '
++                f'direction {np.round(self._direction, 2).tolist()})'
++            )
++        self._push_left -= 1
++        if self._push_left == 0:
++            self._rest_left = _REST_CALLS
++            self._recent.clear()
++        moves = arm.straight_move(joints, _PUSH_STEP_M * self._direction, horizon)
++        return np.concatenate([moves, np.ones((horizon, 1))], axis=1).astype(np.float32)
+diff --git a/positronic/vendors/molmobot/server.py b/positronic/vendors/molmobot/server.py
+index 70a4f1f1..fb5b36a7 100644
+--- a/positronic/vendors/molmobot/server.py
++++ b/positronic/vendors/molmobot/server.py
+@@ -25,6 +25,8 @@ DEFAULT_CHECKPOINT_DIR = '/opt/molmobot/MolmoBot-DROID'
+     grip_release_below=None,
+     training_wording=False,
+     still_calls=None,
++    camera_fallback=False,
++    close_push_after=None,
+ )
+ def molmobot_model(
+     checkpoint_dir: str,
+@@ -34,6 +36,8 @@ def molmobot_model(
+     grip_release_below: float | None,
+     training_wording: bool,
+     still_calls: int | None,
++    camera_fallback: bool,
++    close_push_after: int | None,
+ ) -> Model:
+     """One MolmoBot checkpoint directory (``config.yaml`` and ``model.pt``), in process."""
+     logger.info(f'Loading MolmoBot model {checkpoint_dir}')
+@@ -45,6 +49,8 @@ def molmobot_model(
+         grip_release_below=grip_release_below,
+         training_wording=training_wording,
+         still_calls=still_calls,
++        camera_fallback=camera_fallback,
++        close_push_after=close_push_after,
+     )
+     warmup(policy, warm_observation())
+     return policy
+-- 
+2.43.0
+

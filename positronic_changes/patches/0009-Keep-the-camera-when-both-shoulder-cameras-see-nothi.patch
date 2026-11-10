@@ -1,0 +1,25 @@
+From b48d55b2c0725fcfb574d11bb32dd762a410173b Mon Sep 17 00:00:00 2001
+From: Deniston_Antony <deniston2k@gmail.com>
+Date: Sat, 7 Nov 2026 21:09:44 +0100
+Subject: [PATCH 09/10] Keep the camera when both shoulder cameras see nothing
+
+---
+ positronic/vendors/molmobot/policy.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/positronic/vendors/molmobot/policy.py b/positronic/vendors/molmobot/policy.py
+index fff91ec7..9268c760 100644
+--- a/positronic/vendors/molmobot/policy.py
++++ b/positronic/vendors/molmobot/policy.py
+@@ -278,7 +278,7 @@ class MolmoBotModel(Model):
+         use_2 = exterior_side(exterior, exterior_2) != self._camera
+         if self._camera_fallback:
+             picked, other = (detail(exterior_2), detail(exterior)) if use_2 else (detail(exterior), detail(exterior_2))
+-            if picked < _BLOCKED_DETAIL and other >= _BLOCKED_RATIO * picked:
++            if picked < _BLOCKED_DETAIL and other > picked and other >= _BLOCKED_RATIO * picked:
+                 use_2 = not use_2
+                 logger.info(
+                     f'Session {session_id}: the {self._camera} camera is blocked (detail {picked:.2f}, other '
+-- 
+2.43.0
+
