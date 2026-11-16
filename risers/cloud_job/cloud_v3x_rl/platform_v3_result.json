@@ -1,0 +1,151 @@
+{
+ "artifact_location": "check_2026-11-10/robolab_subset_12/",
+ "attempt_location": "check_2026-11-10/robolab_subset_12/attempts/1/",
+ "error": null,
+ "reason_code": null,
+ "run_id": "75166660ab2a887d",
+ "scores": {
+  "episodes": 12,
+  "per_task": {
+   "BananaInBowlTask": {
+    "mean_subtask_score": 1.0,
+    "success_rate": 1.0,
+    "successes": 1,
+    "trials": 1
+   },
+   "BananasInCrateTask": {
+    "mean_subtask_score": 1.0,
+    "success_rate": 1.0,
+    "successes": 1,
+    "trials": 1
+   },
+   "BowlStackingLeftOnRightTask": {
+    "mean_subtask_score": 0.0,
+    "success_rate": 0.0,
+    "successes": 0,
+    "trials": 1
+   },
+   "GrabABagelTask": {
+    "mean_subtask_score": 1.0,
+    "success_rate": 1.0,
+    "successes": 1,
+    "trials": 1
+   },
+   "MarkerInMugTask": {
+    "mean_subtask_score": 0.0,
+    "success_rate": 0.0,
+    "successes": 0,
+    "trials": 1
+   },
+   "PickUpGreenObjectTask": {
+    "mean_subtask_score": 0.5,
+    "success_rate": 0.0,
+    "successes": 0,
+    "trials": 1
+   },
+   "PutBowlOnShelfTopTask": {
+    "mean_subtask_score": 0.0,
+    "success_rate": 0.0,
+    "successes": 0,
+    "trials": 1
+   },
+   "ReorientAllMugsTask": {
+    "mean_subtask_score": 0.3333333432674408,
+    "success_rate": 0.0,
+    "successes": 0,
+    "trials": 1
+   },
+   "RubiksCubeAndBananaTask": {
+    "mean_subtask_score": 0.0,
+    "success_rate": 0.0,
+    "successes": 0,
+    "trials": 1
+   },
+   "RubiksCubesInBinTask": {
+    "mean_subtask_score": 0.0,
+    "success_rate": 0.0,
+    "successes": 0,
+    "trials": 1
+   },
+   "SmallerObjectButterInBinTask": {
+    "mean_subtask_score": 1.0,
+    "success_rate": 1.0,
+    "successes": 1,
+    "trials": 1
+   },
+   "StackYellowOnRedTask": {
+    "mean_subtask_score": 0.0,
+    "success_rate": 0.0,
+    "successes": 0,
+    "trials": 1
+   }
+  },
+  "primary": 0.4027777786056201,
+  "sim_time": [
+   {
+    "limit_s": 130.0,
+    "sim_s": 120.0000006,
+    "task": "RubiksCubesInBinTask"
+   },
+   {
+    "limit_s": 60.0,
+    "sim_s": 15.533333411,
+    "task": "BananaInBowlTask"
+   },
+   {
+    "limit_s": 40.0,
+    "sim_s": 24.866666791,
+    "task": "GrabABagelTask"
+   },
+   {
+    "limit_s": 30.0,
+    "sim_s": 20.0000001,
+    "task": "BowlStackingLeftOnRightTask"
+   },
+   {
+    "limit_s": 100.0,
+    "sim_s": 90.00000045,
+    "task": "ReorientAllMugsTask"
+   },
+   {
+    "limit_s": 70.0,
+    "sim_s": 60.0000003,
+    "task": "RubiksCubeAndBananaTask"
+   },
+   {
+    "limit_s": 50.0,
+    "sim_s": 40.0000002,
+    "task": "MarkerInMugTask"
+   },
+   {
+    "limit_s": 40.0,
+    "sim_s": 30.00000015,
+    "task": "PickUpGreenObjectTask"
+   },
+   {
+    "limit_s": 70.0,
+    "sim_s": 60.0000003,
+    "task": "StackYellowOnRedTask"
+   },
+   {
+    "limit_s": 70.0,
+    "sim_s": 19.400000097,
+    "task": "BananasInCrateTask"
+   },
+   {
+    "limit_s": 70.0,
+    "sim_s": 60.0000003,
+    "task": "PutBowlOnShelfTopTask"
+   },
+   {
+    "limit_s": 40.0,
+    "sim_s": 17.33333342,
+    "task": "SmallerObjectButterInBinTask"
+   }
+  ],
+  "success_rate": 0.3333333333333333,
+  "unscored": 0
+ },
+ "started_at": "2026-11-13T00:11:40.403621Z",
+ "state": "succeeded"
+}

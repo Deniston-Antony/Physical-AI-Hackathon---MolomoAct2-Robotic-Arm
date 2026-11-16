@@ -1,0 +1,4 @@
+1 ctl sha256:cd02cbefdc152f66b95cc2309ceee7a841696326c4be696de23f297427340973 --model.camera=left --pipeline.horizon_sec=0.7667 --model.num_flow_steps=3 --model.still_calls=3
+1 all sha256:cd02cbefdc152f66b95cc2309ceee7a841696326c4be696de23f297427340973 --model.camera=left --pipeline.horizon_sec=0.7667 --model.num_flow_steps=3 --model.still_calls=3 --model.reword_tasks=True --model.split_tasks=True --model.miss_deeper_m=0.02 --model.close_votes=3
+2 deep sha256:cd02cbefdc152f66b95cc2309ceee7a841696326c4be696de23f297427340973 --model.camera=left --pipeline.horizon_sec=0.7667 --model.num_flow_steps=3 --model.still_calls=3 --model.miss_deeper_m=0.02
+2 vote sha256:cd02cbefdc152f66b95cc2309ceee7a841696326c4be696de23f297427340973 --model.camera=left --pipeline.horizon_sec=0.7667 --model.num_flow_steps=3 --model.still_calls=3 --model.close_votes=3

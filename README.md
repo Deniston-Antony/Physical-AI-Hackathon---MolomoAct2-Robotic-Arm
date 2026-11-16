@@ -1,24 +1,28 @@
 # Physical-AI-Hackathon---MolomoAct2-Robotic-Arm
 This Repository is related to the Physical AI Hackathon which I Participated in Oct-2026.
 
-Team: **The Risers**. Competition: PHAIL stage 1 (Positronic platform, board `molmo.competition_v2`). A Franka robot
-arm in the MolmoSpaces simulator does 320 episodes: pick, pick and place, place next to, open and close. The score is
-the share of episodes that the robot completes in the time limit.
+Team: **The Risers**. Competition: PHAIL (Positronic platform, board `molmo.competition_v2`). In stage 1 (to 15
+November) a Franka robot arm in the MolmoSpaces simulator does 320 episodes: pick, pick and place, place next to, open
+and close. The score is the share of episodes that the robot completes in the time limit. Stage 2 (16 November to 13
+December) adds RoboLab, a second simulator with 120 table-top tasks: the total is the mean of the two scores. Up to 10
+teams then run their last stage-2 image on a real Franka robot in the finale (15–17 December).
 
 This README is a log of the work, **newest first**. The first steps (31 October) are at the bottom.
-A full report of the work since image v3, with more pictures, is in
+A full report of the work from image v3 to 10 November, with more pictures, is in
 [`reports/2026-11-10-changes-since-v3.pdf`](reports/2026-11-10-changes-since-v3.pdf).
 
-## Current status (10 November 2026)
+## Current status (16 November 2026)
 
 | | |
 |---|---|
-| Best board score | **68.4% (219/320)**, image v3 (7 November). Rank **6 of 39** on 10 November (5th place: 70.3%, 1st place: 74.4%) |
+| Best board score | **68.4% (219/320)**, image v3 (7 November). Rank **6 of 40** on 11 November (the last rank we read) |
 | Start (31 October) | 19.4% (62/320) |
 | Best model | MolmoBot-Img-DROID (Ai2), half-overlap timing, left shoulder camera, 12 actions per call, 3 flow steps, still-arm rule |
-| Best image | `docker.io/denistonantony/molmobot-img-droid:v3` |
-| Latest submission | v5-touch (9 November): 61.6%. Open tasks 4/30 (our best), but pick tasks fell (see 9 November) |
-| Limit | From 10 November: 1 submission per day. Stage 1 ends 15 November |
+| Latest submission | v3-jpeg-rl2 (14 November): 66.9% (214/320). The same level as v3; its rules are for RoboLab |
+| Planned stage-2 image | `docker.io/denistonantony/molmobot-img-droid:v3-jpeg-rl2` (best of our images on RoboLab in our cloud test) |
+| RoboLab | Platform check of v3: 4/12 tasks, mean subtask score 0.40 (the π0.5 baseline: 0.56). Our cloud test of v3-jpeg-rl2: 0.46 |
+| Real robot | Platform check of v3: **0 of 27** episodes on 9 tasks; the public models solve 42% (see 14 November) |
+| Limit | 1 submission per day |
 
 ## Score progress (newest first)
 
@@ -26,6 +30,10 @@ Every board submission. "Change" compares the score with our best score before t
 
 | Date (UTC) | Submission | Model and setting | Solved | Score | Change | Board rank |
 |---|---|---|---|---|---|---|
+| 14 Nov | `4bfca4de3f5020f4` | v3-jpeg-rl2: v3-jpeg-rl + training wording, steps of a task, deeper grasp after a miss | 214 | 66.9% | −1.6 | – |
+| 13 Nov | `59db633efae52708` | v3-jpeg-rl: v3-jpeg + still-arm rule for RoboLab wordings | 212 | 66.3% | −2.2 | – |
+| 11 Nov | `19a5da2d361187f1` | v3-jpeg: v3 with JPEG camera frames | 210 | 65.6% | −2.8 | – |
+| 10 Nov | `49e41d2fad85b761` | v6: v5-touch with both action experts on the GPU | 208 | 65.0% | −3.4 | – |
 | 9 Nov | `fdf9b9845e06f7c` | v5-touch: v5 + touch grasp for open tasks | 197 | 61.6% | −6.8 | – |
 | 9 Nov | `3f52961f7f2dcab4` | v5: v4 + open pull + our open/close action expert | 215 | 67.2% | −1.2 | – |
 | 8 Nov | `2e6db64841627b1e` | v3 again (the same image) | 218 | 68.1% | −0.3 | – |
@@ -42,36 +50,40 @@ Every board submission. "Change" compares the score with our best score before t
 | 31 Oct | `3208ed8ba648246a` | MolmoAct2-DROID, first image | – | error | – | – |
 | 31 Oct | `1dd6e85f68e0c3ab` | π0.5-DROID (baseline model) | 62 | 19.4% | first | – |
 
-The board shows the best score of each team, so a worse submission does not lower it.
+The board shows the best score of each team, so a worse submission does not lower it. The rank of the team stayed 6
+(of 39 and 40) after v6 and v3-jpeg.
 
-![Board submissions since image v3](reports/images_1110/chart_board_scores.png)
+![Board submissions since image v3](reports/images_1116/chart_board_scores.png)
+
+The ten submissions from v3 on are between 197 and 219. Six of them are within ±6 of v3, the noise of one board run
+(see "Run-to-run noise" below).
 
 ### Successes by task type
 
-| Task type | Episodes | v5-touch (9 Nov) | v5 (9 Nov) | v4 (7 Nov) | v4-push (7 Nov) | v3 (7 Nov) | v2 (6 Nov) | Img v1 (5 Nov) | MolmoBot (5 Nov) | MolmoAct2 (31 Oct) |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Pick | 116 | 80 | 89 | **96** | 91 | 94 | 85 | 70 | 55 | 28 |
-| Pick and place (with color) | 128 | 92 | 97 | 97 | 98 | **99** | 84 | 65 | 48 | 32 |
-| Place next to | 16 | 3 | **8** | 2 | 6 | 6 | 4 | 0 | 0 | 3 |
-| Open | 30 | 4 | 1 | 1 | 3 | 3 | 2 | 4 | 2 | **6** |
-| Close | 30 | 18 | 20 | 19 | 19 | 17 | 17 | 12 | 12 | **21** |
-| **Total** | 320 | 197 | 215 | 215 | 217 | **219** | 192 | 151 | 117 | 90 |
+| Task type | Episodes | v3-jpeg-rl2 (14 Nov) | v3-jpeg-rl (13 Nov) | v3-jpeg (11 Nov) | v6 (10 Nov) | v5-touch (9 Nov) | v5 (9 Nov) | v4 (7 Nov) | v4-push (7 Nov) | v3 (7 Nov) | v2 (6 Nov) | Img v1 (5 Nov) | MolmoBot (5 Nov) | MolmoAct2 (31 Oct) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Pick | 116 | 87 | 91 | 86 | 89 | 80 | 89 | **96** | 91 | 94 | 85 | 70 | 55 | 28 |
+| Pick and place (with color) | 128 | **103** | 97 | 100 | 95 | 92 | 97 | 97 | 98 | 99 | 84 | 65 | 48 | 32 |
+| Place next to | 16 | 3 | 5 | 3 | 2 | 3 | **8** | 2 | 6 | 6 | 4 | 0 | 0 | 3 |
+| Open | 30 | 2 | 1 | 2 | 4 | 4 | 1 | 1 | 3 | 3 | 2 | 4 | 2 | **6** |
+| Close | 30 | 19 | 18 | 19 | 18 | 18 | 20 | 19 | 19 | 17 | 17 | 12 | 12 | **21** |
+| **Total** | 320 | 214 | 212 | 210 | 208 | 197 | 215 | 215 | 217 | **219** | 192 | 151 | 117 | 90 |
 
 ### Successes by task set (MolmoBot submissions)
 
-| Set | Episodes | Time limit | v5-touch | v5 | v4 | v4-push | v3 | v2 | Img v1 |
-|---|---|---|---|---|---|---|---|---|---|
-| Pick, normal rooms | 59 | 31 s | 51 | 53 | **56** | 54 | 55 | **56** | **56** |
-| Pick, hard | 57 | 21 s | 29 | 36 | **40** | 37 | 39 | 29 | 14 |
-| Pick and place, normal rooms | 54 | 46 s | 43 | 49 | **50** | 45 | 48 | 39 | 37 |
-| Pick and place, hard | 58 | 41 s | 39 | 37 | 38 | **41** | 39 | 34 | 19 |
-| Pick and place, color | 16 | 41 s | 10 | 11 | 9 | **12** | **12** | 11 | 9 |
-| Place next to | 16 | 31 s | 3 | **8** | 2 | 6 | 6 | 4 | 0 |
-| Open, data generation | 15 | 31 s | 1 | 0 | 0 | 2 | 2 | 1 | **3** |
-| Open, hard | 15 | 31 s | **3** | 1 | 1 | 1 | 1 | 1 | 1 |
-| Close, data generation | 15 | 31 s | 11 | 12 | 10 | **13** | **13** | 11 | 9 |
-| Close, hard | 15 | 31 s | 7 | 8 | **9** | 6 | 4 | 6 | 3 |
-| **Total** | 320 | | 197 | 215 | 215 | 217 | **219** | 192 | 151 |
+| Set | Episodes | Time limit | v3-jpeg-rl2 | v3-jpeg-rl | v3-jpeg | v6 | v5-touch | v5 | v4 | v4-push | v3 | v2 | Img v1 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Pick, normal rooms | 59 | 31 s | 53 | **58** | 55 | 55 | 51 | 53 | 56 | 54 | 55 | 56 | 56 |
+| Pick, hard | 57 | 21 s | 34 | 33 | 31 | 34 | 29 | 36 | **40** | 37 | 39 | 29 | 14 |
+| Pick and place, normal rooms | 54 | 46 s | 49 | 49 | 49 | 46 | 43 | 49 | **50** | 45 | 48 | 39 | 37 |
+| Pick and place, hard | 58 | 41 s | **41** | 37 | 39 | 37 | 39 | 37 | 38 | **41** | 39 | 34 | 19 |
+| Pick and place, color | 16 | 41 s | **13** | 11 | 12 | 12 | 10 | 11 | 9 | 12 | 12 | 11 | 9 |
+| Place next to | 16 | 31 s | 3 | 5 | 3 | 2 | 3 | **8** | 2 | 6 | 6 | 4 | 0 |
+| Open, data generation | 15 | 31 s | 2 | 1 | 0 | **4** | 1 | 0 | 0 | 2 | 2 | 1 | 3 |
+| Open, hard | 15 | 31 s | 0 | 0 | 2 | 0 | **3** | 1 | 1 | 1 | 1 | 1 | 1 |
+| Close, data generation | 15 | 31 s | 13 | 13 | **14** | 13 | 11 | 12 | 10 | 13 | 13 | 11 | 9 |
+| Close, hard | 15 | 31 s | 6 | 5 | 5 | 5 | 7 | 8 | **9** | 6 | 4 | 6 | 3 |
+| **Total** | 320 | | 214 | 212 | 210 | 208 | 197 | 215 | 215 | 217 | **219** | 192 | 151 |
 
 `risers/competition_runs/board_by_set.py` makes these counts from the `result.json` file of each submission.
 
@@ -92,6 +104,8 @@ The board shows the best score of each team, so a worse submission does not lowe
 | 7 Nov | Close push rule (close tasks) | Local hard close 7/15 against 4/15. Board hard close 6 and 9 against 4 | Hard close +2 to +5. Total in the noise |
 | 7 Nov | Camera switch when the left camera is blocked | Local hard close 6/15 against 4/15 (#79 solved) | About +1 |
 | 9 Nov | Touch grasp (open tasks) | Local open 6/30 against 4/30. Board open 4/30, our best | Open +1 to +3. Total fell (see 9 November) |
+| 10 Nov | Both action experts stay on the GPU (v6) | Model call 245 ms against 485 ms for v5-touch on a board-load test | Total 208 against 197 for v5-touch (+11). Still below v3 |
+| 13 Nov | Still-arm rule for the wordings of RoboLab ("Put the X in the Y") | The rule matched 0 of 120 RoboLab tasks before, 54 after. RoboLab cloud test 0.49 → 0.51, no task worse | RoboLab only (from stage 2) |
 
 ### Changes that did not help
 
@@ -111,6 +125,12 @@ The board shows the best score of each team, so a worse submission does not lowe
 | 9 Nov | Regrasp rule (grasp again after a close on nothing) | Local open 4/30: no gain. 72 regrasps, 1 caught something |
 | 9 Nov | 10 flow steps for open and close tasks | Local open 2/30 |
 | 9 Nov | Two action experts that change places on the GPU | Each change costs about 290 ms of robot time on the board. Pick tasks fell in v5 and v5-touch |
+| 11 Nov | JPEG camera frames instead of raw frames | Board 210 against 219 (in the noise). Kept: a raw frame makes each call slow on a network (820 ms against 322 ms in our cloud test), and the real robot and RoboLab send three cameras |
+| 12–13 Nov | FLUX 3 Action (a new public model) in the 24 GB of a board run, five settings | Best 20/40 against 26–27/40 for v3 on the same episodes. Dropped |
+| 13 Nov | Late-close rule (keep the gripper open when a chunk closes it only in its last 4 actions) | 24/40 against 26–27/40. The rule acted on 2% of the calls; the gripper closed on nothing as often as before |
+| 14 Nov | Training wording ("Pick up the X and place it in or on the Y") and one step at a time for tasks of several objects | RoboLab 0.36 against 0.36 (control). No failed task became a success |
+| 14 Nov | Vote before a close (close only when 2 of 3 chunks close) | The other chunks agreed 215 of 223 times (board tasks) and 134 of 135 (RoboLab); the slowest calls took 510 ms instead of 200 ms. Dropped |
+| 14 Nov | Deeper grasp after a miss (2 cm lower near a close on nothing) | Cloud 28/40 against 22/40 (control), but on the full board 214 against 212 without it. Kept for stage 2: it did not harm |
 
 ### Run-to-run noise
 
@@ -118,6 +138,245 @@ The same behaviour gives different results in two board runs. v4-push and v3 act
 (all but the close tasks). On those episodes v4-push solved 27 that v3 did not and lost 31 that v3 solved. A second
 run of v3 gave 218 against 219. So one board run varies by about ±6 episodes (±2 points). A change must give more than
 that, or we cannot see it in one run.
+
+The cloud tests of 40 episodes vary more. On 14 November the control (the same behaviour as v3) solved 22 of 40,
+where v3 solved 26 and 27 of the same 40 episodes on 10 and 11 November: ±4–5 episodes in 40. On RoboLab, one
+episode per task, one task moves the mean score by 0.08.
+
+---
+
+## 14 November: platform check on the real robot, rules for RoboLab and image v3-jpeg-rl2 (66.9%)
+
+### The platform's check of v3 on a real robot and in RoboLab
+
+On 10 November the organisers ran our best submission (v3, `2a74d6b52a67c4be`) on a real Franka arm with a Robotiq
+gripper (10 tasks, 3 episodes each, 4 minutes per episode) and on 12 RoboLab tasks. This check does not change the
+score or the rank, but the finale is on the real robot.
+
+| Real robot, 9 tasks | v3 (27 episodes) | Public models (FLUX 3 Action, Cosmos 3 Nano, GR00T N1.7, Galaxea G0.5, MolmoAct2; 50 episodes) |
+|---|---|---|
+| Success | **0%** (0) | 42% (21) |
+| Failure | 56% (15) | 30% (15) |
+| Ran out of time | 44% (12) | 26% (13) |
+| Safety stop | 0% | 2% (1) |
+
+On the 10th task, "Put the marker in the bag" (no public model ran it), v3 succeeded in 1 of 3 episodes. The operator
+notes: "wrong item – flat screwdriver" (marker task), "moved marker instead of toy", "moved padlock" (toy task).
+
+![Real robot: v3 against the public models](reports/images_1116/chart_real_robot.png)
+
+We downloaded the 30 real-robot episodes (camera videos and robot signals) and measured them:
+
+| Measure | Real robot | RoboLab (our cloud test) | MolmoSpaces board tasks (our cloud test) |
+|---|---|---|---|
+| Seconds in which the commands of the model go less than 0.02 rad (the model "hesitates") | **40%** | 42% | 3% |
+| Commands late (median / longest gap) | 2 ms / 0.15 s | | |
+| Episodes in which the gripper never closed | 6 of 30 | | |
+
+- **The stops are the model, not the computer.** The commands come on time, but in 40% of the seconds the model asks
+  for (almost) no motion. MolmoBot learned only from simulated MolmoSpaces houses; in a scene unlike them (the real
+  lab, RoboLab) it hesitates.
+- **The camera choice of v3 fails on the real robot.** v3 gives the model the left shoulder camera and finds it by the
+  white robot base at the lower right of the image. In the real lab the walls and the table are white, so the choice is
+  near random: the same task got a different camera in different takes.
+
+![The three cameras of the real robot (first frame of 6 episodes)](reports/images_1116/real_robot_cameras.jpg)
+
+| RoboLab, 12 tasks of the platform | v3 | Public models |
+|---|---|---|
+| Success | 4 of 12 (33%) | 74 of 216 (34%) |
+| Mean subtask score | 0.403 | 0.556 (π0.5, the baseline) |
+
+### The study of the failures of v3
+
+We studied all 80 episodes of the two cloud runs of v3 (10 and 11 November, the same 40 episodes) and their videos.
+
+| Task group | Episodes | Failed | What happened in the failures |
+|---|---|---|---|
+| Open | 20 | 13 | 7 never held the handle, 5 held it but did not pull, 1 pulled too little |
+| Pick and pick-and-place | 40 | 10 | 3 closed only on air, 3 gripped but could not lift, 4 lifted and then lost the object |
+| Close | 20 | 4 | The hand stayed beside the handle and closed on nothing |
+
+- 9 tasks failed in both runs (18 of the 27 failures): most failures repeat, they are not bad luck.
+- **"Pecking":** in a failed open task the gripper closes on nothing about 14 times (every 2 s), against about 4 times
+  in a success. Every failure runs to the time limit: the model never tries another way.
+- Half of the closes on nothing before a grasp are more than 5 cm above the place where the gripper holds the object
+  at last; the grasp that held the object was 2 cm lower than the miss before it in 19 of 24 cases.
+
+![v3 on "open the dresser" (#422): the fingers close beside the bar again and again](reports/images_1116/v3_open_miss_dresser422.jpg)
+
+### The rules of 14 November
+
+We added four rules to the MolmoBot server, each with its own server flag (all off by default; code in
+`positronic_changes/molmobot_v3_jpeg_rl2/`):
+
+| Flag | Rule |
+|---|---|
+| `--model.reword_tasks=True` | A task in another wording gets the wording of MolmoBot's training data: "Stack the yellow block on the red block" → "Pick up the yellow block and place it in or on the red block", "Grab a bagel" → "pick up the bagel." The 320 board tasks keep their text (checked: 0 of 320 change); 64 of the 120 RoboLab tasks change (`steps.py`) |
+| `--model.split_tasks=True` | A task of several objects is given one step at a time, in the order of the task: "Put the cube and the banana in the bowl" → first the cube, then the banana. The next step starts when the gripper lets go of an object that it held for 2 calls |
+| `--model.miss_deeper_m=0.02` | After a close on nothing (the gripper reads ≥ 0.95), a close within 6 cm of that place first moves the open gripper 2 cm lower (at most 3 times per episode, not in open and close tasks; `arm.py` gives the straight move) |
+| `--model.close_votes=3` | A chunk that closes an open gripper is made 2 more times from the same observation; the gripper closes only when 2 of the 3 chunks close it |
+
+Before the cloud tests, each rule was checked inside the image with a stand-in model that returns scripted chunks.
+
+**Cloud test, board tasks** (40 episodes, 2 servers on one L40S, 4 episodes at a time each):
+
+| Task group | Control (no new rule) | All rules | Deeper grasp | Vote | v3 (10–11 Nov) |
+|---|---|---|---|---|---|
+| Pick, hard (14) | 8 | 10 | **12** | 11 | 10 |
+| Pick and place (6) | 5 | 5 | 5 | 5 | 5 |
+| Open (10) | 1 | 2 | 2 | 2 | 3–4 |
+| Close (10) | 8 | 8 | 9 | 9 | 8 |
+| **All (40)** | **22** | **25** | **28** | **27** | **26–27** |
+
+![New rules on 40 board episodes](reports/images_1116/chart_rules_board.png)
+
+The deeper grasp acted in 12 episodes: the white stopwatch and the egg, which failed in all three runs without it,
+succeeded; one task that usually succeeds failed. The vote changed only 8 of 223 closes.
+
+![v3 on "pick up the white stopwatch" (#555): the fingers close above the flat object](reports/images_1116/v3_pick_stopwatch555.jpg)
+
+**Cloud test, RoboLab** (the 12 tasks of the platform's `robolab.subset_12`, one episode each, the variants one after
+the other on one L40S):
+
+| Category | Tasks | Control (v3-jpeg-rl) | Training wording + steps | All rules | Platform run of v3 (10 Nov) |
+|---|---|---|---|---|---|
+| Visual | 4 | 2 / 0.88 | 3 / 0.88 | 3 / 0.88 | 3 / 0.88 |
+| Relational | 4 | 0 / 0.12 | 0 / 0.12 | 1 / 0.38 | 1 / 0.25 |
+| Procedural | 4 | 0 / 0.08 | 0 / 0.08 | 0 / 0.13 | 0 / 0.08 |
+| **All (successes / mean score)** | 12 | 2 / 0.36 | 3 / 0.36 | **4 / 0.46** | 4 / 0.40 |
+
+![RoboLab: control, wording + steps, all rules](reports/images_1116/chart_rules_robolab.png)
+
+- The training wording changed 8 tasks; no failed task became a success (the stacking tasks stayed at 0). The steps
+  rule went to the second step of "Put the cube and the banana in the bowl" once; the second object was not placed.
+- The gain of "all rules" is mostly one task, "Put 2 bananas in the crate", whose wording the rules do not change.
+
+**Decision:** image **v3-jpeg-rl2** = v3-jpeg-rl + training wording + steps + deeper grasp (no vote).
+
+| | v3-jpeg-rl2 (14 Nov) | v3-jpeg-rl (13 Nov) | v3 (7 Nov) |
+|---|---|---|---|
+| Board total | 214 | 212 | 219 |
+| Pick, hard | 34 | 33 | 39 |
+| Pick and place, all four sets | 106 | 102 | 105 |
+| Deeper grasps in the board run | 260 | – | – |
+
+On the full board the deeper grasp gives no gain beyond the noise (it acted 260 times; pick hard 34 against 33). It did
+not harm, and the image is the best of ours in the RoboLab cloud test, so it is our planned stage-2 image.
+
+---
+
+## 13 November: why v3 fails, the late-close rule, the first RoboLab test and image v3-jpeg-rl (66.3%)
+
+### Late-close rule (no gain)
+
+An offline replay of 6 recorded episodes through the model said that 21% of the chunks for an open gripper close it
+only in their last 4 actions, and that most of these closes are chance (1 or 2 of 6 chunks of the same observation).
+The rule kept the gripper open in such a chunk (`--model.close_before=12`).
+
+| Run (40 episodes, cloud) | All | Pick (20) | Open (10) | Close (10) | Closes on nothing per pick episode |
+|---|---|---|---|---|---|
+| Late-close rule, 1 deferral | 24 | 14 | 3 | 7 | 3.5 |
+| Late-close rule, each time | 24 | 14 | 2 | 8 | 3.0 |
+| v3 (10–11 Nov) | 26–27 | 15 | 3–4 | 8 | 3.5–3.6 |
+
+The rule acted on only 2% of the live calls: the replay did not predict the live server. On the 25–27 episodes that ran
+with normal call times, the score equalled v3 (17 = 17, 15 = 15); the other episodes ran while 3 servers shared the GPU
+(calls of 1.7–2 s), which we do not do again.
+
+### First RoboLab test (12 tasks, 4 per category)
+
+RoboLab needs an RTX GPU (Isaac Sim with Vulkan), so it ran on a cloud L40S. v3-jpeg runs in RoboLab with no change and
+no error (model call 0.16 s).
+
+| Category | Tasks | Successes | Mean score |
+|---|---|---|---|
+| Visual | 4 | 3 | 0.88 |
+| Relational | 4 | 1 | 0.33 |
+| Procedural | 4 | 1 | 0.25 |
+| **All** | 12 | 5 | 0.49 |
+
+In 3 of the 7 failed tasks the arm froze with an open gripper from about 4 s to the end; no success froze. The still-arm
+rule of v3 (7 November) is for this case, but its wording ("pick up the X and place it on the Y") matched none of the
+120 RoboLab tasks ("Put the X in the Y").
+
+![RoboLab "put the butter box on the raisin box": the arm stays up for the whole episode](reports/images_1116/robolab_frozen_butter.jpg)
+
+### Image v3-jpeg-rl
+
+The still-arm rule now also reads "put / place / move / stack the X …" and "pick up the X and place / put it …" (54 of
+the 120 RoboLab tasks; the 320 board tasks get the same pick part as before).
+
+| RoboLab, same 12 tasks | v3-jpeg | v3-jpeg-rl |
+|---|---|---|
+| Successes | 5 | 5 |
+| Mean score | 0.49 | **0.51** |
+| "Put the rubiks cube to the left of the bowl" | 0.33 | **0.67** |
+
+The rule acted in 5 of 12 tasks; no task got worse. Board run: 212/320 (the rule does not act on board tasks).
+
+![RoboLab "stack the yellow block on the red block": the robot puts a blue block in the bin](reports/images_1116/robolab_wrong_block.jpg)
+
+---
+
+## 12–13 November: FLUX 3 Action (a new public model) in the 24 GB of a board run (no gain)
+
+FLUX 3 Action DROID (Black Forest Labs, public image `positro/flux3-action`) is one of the public models of the real
+robot board. Published, it needs about 33 GB of GPU memory; a board run gives 24 GB. We made it fit: text encoder
+on the CPU, the DiT packed in place, memory capped at 24192 MiB (peak of the process 19,084 MiB, no out-of-memory error).
+Then five cloud tests on the 40 episodes of our board-load test:
+
+| Run (40 episodes) | All | Pick + pick-and-place (20) | Open (10) | Close (10) |
+|---|---|---|---|---|
+| FLUX as published (24 GB) | 15 | 3 | 3 | 9 |
+| FLUX + v3 rules (left camera, still-arm rule, v3 timing) | 13 | 4 | 0 | 9 |
+| Try 3: request the next plan 0.9 s earlier (no waiting) | 14 | 0 | 5 | 9 |
+| Try 4: both shoulder cameras, whole plan | 18 | 7 | 2 | 9 |
+| Try 4: both shoulder cameras, 1.03 s of each plan | 19 | 8 | 1 | 10 |
+| Try 5: firm gripper (closed from 0.35 until 0.1) | 14 | 4 | 0 | 10 |
+| Try 5: firm gripper + hybrid timing | **20** | 6 | 4 | 10 |
+| **v3 (MolmoBot), same episodes** | **26–27** | **15** | 3–4 | 8 |
+
+![FLUX 3 Action against v3](reports/images_1116/chart_flux.png)
+
+- A FLUX call takes about 0.85 s (MolmoBot: 0.23 s). With the v3 timing the robot stood still 9.9 s per episode.
+- Requesting earlier removed the waiting, but the plans were older: command jumps 3 times bigger, and pick fell to 0.
+- FLUX learned from both shoulder cameras: giving it both (as published, one view twice) helped pick most (+4 to +5).
+- A firm gripper made it close too early ("closed on nothing" 1 → 7 of 20 pick episodes).
+- Continuous motion helped open tasks (5/10 and 4/10 against 0–2/10 with stop-and-think).
+- Decision: FLUX stays below v3 by 6 or more episodes; we stopped the FLUX work. (FLUX also has a non-commercial
+  licence.)
+
+---
+
+## 11 November: JPEG camera frames, image v3-jpeg (65.6%)
+
+The model server can ask the client for JPEG frames (quality 90) in place of raw frames
+(`positronic_changes/patches_v3_line/0007-Ask-for-JPEG-camera-frames-in-the-MolmoBot-server.patch`). A raw frame makes
+each call slow on a network, and the real robot and RoboLab send three cameras.
+
+| Cloud board-load test (H100, 40 episodes) | v3 + JPEG | v3, raw frames | v3 (10 Nov, L40S) |
+|---|---|---|---|
+| Solved | 26/40 | (stopped after 6) | 27/40 |
+| Model call, median (charged to the robot) | 322 ms | 820 ms | 232 ms |
+
+Board: 210/320 against 219 for v3 (pick hard 31 against 39; the other sets within ±3): in the noise. We kept JPEG for
+stage 2.
+
+---
+
+## 10 November: image v6, both action experts on the GPU (65.0%)
+
+v5-touch swapped two action experts on the GPU at each task change (about 290 ms of robot time each). v6 keeps both on
+the GPU (1.07 GB more memory). Board-load test in the cloud (2 servers, 4 episodes at a time each, as the board runs):
+
+| 40 episodes | v6 | v5-touch | v3 | v4 |
+|---|---|---|---|---|
+| Solved | 27 | 25 | 27 | 29 |
+| Model call, median | 245 ms | 485 ms | 232 ms | 231 ms |
+
+Board: 208/320 (v5-touch 197): the fix works, but pick and pick-and-place stay below v3 (186 against 199). From here on we
+built on v3.
 
 ---
 
@@ -905,30 +1164,34 @@ The official baselines on the board were π0.5 17.5% and MolmoAct2 30.6%. 1st pl
 
 ## Next
 
-1. **Image v6 = v5-touch with both action experts on the GPU** (no swap, 1.07 GB more GPU memory). Before the
-   submission, test it with about 4 episodes at a time on one policy server, as the board runs them. Our tests so far
-   ran one episode per server and did not show the swap cost.
-2. **Close tasks:** our action expert is slow on normal close tasks (median 7.8 s against 1.9 s). Option: use our
-   expert only for open tasks (`--model.open_close_expert_tasks=open`) and keep the original expert with the close
-   push for close tasks (v4: hard close 9/15).
-3. From 10 November the platform allows 1 submission per day, and stage 1 ends on 15 November. Submit only a change
-   that local and cloud tests show to be better by more than the run-to-run noise.
+1. **Stage 2 (16 November to 13 December):** submit v3-jpeg-rl2 as our stage-2 entry, so that it gets a RoboLab score.
+   The last scored stage-2 submission before 13 December is the final entry.
+2. **RoboLab is our weak half:** v3 scores 0.40 against 0.56 for the π0.5 baseline. The open problems are stacking,
+   tasks with two objects and words of place ("on top of", "left of"); rules did not fix them.
+3. **The real robot decides the prizes:** v3 solved 0 of 27 real-robot episodes (public models 42%). MolmoBot learned
+   only in simulation; a model trained on real robot data is the way to close this gap. To go to the finale, a team must
+   also beat the best baseline in simulation.
+4. Rule changes on the board tasks are used up: four rule sets since 10 November all scored 208–214, within the noise
+   of v3 (219).
 
 ## Repository layout
 
 | Path | Content |
 |---|---|
 | `positronic_changes/` | The MolmoBot server and its options, the image recipe and the MolmoAct2 GPU fix. `patches/` holds them as `git am` patches for Positronic commit `e6c45ba`: `0007`–`0009` close push and camera switch, `0010` open-task rules (open pull, reword, regrasp, touch grasp) and the second action expert |
+| `positronic_changes/patches_v3_line/` | The line of v3 (patches `0001`–`0006`) goes on with `0007`: JPEG camera frames (image v3-jpeg) |
+| `positronic_changes/molmobot_v3_jpeg_rl2/` | The MolmoBot server folder of image v3-jpeg-rl2: the still-arm rule for RoboLab wordings, training wording (`steps.py`), steps of a task, deeper grasp after a miss (`arm.py`), vote before a close |
 | `risers/eval_local/` | Local test tools, episode sets (`hard28.json`, `make_hard_set.py`) |
 | `risers/overnight/` | Overnight test runner, results summary, progress timer, top-team video tool |
 | `risers/tests_1107/` | 7 November tests: runners, results summary (`results.md`), progress timer, freeze probe, `frozen19.json` |
-| `risers/tests_1108/` | 8–9 November tests: close and open test runners, episode sets (`close15.json`, `open30.json`, `reliable34.json`), result tables (`results*.md`) |
-| `risers/cloud_job/` | Cloud data generation, training data preparation, H100 training and expert extraction, local checkpoint and grasp test queues, the cloud test of the 34 reliable episodes (`cloud_eval.sh`, `cloud_eval/`), terminal tracker |
+| `risers/tests_1108/` | 8–14 November tests: close and open test runners, episode sets (`close15.json`, `open30.json`, `reliable34.json`), result tables (`results*.md`), the cloud test results of FLUX (`results_cloud_flux*.md`), JPEG (`results_cloud_jpeg.md`), the late-close rule (`results_cloud_peck.md`) and the rules of 14 November (`results_cloud_v3x_ms.md`) |
+| `risers/tests_robolab/` | RoboLab cloud test results: v3-jpeg (`results_cloud_robolab.md`), v3-jpeg-rl (`results_cloud_rlfix.md`), the rules of 14 November (`results_cloud_v3x_rl.md`) |
+| `risers/cloud_job/` | Cloud data generation, training data preparation, H100 training and expert extraction, local checkpoint and grasp test queues, and the cloud tests: each test has `create_<name>_vm.sh` (makes the VM, L40S first), `cloud_<name>.sh` (runs the test, copies the episodes home, deletes the VM at the end or at a time limit) and a folder with the VM job and the report script: `cloud_eval` (34 reliable episodes), `cloud_jpeg`, `cloud_flux` (FLUX server code in `code_flux3v3/`), `cloud_peck` (late-close rule), `cloud_robolab` and `cloud_rlfix` (RoboLab), `cloud_v3x_ms` and `cloud_v3x_rl` (rules of 14 November, board tasks and RoboLab) |
 | `risers/datagen/` | MolmoSpaces data configs for open and close demos (normal and hard), runners, demo counter |
 | `risers/molmobot_image/` | Image build scripts: `build.sh`, `Dockerfile.settings`, and `build_open_close.sh` with `Dockerfile.open_close` (an image with a second action expert) |
 | `risers/competition_runs/` | Submit scripts, board results of every submission (`result.json`, policy logs), `board_by_set.py`, video tools, `board_videos/` (board download, top-5 comparison, wrist-video grip reader) |
 | `risers/nebius_train/` | GR00T training scripts (1 November) |
-| `reports/` | Test reports, and the report of 10 November (`2026-11-10-changes-since-v3.pdf`, pictures in `images_1110/`) |
+| `reports/` | Test reports, the report of 10 November (`2026-11-10-changes-since-v3.pdf`, pictures in `images_1110/`), and the charts and pictures of this README for 10–14 November (`images_1116/`, made by `scripts_1116/`) |
 
 To use the code: clone Positronic, check out commit `e6c45ba`, apply the patches with
 `git am positronic_changes/patches/*.patch`, and put the `risers/` folders beside the `positronic` folder.
@@ -946,6 +1209,14 @@ The server flags of image v5-touch are the v3 flags plus:
 ```text
 --model.close_push_after=6 --model.camera_fallback=True --model.open_pull=True --model.open_touch=True
 --model.open_close_expert=/opt/molmobot/action_expert_open_close.pt
+```
+
+Image v3-jpeg-rl2 is image v3-jpeg with the folder `positronic_changes/molmobot_v3_jpeg_rl2/` in place of
+`/positronic/positronic/vendors/molmobot/` (built with `risers/molmobot_image/Dockerfile.settings`), and these flags:
+
+```text
+--model.camera=left --pipeline.horizon_sec=0.7667 --model.num_flow_steps=3 --model.still_calls=3
+--model.reword_tasks=True --model.split_tasks=True --model.miss_deeper_m=0.02
 ```
 
 To test an image as the platform runs it (its own entrypoint and flags, on the local GPU):
