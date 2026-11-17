@@ -11,16 +11,16 @@ This README is a log of the work, **newest first**. The first steps (31 October)
 A full report of the work from image v3 to 10 November, with more pictures, is in
 [`reports/2026-11-10-changes-since-v3.pdf`](reports/2026-11-10-changes-since-v3.pdf).
 
-## Current status (16 November 2026)
+## Current status (17 November 2026)
 
 | | |
 |---|---|
-| Best board score | **68.4% (219/320)**, image v3 (7 November). Rank **6 of 40** on 11 November (the last rank we read) |
+| Best stage-1 board score | **68.4% (219/320)**, image v3 (7 November). Rank **6 of 40** on 11 November (the last rank we read) |
 | Start (31 October) | 19.4% (62/320) |
 | Best model | MolmoBot-Img-DROID (Ai2), half-overlap timing, left shoulder camera, 12 actions per call, 3 flow steps, still-arm rule |
-| Latest submission | v3-jpeg-rl2 (14 November): 66.9% (214/320). The same level as v3; its rules are for RoboLab |
-| Planned stage-2 image | `docker.io/denistonantony/molmobot-img-droid:v3-jpeg-rl2` (best of our images on RoboLab in our cloud test) |
-| RoboLab | Platform check of v3: 4/12 tasks, mean subtask score 0.40 (the π0.5 baseline: 0.56). Our cloud test of v3-jpeg-rl2: 0.46 |
+| Stage-2 submission | v3-jpeg-rl2 (17 November): MolmoSpaces **65.6%** (210/320), RoboLab **0.325** (7/40 tasks fully done). Total (mean) **0.490** |
+| Stage-2 image | `docker.io/denistonantony/molmobot-img-droid:v3-jpeg-rl2` |
+| RoboLab | Weak half of the stage-2 score: 7 of 40 tasks done, all of them one object to one place (see 17 November) |
 | Real robot | Platform check of v3: **0 of 27** episodes on 9 tasks; the public models solve 42% (see 14 November) |
 | Limit | 1 submission per day |
 
@@ -30,6 +30,7 @@ Every board submission. "Change" compares the score with our best score before t
 
 | Date (UTC) | Submission | Model and setting | Solved | Score | Change | Board rank |
 |---|---|---|---|---|---|---|
+| 17 Nov | `55bf0a88ba309931` | **Stage 2** (`competition.sim_stage_2`): v3-jpeg-rl2 again. RoboLab 0.325, total 0.490 | 210 | 65.6% | −2.8 | – |
 | 14 Nov | `4bfca4de3f5020f4` | v3-jpeg-rl2: v3-jpeg-rl + training wording, steps of a task, deeper grasp after a miss | 214 | 66.9% | −1.6 | – |
 | 13 Nov | `59db633efae52708` | v3-jpeg-rl: v3-jpeg + still-arm rule for RoboLab wordings | 212 | 66.3% | −2.2 | – |
 | 11 Nov | `19a5da2d361187f1` | v3-jpeg: v3 with JPEG camera frames | 210 | 65.6% | −2.8 | – |
@@ -131,6 +132,7 @@ The ten submissions from v3 on are between 197 and 219. Six of them are within �
 | 14 Nov | Training wording ("Pick up the X and place it in or on the Y") and one step at a time for tasks of several objects | RoboLab 0.36 against 0.36 (control). No failed task became a success |
 | 14 Nov | Vote before a close (close only when 2 of 3 chunks close) | The other chunks agreed 215 of 223 times (board tasks) and 134 of 135 (RoboLab); the slowest calls took 510 ms instead of 200 ms. Dropped |
 | 14 Nov | Deeper grasp after a miss (2 cm lower near a close on nothing) | Cloud 28/40 against 22/40 (control), but on the full board 214 against 212 without it. Kept for stage 2: it did not harm |
+| 17 Nov | FLUX 3 Action with fewer denoising steps (4 → 2 → 1) | Faster calls (755 → 398 → 225 ms) but fewer successes: 20 → 18 → 16 of 40, against 26 for v3. Dropped |
 
 ### Run-to-run noise
 
@@ -142,6 +144,63 @@ that, or we cannot see it in one run.
 The cloud tests of 40 episodes vary more. On 14 November the control (the same behaviour as v3) solved 22 of 40,
 where v3 solved 26 and 27 of the same 40 episodes on 10 and 11 November: ±4–5 episodes in 40. On RoboLab, one
 episode per task, one task moves the mean score by 0.08.
+
+---
+
+## 17 November: first stage-2 score (0.490) and FLUX 3 Action with fewer denoising steps (no gain)
+
+### Stage-2 submission: v3-jpeg-rl2
+
+Stage 2 is one submission (`competition.sim_stage_2`) that runs both simulators; the score is the mean of the two.
+
+| Part | Episodes | Score | Before |
+|---|---|---|---|
+| MolmoSpaces (`molmo.competition_v2`) | 320 | **65.6%** (210) | 66.9% (214) for the same image on 14 Nov: run-to-run noise |
+| RoboLab (`robolab.competition_40`) | 40 tasks, 1 try each | **0.325** mean subtask score, 7/40 fully done | Our cloud test 0.46; platform check of v3 0.40 |
+| **Total** | | **0.490** | – |
+
+RoboLab per task (all 40 in
+[`risers/tests_1117/robolab_stage2_per_task.md`](risers/tests_1117/robolab_stage2_per_task.md)):
+
+| Kind of task | Examples | Done | Note |
+|---|---|---|---|
+| One object to one place | mustard in right bin, canned food in bin, butter in bin, one can packed, one more banana, reorient mug, unstack cube | **7/7 listed** | All done in 14–23 s |
+| Nearly done | bananas out of bin, grab a bagel (subtask 1.0), cube behind bowl (0.67) | 0 | Last step missing |
+| Several objects | all hammers, condiments, electronics, black items, red items | 0 | Some moved, then the time limit |
+| Stacking or an order | stack 3 cubes, bowl on bowl, blocks in order | 0 | |
+| Shelf and tools | mugs on/off shelf, pasta tool, spatula to bowl, spoons in pot | 0 | |
+| Choose by description | larger object, orange object, cube or banana | 0 | |
+
+- The model learned single pick-and-place moves; RoboLab asks for many objects, stacking and reasoning.
+- The still-arm rule cut the task to its pick part 23 times in RoboLab (for example "put the black items in the bin"
+  → "pick up the black items"). On tasks of several objects this may stop the robot after the first object. Not yet
+  tested.
+
+### FLUX 3 Action with fewer denoising steps
+
+The FLUX model we run (the GD variant) does 4 denoising steps per call. We set it to 2 and 1 steps (`backend_fit.py
+--num-inference-steps`) and kept the best FLUX setting of 13 November: both shoulder cameras, firm gripper, hybrid
+timing, 24192 MiB GPU cap, text encoder on the CPU. Cloud test on an L40S, the same 40 episodes as before, 4 at a time
+(1.6 h, $3.75). Peak GPU memory about 21 GB, no out-of-memory error.
+
+| Group (episodes) | FLUX 4 steps | FLUX 2 steps | FLUX 1 step | FLUX best, 13 Nov | **v3 (our model)** | v3 on the board, same episodes |
+|---|---|---|---|---|---|---|
+| Pick, hard (14) | 3 | 3 | 4 | 4 | **10** | 14 |
+| Pick and place (6) | 1 | 2 | 0 | 2 | **5** | 6 |
+| Open, normal (5) | **3** | 2 | 1 | **3** | 2 | 2 |
+| Open, hard (5) | **3** | 1 | 1 | 1 | 1 | 1 |
+| Close, normal (5) | **5** | **5** | **5** | **5** | **5** | 4 |
+| Close, hard (5) | **5** | **5** | **5** | **5** | 3 | 3 |
+| **All (40)** | 20 | 18 | 16 | 20 | **26** | 30 |
+| Model call, median | 755 ms | 398 ms | **225 ms** | 911 ms | 322 ms | – |
+
+- Each step less makes a call about twice as fast, but costs successes, mostly on open tasks (6 → 3 → 2 of 10).
+  Close tasks stay 10/10 at every step count.
+- FLUX is better than v3 on open and close (16/20 against 11/20); v3 is far better on pick (15/20 against 4/20).
+- Both models together need about 40 GB, the board gives 24 GB, so we cannot use FLUX for open/close beside v3.
+- Decision: no FLUX setting beats v3; FLUX stays dropped. Full per-episode table:
+  [`risers/tests_1117/results_cloud_flux_steps.md`](risers/tests_1117/results_cloud_flux_steps.md). Job:
+  [`risers/cloud_job/cloud_flux_steps/`](risers/cloud_job/cloud_flux_steps/).
 
 ---
 
