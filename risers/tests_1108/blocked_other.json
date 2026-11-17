@@ -1,0 +1,24 @@
+[
+ {
+  "set": "FrankaOpenHardBench",
+  "group": "left camera blocked",
+  "board_index": 118,
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaOpenHardBench/FrankaOpenHardBench_20260206_json_benchmark/342",
+  "task": "open the table.",
+  "limit_s": 31.03,
+  "v3_ok": false,
+  "top7_solved": 0,
+  "left_camera_blocked": true
+ },
+ {
+  "set": "FrankaPickHardBench",
+  "group": "left camera blocked",
+  "board_index": 214,
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/811",
+  "task": "pick up the screwdriver.",
+  "limit_s": 20.998,
+  "v3_ok": true,
+  "top7_solved": 7,
+  "left_camera_blocked": true
+ }
+]

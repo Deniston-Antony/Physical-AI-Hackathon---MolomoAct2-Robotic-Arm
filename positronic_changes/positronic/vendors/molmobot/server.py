@@ -25,6 +25,15 @@ DEFAULT_CHECKPOINT_DIR = '/opt/molmobot/MolmoBot-DROID'
     grip_release_below=None,
     training_wording=False,
     still_calls=None,
+    camera_fallback=False,
+    close_push_after=None,
+    open_as_pick=False,
+    open_pull=False,
+    open_regrasp=False,
+    open_touch=False,
+    open_close_expert=None,
+    open_close_expert_tasks='both',
+    open_close_flow_steps=None,
 )
 def molmobot_model(
     checkpoint_dir: str,
@@ -34,6 +43,15 @@ def molmobot_model(
     grip_release_below: float | None,
     training_wording: bool,
     still_calls: int | None,
+    camera_fallback: bool,
+    close_push_after: int | None,
+    open_as_pick: bool,
+    open_pull: bool,
+    open_regrasp: bool,
+    open_touch: bool,
+    open_close_expert: str | None,
+    open_close_expert_tasks: str,
+    open_close_flow_steps: int | None,
 ) -> Model:
     """One MolmoBot checkpoint directory (``config.yaml`` and ``model.pt``), in process."""
     logger.info(f'Loading MolmoBot model {checkpoint_dir}')
@@ -45,6 +63,15 @@ def molmobot_model(
         grip_release_below=grip_release_below,
         training_wording=training_wording,
         still_calls=still_calls,
+        camera_fallback=camera_fallback,
+        close_push_after=close_push_after,
+        open_as_pick=open_as_pick,
+        open_pull=open_pull,
+        open_regrasp=open_regrasp,
+        open_touch=open_touch,
+        open_close_expert=open_close_expert,
+        open_close_expert_tasks=open_close_expert_tasks,
+        open_close_flow_steps=open_close_flow_steps,
     )
     warmup(policy, warm_observation())
     return policy

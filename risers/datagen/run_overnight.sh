@@ -2,7 +2,7 @@
 # Generate the overnight demonstration set, one task type after another.
 # Each task type runs in its own systemd scope. If the memory monitor (systemd-oomd) stops it, only that
 # scope stops: VS Code and this loop continue. A failed task type runs again once with 2 workers.
-# Usage: bash run_overnight.sh            (all task types)
+# Usage: bash run_overnight.sh            (all task types; OVERNIGHT_WORKERS=3 sets the first-try workers, default 4)
 #        bash run_overnight.sh RisersOpen RisersClose   (only these)
 here="$(cd "$(dirname "$0")" && pwd)"
 configs=("$@")
@@ -20,7 +20,7 @@ run() {  # config, workers, log
 for config in "${configs[@]}"; do
   log="$here/logs/$config.log"
   echo "$(date '+%F %T') start $config (log: $log)"
-  if run "$config" 4 "$log"; then
+  if run "$config" "${OVERNIGHT_WORKERS:-4}" "$log"; then
     echo "$(date '+%F %T') done  $config: $(grep -a 'Success count' "$log" | tail -1)"
     continue
   fi

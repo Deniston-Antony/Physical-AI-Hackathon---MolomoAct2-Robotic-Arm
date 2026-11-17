@@ -1,0 +1,109 @@
+From ce78d3e5cf6a2c45dfd3fc26e1b9618ae066bd29 Mon Sep 17 00:00:00 2001
+From: Deniston_Antony <deniston2k@gmail.com>
+Date: Sat, 7 Nov 2026 18:57:49 +0100
+Subject: [PATCH 08/10] Drop a down-pointing gripper before the close push
+
+A gripper that points down hovers over the open drawer. It now drops 6 cm (10 cm on the second attempt), then pushes away from the base. The slow check allows 8 cm of drift.
+---
+ positronic/vendors/molmobot/policy.py | 46 ++++++++++++++++-----------
+ 1 file changed, 28 insertions(+), 18 deletions(-)
+
+diff --git a/positronic/vendors/molmobot/policy.py b/positronic/vendors/molmobot/policy.py
+index 9a224d0a..fff91ec7 100644
+--- a/positronic/vendors/molmobot/policy.py
++++ b/positronic/vendors/molmobot/policy.py
+@@ -43,15 +43,17 @@ _STILL_RAD = 0.02
+ _BLOCKED_DETAIL = 0.6
+ _BLOCKED_RATIO = 1.5
+ # Close tasks: the push starts when the gripper stays in this range (m) over the last `_SLOW_CALLS` + 1 observations.
+-_SLOW_M = 0.05
++_SLOW_M = 0.08
+ _SLOW_CALLS = 3
+ # Each push moves the closed gripper this far per action (m), for this many calls, then the model gets this many calls.
+ _PUSH_STEP_M = 0.008
+ _PUSH_CALLS = 3
+ _REST_CALLS = 4
+ _PUSH_ATTEMPTS = 3
+-# The gripper axis gives the push direction while its height part is below this; else the push goes away from the base.
++# The gripper axis gives the push direction while its height part is below this; else the push goes away from the base,
++# after a drop (m) into or in front of the open drawer, by attempt.
+ _STEEP_AXIS = 0.7
++_DROP_M = (0.06, 0.10)
+ 
+ 
+ def warm_observation() -> dict[str, Any]:
+@@ -121,14 +123,24 @@ def detail(img: np.ndarray) -> float:
+     return float((np.abs(np.diff(grey, axis=0)).mean() + np.abs(np.diff(grey, axis=1)).mean()) / 2)
+ 
+ 
+-def push_direction(joints: np.ndarray, attempt: int) -> np.ndarray:
+-    """A level unit push direction in the base frame: the gripper axis, or away from the base on odd attempts."""
++def push_plan(joints: np.ndarray, attempt: int, horizon: int) -> list[np.ndarray]:
++    """The gripper step (m per action, base frame) of each call of one push attempt.
++
++    A level gripper pushes along its axis (away from the base on odd attempts). A gripper that points down first drops
++    into or in front of the open drawer, then pushes away from the base.
++    """
+     pose = arm.gripper_pose(joints)
+-    axis, away = pose[:3, 2].copy(), pose[:3, 3].copy()
+-    use_axis = attempt % 2 == 0 and abs(axis[2]) < _STEEP_AXIS
+-    direction = axis if use_axis else away
+-    direction[2] = 0.0
+-    return direction / max(float(np.linalg.norm(direction)), 1e-6)
++    axis, level = pose[:3, 2], pose[:3, 3].copy()
++    steep = abs(axis[2]) >= _STEEP_AXIS
++    if not steep and attempt % 2 == 0:
++        level = axis.copy()
++    level[2] = 0.0
++    level /= max(float(np.linalg.norm(level)), 1e-6)
++    push = [_PUSH_STEP_M * level] * _PUSH_CALLS
++    if not steep:
++        return push
++    drop = _DROP_M[attempt % len(_DROP_M)]
++    return [np.array([0.0, 0.0, -drop / horizon]), *push]
+ 
+ 
+ def pick_part(task: str) -> str | None:
+@@ -320,32 +332,30 @@ class _ClosePlan:
+         self._push_after = push_after
+         self._calls = 0
+         self._recent: deque[np.ndarray] = deque(maxlen=_SLOW_CALLS + 1)
+-        self._push_left = 0
++        self._steps: list[np.ndarray] = []
+         self._rest_left = 0
+         self._attempt = 0
+-        self._direction = np.zeros(3)
+ 
+     def next_chunk(self, joints: np.ndarray, horizon: int, session_id: str) -> np.ndarray | None:
+         """The pushed actions (joints and a closed gripper) for this call, or None when the model acts."""
+         self._calls += 1
+         self._recent.append(arm.gripper_pose(joints)[:3, 3])
+-        if self._push_left == 0:
++        if not self._steps:
+             if self._rest_left > 0:
+                 self._rest_left -= 1
+                 return None
+             slow = len(self._recent) == self._recent.maxlen and np.ptp(np.stack(self._recent), axis=0).max() < _SLOW_M
+             if self._calls <= self._push_after or self._attempt >= _PUSH_ATTEMPTS or not slow:
+                 return None
+-            self._direction = push_direction(joints, self._attempt)
++            self._steps = push_plan(joints, self._attempt, horizon)
+             self._attempt += 1
+-            self._push_left = _PUSH_CALLS
+             logger.info(
+                 f'Session {session_id}: close push starts (attempt {self._attempt}, call {self._calls}, '
+-                f'direction {np.round(self._direction, 2).tolist()})'
++                f'steps {[np.round(step * horizon, 3).tolist() for step in self._steps]})'
+             )
+-        self._push_left -= 1
+-        if self._push_left == 0:
++        step = self._steps.pop(0)
++        if not self._steps:
+             self._rest_left = _REST_CALLS
+             self._recent.clear()
+-        moves = arm.straight_move(joints, _PUSH_STEP_M * self._direction, horizon)
++        moves = arm.straight_move(joints, step, horizon)
+         return np.concatenate([moves, np.ones((horizon, 1))], axis=1).astype(np.float32)
+-- 
+2.43.0
+

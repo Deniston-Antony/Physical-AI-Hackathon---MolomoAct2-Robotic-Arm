@@ -1,0 +1,1755 @@
+INFO:     10.80.0.125:52670 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:52672 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:52686 - "POST /api/v1/keepalive HTTP/1.1" 200 OK
+INFO:     10.80.0.125:41872 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:39720 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:60572 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:35146 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:52488 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:54566 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:43842 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:39378 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:45096 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:57408 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:51046 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:51596 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:44728 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:56682 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:56298 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:52038 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:34880 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:38850 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:40592 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:46776 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:47700 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:48888 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:42332 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:48098 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:47130 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:59470 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:53100 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:43182 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:48048 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:45870 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:53898 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:57998 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:41768 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:55574 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:46070 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:53254 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:38770 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:51902 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:53732 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:58464 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:59862 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:45942 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:39318 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:50300 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:59706 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:52314 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:46300 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:42176 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:53806 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:38046 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:48784 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:37972 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:35428 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:58530 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:37386 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:41318 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:41830 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:36844 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:46690 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:53212 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:38168 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:51982 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:50248 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:53092 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:43310 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:54098 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:36582 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:46580 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:39050 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:47646 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:35164 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:33512 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:60924 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:50286 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:33104 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:35712 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:60086 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:43350 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:56828 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:48322 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:43162 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:35956 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:38522 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:54852 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:46358 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:51636 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:42652 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:52458 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:36354 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:48464 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:49072 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:41964 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:45810 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:52148 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:47928 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:57332 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:41156 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:40310 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:44828 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:57604 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:38452 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:57908 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:41434 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:33428 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:50466 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:57742 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:41710 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:46724 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:41550 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:54720 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:33852 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:47034 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:56116 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:57190 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:56892 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:45486 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:51434 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:47172 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:49670 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:53258 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:39290 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:38566 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:58532 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:47910 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:33706 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:40652 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:33900 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:52862 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:46082 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:53018 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:39358 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:50844 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:51724 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:50106 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:40982 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:52566 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:40818 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:43540 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:52474 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:42526 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:55994 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:37396 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:38052 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:39482 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:54164 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:54706 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:45768 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:49232 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:46842 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:59846 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:35770 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:33686 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:44696 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:35162 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:36794 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:39580 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:49550 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:37216 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:47902 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:39178 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:50970 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:33606 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:39934 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:59360 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:57272 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:57294 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:40902 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:57406 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:37302 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:34818 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:53348 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:41516 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:60752 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:46430 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:55530 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:42056 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:35236 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:55994 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:50422 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:55246 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:37986 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:47584 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:59498 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:54142 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:48728 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:38518 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:37864 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:40638 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:39396 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:45150 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:58370 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:58218 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:51602 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:42970 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:37326 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:43020 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:50944 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:50664 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:41032 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:57430 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:41342 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:47782 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:53196 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:53796 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:48554 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:36490 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:54146 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:41254 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:44252 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:59446 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:41324 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:44484 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:41068 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:48504 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:50394 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:44434 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:56492 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:41356 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:44526 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:42458 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:45218 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:37094 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:44506 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:46516 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:45138 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:51672 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:41842 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:49512 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:47580 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:49562 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:53530 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:52222 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:58606 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:43538 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:49118 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:38026 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:35392 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:60506 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:44658 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:46190 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:58150 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:45086 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:54070 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:57594 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:56092 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:47796 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:39936 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:56870 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:49180 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:55124 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:51656 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:38994 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:58930 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:57706 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:40708 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:34728 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:33950 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:60860 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:44624 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:39504 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:55796 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:60538 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:47884 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:58746 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:43886 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:52212 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:33476 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:51270 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:47086 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:46978 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:44672 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:44918 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:34054 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:49516 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:36270 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:35446 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:38036 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:57050 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:54304 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:53716 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:34716 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:33636 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:34902 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:36894 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:44772 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:39728 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:49100 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:32798 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:57820 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:35000 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:47698 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:54688 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:43588 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:43370 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:53610 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:39100 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:45488 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:46100 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:34570 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:51846 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:48280 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:53550 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:33146 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:40968 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:48064 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:35500 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:45952 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:60718 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:36348 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:59010 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:34702 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:35060 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:54262 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:35826 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:39106 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:44814 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:34762 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:37994 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:60890 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:33726 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:39420 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:45704 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:56082 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:38010 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:58658 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:33774 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:42578 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:43834 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:43520 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:53416 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:40404 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:51784 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:52192 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:50276 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:35420 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:46156 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:60756 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:50302 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:39672 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:34710 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:49696 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:55844 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:58196 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:60882 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:60072 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:52474 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:45398 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+INFO:     10.80.0.125:58556 - "POST /api/v1/keepalive HTTP/1.1" 401 Unauthorized
+13:40:31.393 [INFO] (server.py:47) Loading MolmoBot model /opt/molmobot/MolmoBot-Img-DROID                         
+13:40:36.418 [INFO] (tokenizer.py:130) Padding tokenizer with 267 tokens                                               
+/opt/molmobot/olmo/data/video_loader.py:55: RuntimeWarning: Mean of empty slice.
+  return 1 / (self.timestamps[1:] - self.timestamps[:-1]).mean()
+/positronic/.venv/lib/python3.13/site-packages/numpy/_core/_methods.py:144: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+13:40:40.268 [INFO] (inference_wrapper.py:171) Built state preprocessor from checkpoint config                                 
+13:40:40.268 [INFO] (inference_wrapper.py:178) Built action postprocessor from checkpoint config                               
+13:40:40.268 [INFO] (inference_wrapper.py:179)   action_key: action                                                            
+13:40:40.268 [INFO] (inference_wrapper.py:180)   action_norm_mode: quantiles                                                   
+13:40:40.268 [INFO] (inference_wrapper.py:181)   repos with stats: ['synthmanip']                                              
+13:40:40.268 [INFO] (inference_wrapper.py:187)     synthmanip/observation.state/q01: len=8                                     
+13:40:40.268 [INFO] (inference_wrapper.py:187)     synthmanip/observation.state/q99: len=8                                     
+13:40:40.268 [INFO] (inference_wrapper.py:187)     synthmanip/action/q01: len=8                                                
+13:40:40.269 [INFO] (inference_wrapper.py:187)     synthmanip/action/q99: len=8                                                
+INFO:     Started server process [1]
+INFO:     ('10.80.0.192', 55702) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:42:26.189 [INFO] (server.py:205) Connected to ('10.80.0.192', 55702)                                             
+INFO:     ('10.80.0.192', 55704) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:42:26.192 [INFO] (server.py:205) Connected to ('10.80.0.192', 55704)                                             
+INFO:     ('10.80.0.192', 55718) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:42:26.193 [INFO] (server.py:205) Connected to ('10.80.0.192', 55718)                                             
+INFO:     ('10.80.0.192', 55726) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:42:26.205 [INFO] (server.py:205) Connected to ('10.80.0.192', 55726)                                             
+INFO:     ('10.80.0.192', 55738) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:42:26.229 [INFO] (server.py:205) Connected to ('10.80.0.192', 55738)                                             
+INFO:     ('10.80.0.192', 55748) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:42:26.420 [INFO] (server.py:205) Connected to ('10.80.0.192', 55748)                                             
+INFO:     ('10.80.0.192', 55760) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:42:26.592 [INFO] (server.py:205) Connected to ('10.80.0.192', 55760)                                             
+INFO:     ('10.80.0.192', 55770) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:42:26.603 [INFO] (server.py:205) Connected to ('10.80.0.192', 55770)                                             
+INFO:     ('10.80.0.192', 55772) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:42:26.823 [INFO] (server.py:205) Connected to ('10.80.0.192', 55772)                                             
+INFO:     ('10.80.0.192', 36850) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:42:28.456 [INFO] (server.py:205) Connected to ('10.80.0.192', 36850)                                             
+INFO:     ('10.80.0.192', 36858) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:42:29.323 [INFO] (server.py:205) Connected to ('10.80.0.192', 36858)                                             
+INFO:     ('10.80.0.192', 36872) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:42:33.813 [INFO] (server.py:205) Connected to ('10.80.0.192', 36872)                                             
+INFO:     ('10.80.0.192', 44858) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:42:42.165 [INFO] (server.py:205) Connected to ('10.80.0.192', 44858)                                             
+INFO:     ('10.80.0.192', 44862) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:42:42.236 [INFO] (server.py:205) Connected to ('10.80.0.192', 44862)                                             
+INFO:     ('10.80.0.192', 55732) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:42:47.321 [INFO] (server.py:205) Connected to ('10.80.0.192', 55732)                                             
+13:42:50.827 [INFO] (policy.py:361) Session a4979574ca254099b5ed83756e9aacc7: a close near a miss goes 2 cm deeper first
+13:42:53.759 [INFO] (policy.py:361) Session 85cdd1a600584c07b7751c0b1cf17583: a close near a miss goes 2 cm deeper first
+13:42:55.083 [INFO] (policy.py:374) Session a81ebaf653314e03b47c9a27f9d5aaf7: the arm is still and the gripper is open, task now 'pick up the spatula.'
+13:42:56.446 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 192 ms, p95 208 ms                       
+13:42:56.446 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 2, 'votes': 0, 'vote kept the close': 0}
+13:43:09.095 [INFO] (policy.py:361) Session a4979574ca254099b5ed83756e9aacc7: a close near a miss goes 2 cm deeper first
+13:43:12.843 [INFO] (policy.py:361) Session cef53748c8f24a8396dde46e737c57a8: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 45788) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:43:12.873 [INFO] (server.py:205) Connected to ('10.80.0.192', 45788)                                             
+13:43:13.053 [INFO] (policy.py:361) Session cc55325b6fb8417893a55e228f787bbd: a close near a miss goes 2 cm deeper first
+13:43:20.017 [INFO] (policy.py:361) Session 85cdd1a600584c07b7751c0b1cf17583: a close near a miss goes 2 cm deeper first
+13:43:21.001 [INFO] (policy.py:361) Session a4979574ca254099b5ed83756e9aacc7: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 56704) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:43:23.585 [INFO] (server.py:205) Connected to ('10.80.0.192', 56704)                                             
+13:43:26.569 [INFO] (policy.py:361) Session dce7431f8fa341f59e20c4022b43b828: a close near a miss goes 2 cm deeper first
+13:43:27.755 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 199 ms, p95 209 ms                       
+13:43:27.756 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 8, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 44078) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:43:28.987 [INFO] (server.py:205) Connected to ('10.80.0.192', 44078)                                             
+INFO:     ('10.80.0.192', 48418) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:43:37.659 [INFO] (server.py:205) Connected to ('10.80.0.192', 48418)                                             
+13:43:40.432 [INFO] (policy.py:361) Session c921b0d39b444504b4e7a522b6120777: a close near a miss goes 2 cm deeper first
+13:43:43.066 [INFO] (policy.py:361) Session dce7431f8fa341f59e20c4022b43b828: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 33702) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:43:49.421 [INFO] (server.py:205) Connected to ('10.80.0.192', 33702)                                             
+INFO:     ('10.80.0.192', 33704) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:43:51.621 [INFO] (server.py:205) Connected to ('10.80.0.192', 33704)                                             
+13:43:54.641 [INFO] (policy.py:361) Session dce7431f8fa341f59e20c4022b43b828: a close near a miss goes 2 cm deeper first
+13:43:59.111 [INFO] (policy.py:374) Session c2d88bde75ac4a8286ddc980e6349f4b: the arm is still and the gripper is open, task now 'pick up the reddish metal brooch with swirl.'
+13:44:01.724 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 194 ms, p95 201 ms                       
+13:44:01.724 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 11, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 34208) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:44:04.009 [INFO] (server.py:205) Connected to ('10.80.0.192', 34208)                                             
+13:44:04.588 [INFO] (policy.py:361) Session 2ed60c87ec3349189ccee8131b48f84b: a close near a miss goes 2 cm deeper first
+13:44:05.818 [INFO] (policy.py:361) Session 189d67357c5a40aaa43a891336bde3cb: a close near a miss goes 2 cm deeper first
+13:44:06.709 [INFO] (policy.py:361) Session c921b0d39b444504b4e7a522b6120777: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 58676) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:44:08.145 [INFO] (server.py:205) Connected to ('10.80.0.192', 58676)                                             
+13:44:11.359 [INFO] (policy.py:361) Session b0b157a0444649edbc74d5103096ba08: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 58692) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:44:14.028 [INFO] (server.py:205) Connected to ('10.80.0.192', 58692)                                             
+INFO:     ('10.80.0.192', 58704) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:44:15.575 [INFO] (server.py:205) Connected to ('10.80.0.192', 58704)                                             
+INFO:     ('10.80.0.192', 34304) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:44:21.594 [INFO] (server.py:205) Connected to ('10.80.0.192', 34304)                                             
+INFO:     ('10.80.0.192', 34306) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:44:24.156 [INFO] (server.py:205) Connected to ('10.80.0.192', 34306)                                             
+13:44:32.973 [INFO] (policy.py:361) Session c2d88bde75ac4a8286ddc980e6349f4b: a close near a miss goes 2 cm deeper first
+13:44:40.341 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 198 ms, p95 207 ms                       
+13:44:40.341 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 16, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 55816) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:44:47.441 [INFO] (server.py:205) Connected to ('10.80.0.192', 55816)                                             
+INFO:     ('10.80.0.192', 38966) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:45:01.594 [INFO] (server.py:205) Connected to ('10.80.0.192', 38966)                                             
+INFO:     ('10.80.0.192', 38970) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:45:05.610 [INFO] (server.py:205) Connected to ('10.80.0.192', 38970)                                             
+INFO:     ('10.80.0.192', 39760) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:45:10.094 [INFO] (server.py:205) Connected to ('10.80.0.192', 39760)                                             
+INFO:     ('10.80.0.192', 39774) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:45:14.067 [INFO] (server.py:205) Connected to ('10.80.0.192', 39774)                                             
+INFO:     ('10.80.0.192', 39778) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:45:15.088 [INFO] (server.py:205) Connected to ('10.80.0.192', 39778)                                             
+13:45:15.590 [INFO] (policy.py:361) Session ce769dcfc92e4f73907b8098068167d2: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 39788) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:45:15.633 [INFO] (server.py:205) Connected to ('10.80.0.192', 39788)                                             
+13:45:17.578 [INFO] (policy.py:361) Session 7adf58662a0d4e028264162e08f28a7c: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 35682) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:45:17.783 [INFO] (server.py:205) Connected to ('10.80.0.192', 35682)                                             
+INFO:     ('10.80.0.192', 35696) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:45:20.690 [INFO] (server.py:205) Connected to ('10.80.0.192', 35696)                                             
+13:45:21.150 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 191 ms, p95 206 ms                       
+13:45:21.150 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 18, 'votes': 0, 'vote kept the close': 0}
+13:45:23.667 [INFO] (policy.py:361) Session 608251fb062e4c089e294b9565a5c27a: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 42736) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:45:27.650 [INFO] (server.py:205) Connected to ('10.80.0.192', 42736)                                             
+INFO:     ('10.80.0.192', 42752) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:45:30.610 [INFO] (server.py:205) Connected to ('10.80.0.192', 42752)                                             
+INFO:     ('10.80.0.192', 42754) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:45:31.826 [INFO] (server.py:205) Connected to ('10.80.0.192', 42754)                                             
+13:45:36.059 [INFO] (policy.py:361) Session ce769dcfc92e4f73907b8098068167d2: a close near a miss goes 2 cm deeper first
+13:45:41.473 [INFO] (policy.py:361) Session 27606146a6554dde9c544e7ab0a434d0: a close near a miss goes 2 cm deeper first
+13:45:44.738 [INFO] (policy.py:374) Session 499dcb72aab24c68a323a21bbc6a98b3: the arm is still and the gripper is open, task now 'pick up the bottle.'
+13:45:55.689 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 187 ms, p95 203 ms                       
+13:45:55.689 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 21, 'votes': 0, 'vote kept the close': 0}
+13:45:56.064 [INFO] (policy.py:361) Session da021647de2a4b34a19f7aabe0d24d45: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 37672) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:45:59.682 [INFO] (server.py:205) Connected to ('10.80.0.192', 37672)                                             
+13:46:00.739 [INFO] (policy.py:361) Session da021647de2a4b34a19f7aabe0d24d45: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 45982) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:46:10.574 [INFO] (server.py:205) Connected to ('10.80.0.192', 45982)                                             
+INFO:     ('10.80.0.192', 45984) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:46:11.598 [INFO] (server.py:205) Connected to ('10.80.0.192', 45984)                                             
+13:46:12.566 [INFO] (policy.py:361) Session da021647de2a4b34a19f7aabe0d24d45: a close near a miss goes 2 cm deeper first
+13:46:13.548 [INFO] (policy.py:361) Session 27606146a6554dde9c544e7ab0a434d0: a close near a miss goes 2 cm deeper first
+13:46:19.355 [INFO] (policy.py:361) Session 28a006ed27b8463ba8b7aebccdef9286: a close near a miss goes 2 cm deeper first
+13:46:21.993 [INFO] (policy.py:361) Session 76b062391e304399bfd155593c94b9cd: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 44464) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:46:25.326 [INFO] (server.py:205) Connected to ('10.80.0.192', 44464)                                             
+INFO:     ('10.80.0.192', 33398) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:46:29.091 [INFO] (server.py:205) Connected to ('10.80.0.192', 33398)                                             
+13:46:30.312 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 187 ms, p95 201 ms                       
+13:46:30.312 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 27, 'votes': 0, 'vote kept the close': 0}
+13:46:31.682 [INFO] (policy.py:361) Session 76b062391e304399bfd155593c94b9cd: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 37042) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:46:42.293 [INFO] (server.py:205) Connected to ('10.80.0.192', 37042)                                             
+13:46:44.279 [INFO] (policy.py:361) Session 76b062391e304399bfd155593c94b9cd: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 37054) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:46:45.063 [INFO] (server.py:205) Connected to ('10.80.0.192', 37054)                                             
+INFO:     ('10.80.0.192', 37066) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:46:45.449 [INFO] (server.py:205) Connected to ('10.80.0.192', 37066)                                             
+13:46:48.110 [INFO] (policy.py:374) Session 35518a79a9dc4cf3886cc4c3911e616a: the arm is still and the gripper is open, task now 'pick up the fork.'
+INFO:     ('10.80.0.192', 54112) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:46:51.783 [INFO] (server.py:205) Connected to ('10.80.0.192', 54112)                                             
+INFO:     ('10.80.0.192', 60812) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:47:02.010 [INFO] (server.py:205) Connected to ('10.80.0.192', 60812)                                             
+13:47:07.386 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 190 ms, p95 202 ms                       
+13:47:07.386 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 29, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 56270) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:47:08.143 [INFO] (server.py:205) Connected to ('10.80.0.192', 56270)                                             
+INFO:     ('10.80.0.192', 56280) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:47:12.256 [INFO] (server.py:205) Connected to ('10.80.0.192', 56280)                                             
+13:47:13.056 [INFO] (policy.py:361) Session 74750f35625646dab5b711048de7d0f7: a close near a miss goes 2 cm deeper first
+13:47:13.247 [INFO] (policy.py:361) Session 8f0d6aee02d64c06badd7e8049169859: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 56290) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:47:14.989 [INFO] (server.py:205) Connected to ('10.80.0.192', 56290)                                             
+13:47:19.543 [INFO] (policy.py:361) Session 35518a79a9dc4cf3886cc4c3911e616a: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 51626) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:47:20.298 [INFO] (server.py:205) Connected to ('10.80.0.192', 51626)                                             
+INFO:     ('10.80.0.192', 51640) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:47:24.425 [INFO] (server.py:205) Connected to ('10.80.0.192', 51640)                                             
+13:47:25.301 [INFO] (policy.py:361) Session c731202566224d33806ed7890ce4305d: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 51656) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:47:26.160 [INFO] (server.py:205) Connected to ('10.80.0.192', 51656)                                             
+13:47:26.802 [INFO] (policy.py:361) Session 547fa916833c475cb8c9a316a8612676: a close near a miss goes 2 cm deeper first
+13:47:33.200 [INFO] (policy.py:361) Session 547fa916833c475cb8c9a316a8612676: a close near a miss goes 2 cm deeper first
+13:47:41.038 [INFO] (policy.py:374) Session 7ba3b8a5a5f94652b1bce518a438ddb9: the arm is still and the gripper is open, task now 'pick up the ladle.'
+13:47:42.143 [INFO] (policy.py:361) Session 547fa916833c475cb8c9a316a8612676: a close near a miss goes 2 cm deeper first
+13:47:42.332 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 191 ms, p95 203 ms                       
+13:47:42.332 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 36, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 47478) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:47:53.823 [INFO] (server.py:205) Connected to ('10.80.0.192', 47478)                                             
+INFO:     ('10.80.0.192', 47494) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:47:53.847 [INFO] (server.py:205) Connected to ('10.80.0.192', 47494)                                             
+13:48:02.419 [INFO] (policy.py:361) Session 5bfa0f26a2914f158c5f44c2877ff181: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 35370) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:48:02.951 [INFO] (server.py:205) Connected to ('10.80.0.192', 35370)                                             
+INFO:     ('10.80.0.192', 32822) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:48:19.055 [INFO] (server.py:205) Connected to ('10.80.0.192', 32822)                                             
+13:48:20.932 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 201 ms, p95 207 ms                       
+13:48:20.932 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 37, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 32838) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:48:22.210 [INFO] (server.py:205) Connected to ('10.80.0.192', 32838)                                             
+13:48:26.356 [INFO] (policy.py:374) Session c5503ceb12d2433fa9d6f5dd2cbdbdbe: the arm is still and the gripper is open, task now 'pick up the knife.'
+INFO:     ('10.80.0.192', 56720) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:48:27.892 [INFO] (server.py:205) Connected to ('10.80.0.192', 56720)                                             
+INFO:     ('10.80.0.192', 56730) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:48:29.144 [INFO] (server.py:205) Connected to ('10.80.0.192', 56730)                                             
+13:48:37.766 [INFO] (policy.py:361) Session def6f3e6d4f045a8a1a967b1f33b6efd: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 42982) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:48:39.083 [INFO] (server.py:205) Connected to ('10.80.0.192', 42982)                                             
+13:48:43.281 [INFO] (policy.py:361) Session 12aaefb9c6594670ab91cfd4693f14e2: a close near a miss goes 2 cm deeper first
+13:48:51.143 [INFO] (policy.py:361) Session db78ec69a16b4c3a9af1673a714d3f06: a close near a miss goes 2 cm deeper first
+13:48:52.858 [INFO] (policy.py:361) Session def6f3e6d4f045a8a1a967b1f33b6efd: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 37780) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:48:55.284 [INFO] (server.py:205) Connected to ('10.80.0.192', 37780)                                             
+13:48:59.489 [INFO] (policy.py:361) Session 0c411e6805b946278c894f090cd69e33: a close near a miss goes 2 cm deeper first
+13:49:01.256 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 202 ms, p95 209 ms                       
+13:49:01.256 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 42, 'votes': 0, 'vote kept the close': 0}
+13:49:03.534 [INFO] (policy.py:361) Session db78ec69a16b4c3a9af1673a714d3f06: a close near a miss goes 2 cm deeper first
+13:49:10.653 [INFO] (policy.py:361) Session 12aaefb9c6594670ab91cfd4693f14e2: a close near a miss goes 2 cm deeper first
+13:49:11.848 [INFO] (policy.py:361) Session def6f3e6d4f045a8a1a967b1f33b6efd: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 55312) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:49:18.384 [INFO] (server.py:205) Connected to ('10.80.0.192', 55312)                                             
+13:49:20.680 [INFO] (policy.py:361) Session 0c411e6805b946278c894f090cd69e33: a close near a miss goes 2 cm deeper first
+13:49:21.150 [INFO] (policy.py:361) Session db78ec69a16b4c3a9af1673a714d3f06: a close near a miss goes 2 cm deeper first
+13:49:28.914 [INFO] (policy.py:361) Session e58ade3a1a024696a058d34bd2b38302: a close near a miss goes 2 cm deeper first
+13:49:32.349 [INFO] (policy.py:361) Session 0c411e6805b946278c894f090cd69e33: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 57750) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:49:37.298 [INFO] (server.py:205) Connected to ('10.80.0.192', 57750)                                             
+13:49:45.320 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 202 ms, p95 209 ms                       
+13:49:45.321 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 49, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 37236) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:49:50.370 [INFO] (server.py:205) Connected to ('10.80.0.192', 37236)                                             
+13:49:57.773 [INFO] (policy.py:361) Session d6c9b7cfadbd44ae8a6329ad9a8a724a: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 32862) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:50:00.943 [INFO] (server.py:205) Connected to ('10.80.0.192', 32862)                                             
+INFO:     ('10.80.0.192', 38814) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:50:09.460 [INFO] (server.py:205) Connected to ('10.80.0.192', 38814)                                             
+INFO:     ('10.80.0.192', 38826) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:50:12.314 [INFO] (server.py:205) Connected to ('10.80.0.192', 38826)                                             
+INFO:     ('10.80.0.192', 38832) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:50:16.486 [INFO] (server.py:205) Connected to ('10.80.0.192', 38832)                                             
+INFO:     ('10.80.0.192', 37156) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:50:18.138 [INFO] (server.py:205) Connected to ('10.80.0.192', 37156)                                             
+13:50:18.207 [INFO] (policy.py:361) Session 91165e095b514b68bc980b428afb3a1c: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 45080) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:50:29.005 [INFO] (server.py:205) Connected to ('10.80.0.192', 45080)                                             
+13:50:30.211 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 187 ms, p95 201 ms                       
+13:50:30.211 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 51, 'votes': 0, 'vote kept the close': 0}
+13:50:30.399 [INFO] (policy.py:361) Session 3e41824ace0b4c57995901e7b5eac589: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 45088) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:50:31.648 [INFO] (server.py:205) Connected to ('10.80.0.192', 45088)                                             
+13:50:43.939 [INFO] (policy.py:361) Session 42313bad18654af1b60b18924031bcfc: a close near a miss goes 2 cm deeper first
+13:50:46.539 [INFO] (policy.py:361) Session 65a306101c404642b6cc6dd30bcba369: a close near a miss goes 2 cm deeper first
+13:50:50.285 [INFO] (policy.py:361) Session 5169e52b74ca4187a2b79b2e85bb0dd6: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 53708) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:50:52.532 [INFO] (server.py:205) Connected to ('10.80.0.192', 53708)                                             
+INFO:     ('10.80.0.192', 59970) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:50:58.644 [INFO] (server.py:205) Connected to ('10.80.0.192', 59970)                                             
+13:51:03.679 [INFO] (policy.py:361) Session cc7f4c6f34f94e2ea89ae634b814d6d6: a close near a miss goes 2 cm deeper first
+13:51:05.200 [INFO] (policy.py:374) Session e874d1a9e10a470788a2c7ff8740cfed: the arm is still and the gripper is open, task now 'pick up the apple.'
+INFO:     ('10.80.0.192', 54736) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:51:12.370 [INFO] (server.py:205) Connected to ('10.80.0.192', 54736)                                             
+13:51:14.933 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 189 ms, p95 204 ms                       
+13:51:14.933 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 56, 'votes': 0, 'vote kept the close': 0}
+13:51:19.775 [INFO] (policy.py:361) Session 84e7d41ce64545debf02a70467b47aa6: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 55000) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:51:20.291 [INFO] (server.py:205) Connected to ('10.80.0.192', 55000)                                             
+13:51:22.120 [INFO] (policy.py:361) Session e874d1a9e10a470788a2c7ff8740cfed: a close near a miss goes 2 cm deeper first
+13:51:30.195 [INFO] (policy.py:361) Session c5503ceb12d2433fa9d6f5dd2cbdbdbe: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 36424) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:51:31.487 [INFO] (server.py:205) Connected to ('10.80.0.192', 36424)                                             
+13:51:38.223 [INFO] (policy.py:361) Session 84e7d41ce64545debf02a70467b47aa6: a close near a miss goes 2 cm deeper first
+13:51:41.795 [INFO] (policy.py:361) Session 5169e52b74ca4187a2b79b2e85bb0dd6: a close near a miss goes 2 cm deeper first
+13:51:46.562 [INFO] (policy.py:361) Session 2cdad3b89c584e049bd03158b7b6dd7a: a close near a miss goes 2 cm deeper first
+13:51:47.908 [INFO] (policy.py:361) Session e874d1a9e10a470788a2c7ff8740cfed: a close near a miss goes 2 cm deeper first
+13:51:54.417 [INFO] (policy.py:361) Session 2cdad3b89c584e049bd03158b7b6dd7a: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 37834) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:51:56.147 [INFO] (server.py:205) Connected to ('10.80.0.192', 37834)                                             
+13:51:56.906 [INFO] (policy.py:361) Session e874d1a9e10a470788a2c7ff8740cfed: a close near a miss goes 2 cm deeper first
+13:52:00.698 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 186 ms, p95 193 ms                       
+13:52:00.698 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 65, 'votes': 0, 'vote kept the close': 0}
+13:52:02.659 [INFO] (policy.py:361) Session 2cdad3b89c584e049bd03158b7b6dd7a: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 53734) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:52:09.757 [INFO] (server.py:205) Connected to ('10.80.0.192', 53734)                                             
+13:52:15.834 [INFO] (policy.py:361) Session 84e7d41ce64545debf02a70467b47aa6: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 45636) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:52:20.568 [INFO] (server.py:205) Connected to ('10.80.0.192', 45636)                                             
+INFO:     ('10.80.0.192', 45642) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:52:22.025 [INFO] (server.py:205) Connected to ('10.80.0.192', 45642)                                             
+13:52:22.489 [INFO] (policy.py:374) Session d537b90690774d648089f0715e7854d7: the arm is still and the gripper is open, task now 'pick up the green gemstone.'
+13:52:40.124 [INFO] (policy.py:361) Session 8ba3502d237c4a3c88d0c60f88e62215: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 48446) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:52:42.632 [INFO] (server.py:205) Connected to ('10.80.0.192', 48446)                                             
+13:52:43.032 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 186 ms, p95 192 ms                       
+13:52:43.032 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 68, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 48288) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:52:47.797 [INFO] (server.py:205) Connected to ('10.80.0.192', 48288)                                             
+13:52:50.546 [INFO] (policy.py:361) Session bd9c01bede4f4e33aced020a5105deeb: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 48760) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:52:57.701 [INFO] (server.py:205) Connected to ('10.80.0.192', 48760)                                             
+INFO:     ('10.80.0.192', 48774) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:53:05.294 [INFO] (server.py:205) Connected to ('10.80.0.192', 48774)                                             
+13:53:06.420 [INFO] (policy.py:361) Session bd9c01bede4f4e33aced020a5105deeb: a close near a miss goes 2 cm deeper first
+13:53:09.654 [INFO] (policy.py:374) Session 3c69b3e9e5d24393b6208830efbe59f2: the arm is still and the gripper is open, task now 'pick up the cup.'
+13:53:16.752 [INFO] (policy.py:374) Session d537b90690774d648089f0715e7854d7: the arm is still and the gripper is open, task now 'pick up the green gemstone.'
+13:53:18.099 [INFO] (policy.py:374) Session 7819c187d39f44cb90ff442502fbcf10: the arm is still and the gripper is open, task now 'pick up the fork.'
+13:53:21.969 [INFO] (policy.py:361) Session 82ff5b72e01d4012a870ab94bbb46bb2: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 60604) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:53:22.522 [INFO] (server.py:205) Connected to ('10.80.0.192', 60604)                                             
+INFO:     ('10.80.0.192', 60616) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:53:23.181 [INFO] (server.py:205) Connected to ('10.80.0.192', 60616)                                             
+13:53:24.216 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 185 ms, p95 193 ms                       
+13:53:24.216 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 71, 'votes': 0, 'vote kept the close': 0}
+13:53:31.015 [INFO] (policy.py:361) Session bd9c01bede4f4e33aced020a5105deeb: a close near a miss goes 2 cm deeper first
+13:53:32.491 [INFO] (policy.py:361) Session 39a9a1f3a20c49ef889a333606f820fb: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 42884) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:53:32.657 [INFO] (server.py:205) Connected to ('10.80.0.192', 42884)                                             
+INFO:     ('10.80.0.192', 42898) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:53:35.666 [INFO] (server.py:205) Connected to ('10.80.0.192', 42898)                                             
+INFO:     ('10.80.0.192', 46866) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:53:37.675 [INFO] (server.py:205) Connected to ('10.80.0.192', 46866)                                             
+13:53:39.025 [INFO] (policy.py:361) Session 82ff5b72e01d4012a870ab94bbb46bb2: a close near a miss goes 2 cm deeper first
+13:53:40.546 [INFO] (policy.py:361) Session 39a9a1f3a20c49ef889a333606f820fb: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 46870) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:53:42.513 [INFO] (server.py:205) Connected to ('10.80.0.192', 46870)                                             
+INFO:     ('10.80.0.192', 46880) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:53:44.845 [INFO] (server.py:205) Connected to ('10.80.0.192', 46880)                                             
+13:53:46.612 [INFO] (policy.py:361) Session c5503ceb12d2433fa9d6f5dd2cbdbdbe: a close near a miss goes 2 cm deeper first
+13:53:48.327 [INFO] (policy.py:361) Session 39a9a1f3a20c49ef889a333606f820fb: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 36880) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:53:49.716 [INFO] (server.py:205) Connected to ('10.80.0.192', 36880)                                             
+13:53:53.426 [INFO] (policy.py:361) Session 0c72f7c296874758840c0e1a22ab5d92: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 52018) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:53:58.053 [INFO] (server.py:205) Connected to ('10.80.0.192', 52018)                                             
+13:54:00.305 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 187 ms, p95 197 ms                       
+13:54:00.305 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 78, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 52026) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:54:03.264 [INFO] (server.py:205) Connected to ('10.80.0.192', 52026)                                             
+13:54:07.312 [INFO] (policy.py:361) Session 9cde244201ef43428644b77c627d2588: a close near a miss goes 2 cm deeper first
+13:54:11.342 [INFO] (policy.py:361) Session 74b09c7a21fc4846bd059b9597d64bb4: a close near a miss goes 2 cm deeper first
+13:54:14.395 [INFO] (policy.py:361) Session 255f0ca430aa4472989743ebdfd24ca4: a close near a miss goes 2 cm deeper first
+13:54:14.578 [INFO] (policy.py:361) Session 752d3e91db364f3cbb5121e9f96c321c: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 37146) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:54:18.598 [INFO] (server.py:205) Connected to ('10.80.0.192', 37146)                                             
+INFO:     ('10.80.0.192', 37158) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:54:26.388 [INFO] (server.py:205) Connected to ('10.80.0.192', 37158)                                             
+13:54:28.390 [INFO] (policy.py:361) Session 255f0ca430aa4472989743ebdfd24ca4: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 32858) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:54:30.252 [INFO] (server.py:205) Connected to ('10.80.0.192', 32858)                                             
+13:54:30.880 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 187 ms, p95 199 ms                       
+13:54:30.880 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 83, 'votes': 0, 'vote kept the close': 0}
+13:54:34.203 [INFO] (policy.py:361) Session aab240e22cc44300bc50b888b36493f9: a close near a miss goes 2 cm deeper first
+13:54:35.940 [INFO] (policy.py:361) Session 752d3e91db364f3cbb5121e9f96c321c: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 43554) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:54:37.356 [INFO] (server.py:205) Connected to ('10.80.0.192', 43554)                                             
+13:54:38.086 [INFO] (policy.py:361) Session 74b09c7a21fc4846bd059b9597d64bb4: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 43562) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:54:39.666 [INFO] (server.py:205) Connected to ('10.80.0.192', 43562)                                             
+INFO:     ('10.80.0.192', 43566) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:54:44.233 [INFO] (server.py:205) Connected to ('10.80.0.192', 43566)                                             
+INFO:     ('10.80.0.192', 35108) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:54:47.808 [INFO] (server.py:205) Connected to ('10.80.0.192', 35108)                                             
+13:54:50.667 [INFO] (policy.py:361) Session aab240e22cc44300bc50b888b36493f9: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 35116) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:54:51.502 [INFO] (server.py:205) Connected to ('10.80.0.192', 35116)                                             
+INFO:     ('10.80.0.192', 35118) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:54:53.847 [INFO] (server.py:205) Connected to ('10.80.0.192', 35118)                                             
+13:55:07.328 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 193 ms, p95 206 ms                       
+13:55:07.328 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 87, 'votes': 0, 'vote kept the close': 0}
+13:55:07.330 [INFO] (policy.py:361) Session 9cde244201ef43428644b77c627d2588: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 36404) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:55:13.637 [INFO] (server.py:205) Connected to ('10.80.0.192', 36404)                                             
+INFO:     ('10.80.0.192', 40256) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:55:18.635 [INFO] (server.py:205) Connected to ('10.80.0.192', 40256)                                             
+INFO:     ('10.80.0.192', 40272) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:55:24.372 [INFO] (server.py:205) Connected to ('10.80.0.192', 40272)                                             
+INFO:     ('10.80.0.192', 60530) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:55:27.443 [INFO] (server.py:205) Connected to ('10.80.0.192', 60530)                                             
+INFO:     ('10.80.0.192', 60542) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:55:32.765 [INFO] (server.py:205) Connected to ('10.80.0.192', 60542)                                             
+INFO:     ('10.80.0.192', 49974) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:55:42.366 [INFO] (server.py:205) Connected to ('10.80.0.192', 49974)                                             
+INFO:     ('10.80.0.192', 49980) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:55:44.061 [INFO] (server.py:205) Connected to ('10.80.0.192', 49980)                                             
+13:55:44.094 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 191 ms, p95 206 ms                       
+13:55:44.094 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 88, 'votes': 0, 'vote kept the close': 0}
+13:55:54.764 [INFO] (policy.py:361) Session 5265059c3eee4d8f8f26efda8b717aa8: a close near a miss goes 2 cm deeper first
+13:55:57.057 [INFO] (policy.py:361) Session e0837c0cdd0c4bd59e39f2940651c774: a close near a miss goes 2 cm deeper first
+13:55:58.476 [INFO] (policy.py:361) Session c5503ceb12d2433fa9d6f5dd2cbdbdbe: a close near a miss goes 2 cm deeper first
+13:55:59.970 [INFO] (policy.py:374) Session 88c2bd53d78045cc89fbe8ab16d0e359: the arm is still and the gripper is open, task now 'pick up the gray metal ring.'
+INFO:     ('10.80.0.192', 42426) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:56:04.826 [INFO] (server.py:205) Connected to ('10.80.0.192', 42426)                                             
+INFO:     ('10.80.0.192', 42442) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:56:05.573 [INFO] (server.py:205) Connected to ('10.80.0.192', 42442)                                             
+13:56:13.171 [INFO] (policy.py:361) Session e0837c0cdd0c4bd59e39f2940651c774: a close near a miss goes 2 cm deeper first
+13:56:17.870 [INFO] (policy.py:374) Session 5265059c3eee4d8f8f26efda8b717aa8: the arm is still and the gripper is open, task now 'pick up the towel.'
+13:56:19.809 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 194 ms, p95 208 ms                       
+13:56:19.809 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 92, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 32962) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:56:22.302 [INFO] (server.py:205) Connected to ('10.80.0.192', 32962)                                             
+13:56:46.312 [INFO] (policy.py:361) Session e0837c0cdd0c4bd59e39f2940651c774: a close near a miss goes 2 cm deeper first
+13:56:46.538 [INFO] (policy.py:374) Session 5265059c3eee4d8f8f26efda8b717aa8: the arm is still and the gripper is open, task now 'pick up the towel.'
+13:56:52.505 [INFO] (policy.py:361) Session 5265059c3eee4d8f8f26efda8b717aa8: a close near a miss goes 2 cm deeper first
+13:56:56.645 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 193 ms, p95 203 ms                       
+13:56:56.645 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 94, 'votes': 0, 'vote kept the close': 0}
+13:56:58.407 [INFO] (policy.py:361) Session 5265059c3eee4d8f8f26efda8b717aa8: a close near a miss goes 2 cm deeper first
+13:56:59.596 [INFO] (policy.py:361) Session 1cd8c7f7f8e547eba30aa3a991ce08c9: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 40446) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:57:08.074 [INFO] (server.py:205) Connected to ('10.80.0.192', 40446)                                             
+INFO:     ('10.80.0.192', 40460) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:57:12.185 [INFO] (server.py:205) Connected to ('10.80.0.192', 40460)                                             
+13:57:25.233 [INFO] (policy.py:361) Session 6e0bf0cfa28d4c31a075a899fc26d63d: a close near a miss goes 2 cm deeper first
+13:57:32.726 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 195 ms, p95 206 ms                       
+13:57:32.726 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 97, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 42304) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:57:40.271 [INFO] (server.py:205) Connected to ('10.80.0.192', 42304)                                             
+INFO:     ('10.80.0.192', 42298) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:57:40.273 [INFO] (server.py:205) Connected to ('10.80.0.192', 42298)                                             
+INFO:     ('10.80.0.192', 42310) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:57:41.726 [INFO] (server.py:205) Connected to ('10.80.0.192', 42310)                                             
+INFO:     ('10.80.0.192', 42326) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:57:43.558 [INFO] (server.py:205) Connected to ('10.80.0.192', 42326)                                             
+INFO:     ('10.80.0.192', 42328) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:57:44.609 [INFO] (server.py:205) Connected to ('10.80.0.192', 42328)                                             
+INFO:     ('10.80.0.192', 50380) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:57:52.949 [INFO] (server.py:205) Connected to ('10.80.0.192', 50380)                                             
+13:57:57.850 [INFO] (policy.py:361) Session e7738c266de7421a87155c3858292a61: a close near a miss goes 2 cm deeper first
+13:57:58.610 [INFO] (policy.py:361) Session d1c3efebde1041bf8250121d6feda41d: a close near a miss goes 2 cm deeper first
+13:58:01.312 [INFO] (policy.py:361) Session e3013a01fabe482c9095c5e32e2c0388: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 32826) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:58:01.913 [INFO] (server.py:205) Connected to ('10.80.0.192', 32826)                                             
+INFO:     ('10.80.0.192', 32838) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:58:02.063 [INFO] (server.py:205) Connected to ('10.80.0.192', 32838)                                             
+13:58:04.428 [INFO] (policy.py:361) Session d1c3efebde1041bf8250121d6feda41d: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 32846) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:58:05.237 [INFO] (server.py:205) Connected to ('10.80.0.192', 32846)                                             
+13:58:05.475 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 190 ms, p95 203 ms                       
+13:58:05.475 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 101, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 32860) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:58:06.326 [INFO] (server.py:205) Connected to ('10.80.0.192', 32860)                                             
+13:58:07.964 [INFO] (policy.py:361) Session 6e0bf0cfa28d4c31a075a899fc26d63d: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 45324) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:58:20.275 [INFO] (server.py:205) Connected to ('10.80.0.192', 45324)                                             
+INFO:     ('10.80.0.192', 38230) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:58:29.403 [INFO] (server.py:205) Connected to ('10.80.0.192', 38230)                                             
+INFO:     ('10.80.0.192', 38236) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:58:35.797 [INFO] (server.py:205) Connected to ('10.80.0.192', 38236)                                             
+13:58:36.858 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 189 ms, p95 199 ms                       
+13:58:36.858 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 102, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 38810) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:58:37.229 [INFO] (server.py:205) Connected to ('10.80.0.192', 38810)                                             
+13:58:37.789 [INFO] (policy.py:361) Session 88c2bd53d78045cc89fbe8ab16d0e359: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 38822) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:58:39.143 [INFO] (server.py:205) Connected to ('10.80.0.192', 38822)                                             
+INFO:     ('10.80.0.192', 58696) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:58:47.414 [INFO] (server.py:205) Connected to ('10.80.0.192', 58696)                                             
+INFO:     ('10.80.0.192', 58704) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:58:51.429 [INFO] (server.py:205) Connected to ('10.80.0.192', 58704)                                             
+13:58:56.076 [INFO] (policy.py:361) Session 6e0bf0cfa28d4c31a075a899fc26d63d: a close near a miss goes 2 cm deeper first
+13:59:02.638 [INFO] (policy.py:361) Session 5d96565b3c9348a5980179b5937fc9d8: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 44896) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:59:04.195 [INFO] (server.py:205) Connected to ('10.80.0.192', 44896)                                             
+13:59:12.085 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 189 ms, p95 200 ms                       
+13:59:12.085 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 105, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 40028) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:59:12.851 [INFO] (server.py:205) Connected to ('10.80.0.192', 40028)                                             
+INFO:     ('10.80.0.192', 57302) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:59:21.674 [INFO] (server.py:205) Connected to ('10.80.0.192', 57302)                                             
+13:59:22.292 [INFO] (policy.py:374) Session bed257989dcc4db2a4d882a47e1f87a3: the arm is still and the gripper is open, task now 'pick up the spatula.'
+INFO:     ('10.80.0.192', 42832) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:59:29.993 [INFO] (server.py:205) Connected to ('10.80.0.192', 42832)                                             
+13:59:32.445 [INFO] (policy.py:374) Session 02c1b9ff912a4e61b8fe64b4701259f1: the arm is still and the gripper is open, task now 'pick up the lighter.'
+INFO:     ('10.80.0.192', 42834) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:59:35.963 [INFO] (server.py:205) Connected to ('10.80.0.192', 42834)                                             
+13:59:38.902 [INFO] (policy.py:361) Session 0493733b107e444ebcd3dc931fa98e40: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 55482) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+13:59:48.196 [INFO] (server.py:205) Connected to ('10.80.0.192', 55482)                                             
+13:59:50.061 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 188 ms, p95 196 ms                       
+13:59:50.061 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 106, 'votes': 0, 'vote kept the close': 0}
+13:59:56.010 [INFO] (policy.py:361) Session bed257989dcc4db2a4d882a47e1f87a3: a close near a miss goes 2 cm deeper first
+13:59:58.060 [INFO] (policy.py:374) Session e247d7e273a04838929aef58d32b9751: the arm is still and the gripper is open, task now 'pick up the bottle.'
+INFO:     ('10.80.0.192', 55416) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:00:06.079 [INFO] (server.py:205) Connected to ('10.80.0.192', 55416)                                             
+INFO:     ('10.80.0.192', 54196) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:00:06.984 [INFO] (server.py:205) Connected to ('10.80.0.192', 54196)                                             
+14:00:12.346 [INFO] (policy.py:361) Session 184a35153edc4217a7fa63f691336e76: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 54900) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:00:18.002 [INFO] (server.py:205) Connected to ('10.80.0.192', 54900)                                             
+INFO:     ('10.80.0.192', 54912) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:00:20.171 [INFO] (server.py:205) Connected to ('10.80.0.192', 54912)                                             
+INFO:     ('10.80.0.192', 54922) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:00:25.368 [INFO] (server.py:205) Connected to ('10.80.0.192', 54922)                                             
+14:00:27.425 [INFO] (policy.py:361) Session 02c1b9ff912a4e61b8fe64b4701259f1: a close near a miss goes 2 cm deeper first
+14:00:31.836 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 185 ms, p95 191 ms                       
+14:00:31.837 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 109, 'votes': 0, 'vote kept the close': 0}
+14:00:31.838 [INFO] (policy.py:361) Session 25652b926498422b9087ac277afad183: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 38778) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:00:36.708 [INFO] (server.py:205) Connected to ('10.80.0.192', 38778)                                             
+14:00:37.697 [INFO] (policy.py:361) Session 184a35153edc4217a7fa63f691336e76: a close near a miss goes 2 cm deeper first
+14:00:38.956 [INFO] (policy.py:361) Session 02c1b9ff912a4e61b8fe64b4701259f1: a close near a miss goes 2 cm deeper first
+14:00:50.416 [INFO] (policy.py:361) Session 6f66bb1445e74a4f8b64fc0a5f52d945: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 57900) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:00:52.162 [INFO] (server.py:205) Connected to ('10.80.0.192', 57900)                                             
+INFO:     ('10.80.0.192', 57914) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:00:53.648 [INFO] (server.py:205) Connected to ('10.80.0.192', 57914)                                             
+14:00:57.160 [INFO] (policy.py:361) Session 02c1b9ff912a4e61b8fe64b4701259f1: a close near a miss goes 2 cm deeper first
+14:01:02.460 [INFO] (policy.py:361) Session 25652b926498422b9087ac277afad183: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 40242) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:01:10.312 [INFO] (server.py:205) Connected to ('10.80.0.192', 40242)                                             
+14:01:11.309 [INFO] (policy.py:361) Session 25652b926498422b9087ac277afad183: a close near a miss goes 2 cm deeper first
+14:01:13.968 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 184 ms, p95 191 ms                       
+14:01:13.968 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 116, 'votes': 0, 'vote kept the close': 0}
+14:01:14.442 [INFO] (policy.py:361) Session b5bcc44845544c088eb5c8f0321c5a1b: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 55686) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:01:21.619 [INFO] (server.py:205) Connected to ('10.80.0.192', 55686)                                             
+14:01:23.898 [INFO] (policy.py:374) Session 999f5921d45d40be800a3c7868eafcbf: the arm is still and the gripper is open, task now 'pick up the potato.'
+INFO:     ('10.80.0.192', 55030) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:01:34.793 [INFO] (server.py:205) Connected to ('10.80.0.192', 55030)                                             
+14:01:40.654 [INFO] (policy.py:361) Session 999f5921d45d40be800a3c7868eafcbf: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 43214) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:01:41.366 [INFO] (server.py:205) Connected to ('10.80.0.192', 43214)                                             
+14:01:42.124 [INFO] (policy.py:361) Session 0ae452f38d66457185c4bd38ccc85aff: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 43224) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:01:45.128 [INFO] (server.py:205) Connected to ('10.80.0.192', 43224)                                             
+14:01:47.104 [INFO] (policy.py:361) Session 05b6ff521ba4470aaade5e287029f3f7: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 59864) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:01:54.793 [INFO] (server.py:205) Connected to ('10.80.0.192', 59864)                                             
+INFO:     ('10.80.0.192', 59876) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:01:55.605 [INFO] (server.py:205) Connected to ('10.80.0.192', 59876)                                             
+14:01:56.620 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 185 ms, p95 195 ms                       
+14:01:56.620 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 120, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 54194) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:01:57.017 [INFO] (server.py:205) Connected to ('10.80.0.192', 54194)                                             
+INFO:     ('10.80.0.192', 54198) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:01:59.935 [INFO] (server.py:205) Connected to ('10.80.0.192', 54198)                                             
+INFO:     ('10.80.0.192', 54200) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:02:00.131 [INFO] (server.py:205) Connected to ('10.80.0.192', 54200)                                             
+INFO:     ('10.80.0.192', 54212) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:02:01.489 [INFO] (server.py:205) Connected to ('10.80.0.192', 54212)                                             
+INFO:     ('10.80.0.192', 54214) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:02:04.709 [INFO] (server.py:205) Connected to ('10.80.0.192', 54214)                                             
+14:02:08.274 [INFO] (policy.py:361) Session 463368f767a94c4ea21e0126969dd536: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 34324) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:02:13.179 [INFO] (server.py:205) Connected to ('10.80.0.192', 34324)                                             
+INFO:     ('10.80.0.192', 34338) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:02:16.059 [INFO] (server.py:205) Connected to ('10.80.0.192', 34338)                                             
+14:02:16.845 [INFO] (policy.py:361) Session 832a77ce72024bd18165024ee9a7b383: a close near a miss goes 2 cm deeper first
+14:02:21.432 [INFO] (policy.py:361) Session 160d314e2eef453cba088fa124113490: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 51966) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:02:23.683 [INFO] (server.py:205) Connected to ('10.80.0.192', 51966)                                             
+14:02:25.747 [INFO] (policy.py:374) Session e6a6207d311f4bbe8701aaef232257fd: the arm is still and the gripper is open, task now 'pick up the fork.'
+14:02:28.898 [INFO] (policy.py:361) Session f894a7784f074fba963363fa33b0e2dd: a close near a miss goes 2 cm deeper first
+14:02:34.674 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 185 ms, p95 196 ms                       
+14:02:34.674 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 124, 'votes': 0, 'vote kept the close': 0}
+14:02:37.680 [INFO] (policy.py:361) Session 6f66bb1445e74a4f8b64fc0a5f52d945: a close near a miss goes 2 cm deeper first
+14:02:38.412 [INFO] (policy.py:361) Session b0ec4e52e6994958882e4aa2ece8c3ad: a close near a miss goes 2 cm deeper first
+14:02:39.194 [INFO] (policy.py:361) Session 9d2ec5c7928b4ec78255efea3c76c16b: a close near a miss goes 2 cm deeper first
+14:02:39.264 [INFO] (policy.py:374) Session cc6230581b7b47a199abbc3f860c7da4: the arm is still and the gripper is open, task now 'pick up the bowl.'
+14:02:40.590 [INFO] (policy.py:361) Session e0acaa84074744a79e51cbf9d2e233e3: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 41310) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:02:42.132 [INFO] (server.py:205) Connected to ('10.80.0.192', 41310)                                             
+14:02:45.676 [INFO] (policy.py:361) Session e6a6207d311f4bbe8701aaef232257fd: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 41324) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:02:46.385 [INFO] (server.py:205) Connected to ('10.80.0.192', 41324)                                             
+14:02:46.865 [INFO] (policy.py:361) Session b0ec4e52e6994958882e4aa2ece8c3ad: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 48906) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:02:47.749 [INFO] (server.py:205) Connected to ('10.80.0.192', 48906)                                             
+14:02:54.591 [INFO] (policy.py:361) Session b0ec4e52e6994958882e4aa2ece8c3ad: a close near a miss goes 2 cm deeper first
+14:02:57.072 [INFO] (policy.py:361) Session 9d2ec5c7928b4ec78255efea3c76c16b: a close near a miss goes 2 cm deeper first
+14:03:01.301 [INFO] (policy.py:361) Session 4938f878983d49b683889c9a5816e166: a close near a miss goes 2 cm deeper first
+14:03:02.701 [INFO] (policy.py:361) Session f336d91cd6d9452c907281b4ffaa585d: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 38796) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:03:10.125 [INFO] (server.py:205) Connected to ('10.80.0.192', 38796)                                             
+14:03:18.535 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 189 ms, p95 204 ms                       
+14:03:18.535 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 134, 'votes': 0, 'vote kept the close': 0}
+14:03:20.378 [INFO] (policy.py:361) Session 9d2ec5c7928b4ec78255efea3c76c16b: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 57092) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:03:21.987 [INFO] (server.py:205) Connected to ('10.80.0.192', 57092)                                             
+INFO:     ('10.80.0.192', 57102) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:03:25.660 [INFO] (server.py:205) Connected to ('10.80.0.192', 57102)                                             
+INFO:     ('10.80.0.192', 37150) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:03:35.675 [INFO] (server.py:205) Connected to ('10.80.0.192', 37150)                                             
+INFO:     ('10.80.0.192', 57916) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:03:39.962 [INFO] (server.py:205) Connected to ('10.80.0.192', 57916)                                             
+INFO:     ('10.80.0.192', 57930) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:03:43.579 [INFO] (server.py:205) Connected to ('10.80.0.192', 57930)                                             
+INFO:     ('10.80.0.192', 36382) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:03:47.551 [INFO] (server.py:205) Connected to ('10.80.0.192', 36382)                                             
+INFO:     ('10.80.0.192', 36388) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:03:50.939 [INFO] (server.py:205) Connected to ('10.80.0.192', 36388)                                             
+14:03:54.188 [INFO] (policy.py:361) Session 987b19e1ac8c4c038d82d5fdaff6c118: a close near a miss goes 2 cm deeper first
+14:04:00.011 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 190 ms, p95 207 ms                       
+14:04:00.011 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 136, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 37196) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:04:06.080 [INFO] (server.py:205) Connected to ('10.80.0.192', 37196)                                             
+INFO:     ('10.80.0.192', 43866) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:04:09.317 [INFO] (server.py:205) Connected to ('10.80.0.192', 43866)                                             
+INFO:     ('10.80.0.192', 41368) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:04:18.908 [INFO] (server.py:205) Connected to ('10.80.0.192', 41368)                                             
+14:04:35.388 [INFO] (policy.py:361) Session 396e0988683e4b43a2ce1af993742665: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 55636) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:04:37.913 [INFO] (server.py:205) Connected to ('10.80.0.192', 55636)                                             
+14:04:40.424 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 190 ms, p95 202 ms                       
+14:04:40.424 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 137, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 55640) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:04:41.303 [INFO] (server.py:205) Connected to ('10.80.0.192', 55640)                                             
+INFO:     ('10.80.0.192', 46694) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:04:47.687 [INFO] (server.py:205) Connected to ('10.80.0.192', 46694)                                             
+14:04:50.148 [INFO] (policy.py:361) Session 396e0988683e4b43a2ce1af993742665: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 46700) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:04:54.720 [INFO] (server.py:205) Connected to ('10.80.0.192', 46700)                                             
+14:04:55.344 [INFO] (policy.py:361) Session d87551485d50423ba737e62e528ea4ee: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 45514) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:04:57.554 [INFO] (server.py:205) Connected to ('10.80.0.192', 45514)                                             
+14:05:12.229 [INFO] (policy.py:361) Session d87551485d50423ba737e62e528ea4ee: a close near a miss goes 2 cm deeper first
+14:05:19.967 [INFO] (policy.py:361) Session 989238064d5b489abd6338887406d633: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 45858) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:05:24.916 [INFO] (server.py:205) Connected to ('10.80.0.192', 45858)                                             
+14:05:27.280 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 187 ms, p95 194 ms                       
+14:05:27.280 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 141, 'votes': 0, 'vote kept the close': 0}
+14:05:33.300 [INFO] (policy.py:374) Session a5d3e615680642b8903a48ba3fdc93eb: the arm is still and the gripper is open, task now 'pick up the pointed metal awl.'
+14:05:40.464 [INFO] (policy.py:374) Session 987b19e1ac8c4c038d82d5fdaff6c118: the arm is still and the gripper is open, task now 'pick up the bottle.'
+14:05:56.645 [INFO] (policy.py:361) Session 989238064d5b489abd6338887406d633: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 50626) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:05:59.813 [INFO] (server.py:205) Connected to ('10.80.0.192', 50626)                                             
+14:06:15.314 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 186 ms, p95 193 ms                       
+14:06:15.314 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 142, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 44906) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:06:16.315 [INFO] (server.py:205) Connected to ('10.80.0.192', 44906)                                             
+INFO:     ('10.80.0.192', 59722) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:06:17.957 [INFO] (server.py:205) Connected to ('10.80.0.192', 59722)                                             
+14:06:21.728 [INFO] (policy.py:361) Session 4f821b3083944603a314118d9df328a5: a close near a miss goes 2 cm deeper first
+14:06:23.238 [INFO] (policy.py:361) Session f71c6a5b2bbe48d4a6085057310a53ac: a close near a miss goes 2 cm deeper first
+14:06:25.770 [INFO] (policy.py:361) Session 989238064d5b489abd6338887406d633: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 34212) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:06:32.173 [INFO] (server.py:205) Connected to ('10.80.0.192', 34212)                                             
+14:06:33.260 [INFO] (policy.py:361) Session a5d3e615680642b8903a48ba3fdc93eb: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 55680) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:06:37.015 [INFO] (server.py:205) Connected to ('10.80.0.192', 55680)                                             
+14:06:39.749 [INFO] (policy.py:361) Session 6aa664db4e7d4f7ab9838c4653eabebc: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 55686) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:06:44.009 [INFO] (server.py:205) Connected to ('10.80.0.192', 55686)                                             
+14:06:46.026 [INFO] (policy.py:361) Session 6aa664db4e7d4f7ab9838c4653eabebc: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 54044) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:06:48.381 [INFO] (server.py:205) Connected to ('10.80.0.192', 54044)                                             
+14:06:58.290 [INFO] (policy.py:361) Session bbae7cf2ef8c4181a89c1b3f97f4f836: a close near a miss goes 2 cm deeper first
+14:06:59.617 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 187 ms, p95 197 ms                       
+14:06:59.617 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 149, 'votes': 0, 'vote kept the close': 0}
+14:07:01.950 [INFO] (policy.py:361) Session a5d3e615680642b8903a48ba3fdc93eb: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 57768) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:07:03.988 [INFO] (server.py:205) Connected to ('10.80.0.192', 57768)                                             
+INFO:     ('10.80.0.192', 37106) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:07:09.012 [INFO] (server.py:205) Connected to ('10.80.0.192', 37106)                                             
+INFO:     ('10.80.0.192', 37122) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:07:10.369 [INFO] (server.py:205) Connected to ('10.80.0.192', 37122)                                             
+14:07:11.917 [INFO] (policy.py:361) Session 6aa664db4e7d4f7ab9838c4653eabebc: a close near a miss goes 2 cm deeper first
+14:07:15.738 [INFO] (policy.py:374) Session 920e2a53c8874a1fa83f39f5f992b816: the arm is still and the gripper is open, task now 'pick up the blue die.'
+INFO:     ('10.80.0.192', 47216) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:07:18.905 [INFO] (server.py:205) Connected to ('10.80.0.192', 47216)                                             
+INFO:     ('10.80.0.192', 47228) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:07:25.465 [INFO] (server.py:205) Connected to ('10.80.0.192', 47228)                                             
+INFO:     ('10.80.0.192', 40088) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:07:38.446 [INFO] (server.py:205) Connected to ('10.80.0.192', 40088)                                             
+14:07:39.675 [INFO] (policy.py:361) Session a5d3e615680642b8903a48ba3fdc93eb: a close near a miss goes 2 cm deeper first
+14:07:42.066 [INFO] (policy.py:361) Session 607c08ebfd3c4dceb44ba25d3e48d876: a close near a miss goes 2 cm deeper first
+14:07:42.253 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 189 ms, p95 204 ms                       
+14:07:42.254 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 153, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 51926) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:07:47.107 [INFO] (server.py:205) Connected to ('10.80.0.192', 51926)                                             
+INFO:     ('10.80.0.192', 55072) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:08:01.112 [INFO] (server.py:205) Connected to ('10.80.0.192', 55072)                                             
+INFO:     ('10.80.0.192', 55080) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:08:02.538 [INFO] (server.py:205) Connected to ('10.80.0.192', 55080)                                             
+14:08:04.656 [INFO] (policy.py:361) Session 607c08ebfd3c4dceb44ba25d3e48d876: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 55094) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:08:05.016 [INFO] (server.py:205) Connected to ('10.80.0.192', 55094)                                             
+INFO:     ('10.80.0.192', 55100) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:08:06.021 [INFO] (server.py:205) Connected to ('10.80.0.192', 55100)                                             
+14:08:11.879 [INFO] (policy.py:361) Session 920e2a53c8874a1fa83f39f5f992b816: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 53186) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:08:12.199 [INFO] (server.py:205) Connected to ('10.80.0.192', 53186)                                             
+14:08:29.500 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 198 ms, p95 209 ms                       
+14:08:29.500 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 155, 'votes': 0, 'vote kept the close': 0}
+14:08:38.385 [INFO] (policy.py:361) Session 106558134e504b11a76bc67115553efa: a close near a miss goes 2 cm deeper first
+14:08:40.868 [INFO] (policy.py:361) Session ffad7f9cca5b4146b485260caa1deec0: a close near a miss goes 2 cm deeper first
+14:08:46.478 [INFO] (policy.py:361) Session 106558134e504b11a76bc67115553efa: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 39016) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:08:46.721 [INFO] (server.py:205) Connected to ('10.80.0.192', 39016)                                             
+14:08:57.659 [INFO] (policy.py:361) Session eb2a468b1fc8452fbf2fba1fa7663591: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 60644) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:08:57.687 [INFO] (server.py:205) Connected to ('10.80.0.192', 60644)                                             
+14:09:11.099 [INFO] (policy.py:361) Session eb2a468b1fc8452fbf2fba1fa7663591: a close near a miss goes 2 cm deeper first
+14:09:11.296 [INFO] (policy.py:361) Session b1e84eefae2745a2860c718fdec10c5c: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 42450) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:09:11.685 [INFO] (server.py:205) Connected to ('10.80.0.192', 42450)                                             
+14:09:12.736 [INFO] (policy.py:361) Session ffad7f9cca5b4146b485260caa1deec0: a close near a miss goes 2 cm deeper first
+14:09:17.338 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 194 ms, p95 208 ms                       
+14:09:17.338 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 162, 'votes': 0, 'vote kept the close': 0}
+14:09:23.708 [INFO] (policy.py:361) Session ffad7f9cca5b4146b485260caa1deec0: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 51378) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:09:25.864 [INFO] (server.py:205) Connected to ('10.80.0.192', 51378)                                             
+INFO:     ('10.80.0.192', 48878) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:09:30.552 [INFO] (server.py:205) Connected to ('10.80.0.192', 48878)                                             
+14:09:31.371 [INFO] (policy.py:361) Session eb2a468b1fc8452fbf2fba1fa7663591: a close near a miss goes 2 cm deeper first
+14:09:33.080 [INFO] (policy.py:374) Session c5503ceb12d2433fa9d6f5dd2cbdbdbe: the arm is still and the gripper is open, task now 'pick up the knife.'
+14:09:35.338 [INFO] (policy.py:361) Session 54d914609b394b92806e232a1ac7534b: a close near a miss goes 2 cm deeper first
+14:09:39.069 [INFO] (policy.py:361) Session 74ed0ba66d3f475885fe67a3371c7a45: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 59988) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:09:40.130 [INFO] (server.py:205) Connected to ('10.80.0.192', 59988)                                             
+INFO:     ('10.80.0.192', 59990) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:09:45.125 [INFO] (server.py:205) Connected to ('10.80.0.192', 59990)                                             
+INFO:     ('10.80.0.192', 48740) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:09:47.558 [INFO] (server.py:205) Connected to ('10.80.0.192', 48740)                                             
+14:09:52.173 [INFO] (policy.py:361) Session 54d914609b394b92806e232a1ac7534b: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 48748) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:09:55.308 [INFO] (server.py:205) Connected to ('10.80.0.192', 48748)                                             
+14:09:57.140 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 188 ms, p95 194 ms                       
+14:09:57.140 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 167, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 57568) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:09:58.154 [INFO] (server.py:205) Connected to ('10.80.0.192', 57568)                                             
+14:10:05.159 [INFO] (policy.py:361) Session ba6103e1d8634297ba54ce59e68fd54e: a close near a miss goes 2 cm deeper first
+14:10:13.339 [INFO] (policy.py:361) Session ba6103e1d8634297ba54ce59e68fd54e: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 52936) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:10:21.522 [INFO] (server.py:205) Connected to ('10.80.0.192', 52936)                                             
+INFO:     ('10.80.0.192', 33570) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:10:30.306 [INFO] (server.py:205) Connected to ('10.80.0.192', 33570)                                             
+INFO:     ('10.80.0.192', 33578) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:10:32.416 [INFO] (server.py:205) Connected to ('10.80.0.192', 33578)                                             
+14:10:32.578 [INFO] (policy.py:361) Session ba6103e1d8634297ba54ce59e68fd54e: a close near a miss goes 2 cm deeper first
+14:10:34.944 [INFO] (policy.py:361) Session e7e089003c5e4718abb05713090a8f7e: a close near a miss goes 2 cm deeper first
+14:10:35.125 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 186 ms, p95 193 ms                       
+14:10:35.125 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 171, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 33580) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:10:35.596 [INFO] (server.py:205) Connected to ('10.80.0.192', 33580)                                             
+INFO:     ('10.80.0.192', 33582) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:10:36.822 [INFO] (server.py:205) Connected to ('10.80.0.192', 33582)                                             
+INFO:     ('10.80.0.192', 59188) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:10:42.251 [INFO] (server.py:205) Connected to ('10.80.0.192', 59188)                                             
+14:10:44.995 [INFO] (policy.py:361) Session 4b30ac3f5ec845039944010a2aeb05cd: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 59200) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:10:46.115 [INFO] (server.py:205) Connected to ('10.80.0.192', 59200)                                             
+14:10:52.303 [INFO] (policy.py:361) Session e7e089003c5e4718abb05713090a8f7e: a close near a miss goes 2 cm deeper first
+14:10:54.556 [INFO] (policy.py:361) Session ba086ddfab174e8183f215544119117c: a close near a miss goes 2 cm deeper first
+14:10:57.032 [INFO] (policy.py:361) Session 4b30ac3f5ec845039944010a2aeb05cd: a close near a miss goes 2 cm deeper first
+14:11:06.485 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 186 ms, p95 194 ms                       
+14:11:06.485 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 175, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 44756) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:11:09.934 [INFO] (server.py:205) Connected to ('10.80.0.192', 44756)                                             
+14:11:14.758 [INFO] (policy.py:361) Session 4b30ac3f5ec845039944010a2aeb05cd: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 44758) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:11:15.385 [INFO] (server.py:205) Connected to ('10.80.0.192', 44758)                                             
+INFO:     ('10.80.0.192', 49248) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:11:27.582 [INFO] (server.py:205) Connected to ('10.80.0.192', 49248)                                             
+14:11:38.940 [INFO] (policy.py:361) Session 7cf7e7f311c24d77a1f11b69e82280a3: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 33294) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:11:39.077 [INFO] (server.py:205) Connected to ('10.80.0.192', 33294)                                             
+INFO:     ('10.80.0.192', 33306) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:11:42.077 [INFO] (server.py:205) Connected to ('10.80.0.192', 33306)                                             
+14:11:50.287 [INFO] (policy.py:374) Session 179d6c47350f4fac89902ec19c6c1275: the arm is still and the gripper is open, task now 'pick up the spoon.'
+14:11:52.623 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 186 ms, p95 192 ms                       
+14:11:52.623 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 177, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 56600) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:12:03.283 [INFO] (server.py:205) Connected to ('10.80.0.192', 56600)                                             
+INFO:     ('10.80.0.192', 34606) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:12:07.480 [INFO] (server.py:205) Connected to ('10.80.0.192', 34606)                                             
+INFO:     ('10.80.0.192', 34620) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:12:13.475 [INFO] (server.py:205) Connected to ('10.80.0.192', 34620)                                             
+14:12:14.832 [INFO] (policy.py:361) Session 67617664d4fd43579e9f0b0508a0ebd7: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 56170) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:12:27.446 [INFO] (server.py:205) Connected to ('10.80.0.192', 56170)                                             
+INFO:     ('10.80.0.192', 56180) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:12:28.626 [INFO] (server.py:205) Connected to ('10.80.0.192', 56180)                                             
+INFO:     ('10.80.0.192', 56188) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:12:31.037 [INFO] (server.py:205) Connected to ('10.80.0.192', 56188)                                             
+INFO:     ('10.80.0.192', 54702) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:12:37.621 [INFO] (server.py:205) Connected to ('10.80.0.192', 54702)                                             
+14:12:43.040 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 196 ms, p95 208 ms                       
+14:12:43.040 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 178, 'votes': 0, 'vote kept the close': 0}
+14:12:43.042 [INFO] (policy.py:361) Session 67617664d4fd43579e9f0b0508a0ebd7: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 54708) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:12:45.607 [INFO] (server.py:205) Connected to ('10.80.0.192', 54708)                                             
+INFO:     ('10.80.0.192', 46472) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:12:50.236 [INFO] (server.py:205) Connected to ('10.80.0.192', 46472)                                             
+14:12:56.469 [INFO] (policy.py:361) Session 1ceaf8f345e84b36b37c9ae8eb50c4b1: a close near a miss goes 2 cm deeper first
+14:12:58.131 [INFO] (policy.py:361) Session fd17a99fe0114849b43aaccf8f2fd01e: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 53556) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:13:20.293 [INFO] (server.py:205) Connected to ('10.80.0.192', 53556)                                             
+14:13:21.544 [INFO] (policy.py:361) Session 7cf7e7f311c24d77a1f11b69e82280a3: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 35518) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:13:30.270 [INFO] (server.py:205) Connected to ('10.80.0.192', 35518)                                             
+14:13:32.093 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 196 ms, p95 208 ms                       
+14:13:32.093 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 182, 'votes': 0, 'vote kept the close': 0}
+14:13:34.286 [INFO] (policy.py:361) Session 9c01cf0815ae4e72901c51a0286b15c1: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 38584) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:13:39.506 [INFO] (server.py:205) Connected to ('10.80.0.192', 38584)                                             
+INFO:     ('10.80.0.192', 33508) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:13:47.724 [INFO] (server.py:205) Connected to ('10.80.0.192', 33508)                                             
+14:14:03.791 [INFO] (policy.py:361) Session f4a6d1b6c0214c0dbebbbf0b19a84c90: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 35138) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:14:05.490 [INFO] (server.py:205) Connected to ('10.80.0.192', 35138)                                             
+14:14:10.131 [INFO] (policy.py:361) Session f788ba282e124218b57d3f8bc0ab3167: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 55364) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:14:11.850 [INFO] (server.py:205) Connected to ('10.80.0.192', 55364)                                             
+INFO:     ('10.80.0.192', 55378) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:14:12.152 [INFO] (server.py:205) Connected to ('10.80.0.192', 55378)                                             
+14:14:16.518 [INFO] (policy.py:361) Session a1d18de18cd243da869e60c651ff15b5: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 59550) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:14:23.781 [INFO] (server.py:205) Connected to ('10.80.0.192', 59550)                                             
+14:14:27.019 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 201 ms, p95 210 ms                       
+14:14:27.019 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 186, 'votes': 0, 'vote kept the close': 0}
+14:14:33.204 [INFO] (policy.py:361) Session f788ba282e124218b57d3f8bc0ab3167: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 48262) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:14:33.859 [INFO] (server.py:205) Connected to ('10.80.0.192', 48262)                                             
+14:14:44.824 [INFO] (policy.py:361) Session a1d18de18cd243da869e60c651ff15b5: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 39136) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:14:47.975 [INFO] (server.py:205) Connected to ('10.80.0.192', 39136)                                             
+14:14:48.616 [INFO] (policy.py:361) Session fca7f516e7f84e7494b60a8c03a9b7db: a close near a miss goes 2 cm deeper first
+14:14:50.370 [INFO] (policy.py:361) Session f788ba282e124218b57d3f8bc0ab3167: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 37090) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:15:09.685 [INFO] (server.py:205) Connected to ('10.80.0.192', 37090)                                             
+INFO:     ('10.80.0.192', 37094) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:15:13.053 [INFO] (server.py:205) Connected to ('10.80.0.192', 37094)                                             
+14:15:16.101 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 199 ms, p95 209 ms                       
+14:15:16.101 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 190, 'votes': 0, 'vote kept the close': 0}
+14:15:21.803 [INFO] (policy.py:361) Session 627eef1bb9ea44e2ba3772ba93e63342: a close near a miss goes 2 cm deeper first
+14:15:23.266 [INFO] (policy.py:361) Session abdfbe78c0f442ad9d43cc9c7df55841: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 53810) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:15:23.842 [INFO] (server.py:205) Connected to ('10.80.0.192', 53810)                                             
+INFO:     ('10.80.0.192', 53816) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:15:26.547 [INFO] (server.py:205) Connected to ('10.80.0.192', 53816)                                             
+14:15:37.400 [INFO] (policy.py:361) Session 520763ce881a41a4bd0fffc4d72fcbd4: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 39860) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:15:45.610 [INFO] (server.py:205) Connected to ('10.80.0.192', 39860)                                             
+INFO:     ('10.80.0.192', 57218) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:15:48.662 [INFO] (server.py:205) Connected to ('10.80.0.192', 57218)                                             
+14:15:51.626 [INFO] (policy.py:361) Session 627eef1bb9ea44e2ba3772ba93e63342: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 50994) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:15:59.688 [INFO] (server.py:205) Connected to ('10.80.0.192', 50994)                                             
+14:16:00.113 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 190 ms, p95 204 ms                       
+14:16:00.113 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 194, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 59636) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:16:11.996 [INFO] (server.py:205) Connected to ('10.80.0.192', 59636)                                             
+INFO:     ('10.80.0.192', 59644) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:16:12.981 [INFO] (server.py:205) Connected to ('10.80.0.192', 59644)                                             
+14:16:21.923 [INFO] (policy.py:361) Session 520763ce881a41a4bd0fffc4d72fcbd4: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 52612) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:16:22.941 [INFO] (server.py:205) Connected to ('10.80.0.192', 52612)                                             
+14:16:23.394 [INFO] (policy.py:361) Session abe7dacb7b6e464fb8e12e4f4fee878f: a close near a miss goes 2 cm deeper first
+14:16:27.426 [INFO] (policy.py:374) Session ced9308da6384efc862fb858fa25abe2: the arm is still and the gripper is open, task now 'pick up the card.'
+14:16:29.730 [INFO] (policy.py:361) Session 0530fa6139824397bc321347c75418d3: a close near a miss goes 2 cm deeper first
+14:16:31.265 [INFO] (policy.py:361) Session f329148850a9423f8948183371eaaf97: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 39130) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:16:38.306 [INFO] (server.py:205) Connected to ('10.80.0.192', 39130)                                             
+14:16:40.407 [INFO] (policy.py:361) Session 638f545a40fb444baa5165d888578dce: a close near a miss goes 2 cm deeper first
+14:16:40.610 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 191 ms, p95 201 ms                       
+14:16:40.611 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 199, 'votes': 0, 'vote kept the close': 0}
+14:16:46.447 [INFO] (policy.py:361) Session 638f545a40fb444baa5165d888578dce: a close near a miss goes 2 cm deeper first
+14:16:48.119 [INFO] (policy.py:374) Session 94c23324fa3e499eb2127bd6c7ec23e0: the arm is still and the gripper is open, task now 'pick up the gold watch.'
+INFO:     ('10.80.0.192', 53482) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:16:49.785 [INFO] (server.py:205) Connected to ('10.80.0.192', 53482)                                             
+14:16:52.290 [INFO] (policy.py:361) Session 638f545a40fb444baa5165d888578dce: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 39236) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:16:57.345 [INFO] (server.py:205) Connected to ('10.80.0.192', 39236)                                             
+14:16:58.571 [INFO] (policy.py:361) Session f329148850a9423f8948183371eaaf97: a close near a miss goes 2 cm deeper first
+14:16:58.760 [INFO] (policy.py:361) Session ced9308da6384efc862fb858fa25abe2: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 39244) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:17:04.838 [INFO] (server.py:205) Connected to ('10.80.0.192', 39244)                                             
+14:17:08.000 [INFO] (policy.py:361) Session f329148850a9423f8948183371eaaf97: a close near a miss goes 2 cm deeper first
+14:17:14.980 [INFO] (policy.py:361) Session ced9308da6384efc862fb858fa25abe2: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 38218) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:17:18.761 [INFO] (server.py:205) Connected to ('10.80.0.192', 38218)                                             
+INFO:     ('10.80.0.192', 38230) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:17:19.116 [INFO] (server.py:205) Connected to ('10.80.0.192', 38230)                                             
+14:17:19.265 [INFO] (policy.py:361) Session 520763ce881a41a4bd0fffc4d72fcbd4: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 38232) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:17:19.693 [INFO] (server.py:205) Connected to ('10.80.0.192', 38232)                                             
+INFO:     ('10.80.0.192', 38236) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:17:22.643 [INFO] (server.py:205) Connected to ('10.80.0.192', 38236)                                             
+14:17:24.433 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 188 ms, p95 199 ms                       
+14:17:24.433 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 206, 'votes': 0, 'vote kept the close': 0}
+14:17:30.764 [INFO] (policy.py:361) Session 2bb53184dc104a27a717391b71101073: a close near a miss goes 2 cm deeper first
+14:17:38.253 [INFO] (policy.py:361) Session ced9308da6384efc862fb858fa25abe2: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 39154) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:17:41.985 [INFO] (server.py:205) Connected to ('10.80.0.192', 39154)                                             
+INFO:     ('10.80.0.192', 47004) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:17:55.583 [INFO] (server.py:205) Connected to ('10.80.0.192', 47004)                                             
+INFO:     ('10.80.0.192', 47010) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:17:56.738 [INFO] (server.py:205) Connected to ('10.80.0.192', 47010)                                             
+14:17:58.271 [INFO] (policy.py:361) Session 2fcebeef83be416e8dc5092508a3bb42: a close near a miss goes 2 cm deeper first
+14:18:02.059 [INFO] (policy.py:361) Session 527b0c6f7ce946c89ba3129b56b0a8df: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 44872) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:18:06.360 [INFO] (server.py:205) Connected to ('10.80.0.192', 44872)                                             
+14:18:08.721 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 189 ms, p95 203 ms                       
+14:18:08.721 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 210, 'votes': 0, 'vote kept the close': 0}
+14:18:11.312 [INFO] (policy.py:361) Session 09731b95ccf74f12914cc1724f1723c0: a close near a miss goes 2 cm deeper first
+14:18:12.401 [INFO] (policy.py:361) Session 527b0c6f7ce946c89ba3129b56b0a8df: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 44652) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:18:20.574 [INFO] (server.py:205) Connected to ('10.80.0.192', 44652)                                             
+INFO:     ('10.80.0.192', 47858) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:18:36.842 [INFO] (server.py:205) Connected to ('10.80.0.192', 47858)                                             
+14:18:39.389 [INFO] (policy.py:361) Session ef2f159c363d435db8307349cf261f70: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 60308) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:18:40.007 [INFO] (server.py:205) Connected to ('10.80.0.192', 60308)                                             
+INFO:     ('10.80.0.192', 60320) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:18:40.658 [INFO] (server.py:205) Connected to ('10.80.0.192', 60320)                                             
+14:18:46.008 [INFO] (policy.py:361) Session dc0a28c551094ab29f32d9c73a9f302a: a close near a miss goes 2 cm deeper first
+14:18:55.460 [INFO] (policy.py:361) Session 43e073dc7120468e85031fe032f2bb6f: a close near a miss goes 2 cm deeper first
+14:19:00.133 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 191 ms, p95 203 ms                       
+14:19:00.133 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 215, 'votes': 0, 'vote kept the close': 0}
+14:19:00.135 [INFO] (policy.py:361) Session 42fa6f1edb5845a78ea888a4ac020acb: a close near a miss goes 2 cm deeper first
+14:19:10.457 [INFO] (policy.py:361) Session 43e073dc7120468e85031fe032f2bb6f: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 42564) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:19:15.462 [INFO] (server.py:205) Connected to ('10.80.0.192', 42564)                                             
+14:19:15.578 [INFO] (policy.py:361) Session dc0a28c551094ab29f32d9c73a9f302a: a close near a miss goes 2 cm deeper first
+14:19:22.734 [INFO] (policy.py:361) Session ef2f159c363d435db8307349cf261f70: a close near a miss goes 2 cm deeper first
+14:19:31.446 [INFO] (policy.py:361) Session 42fa6f1edb5845a78ea888a4ac020acb: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 51620) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:19:31.562 [INFO] (server.py:205) Connected to ('10.80.0.192', 51620)                                             
+14:19:37.066 [INFO] (policy.py:361) Session 94c23324fa3e499eb2127bd6c7ec23e0: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 48292) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:19:37.798 [INFO] (server.py:205) Connected to ('10.80.0.192', 48292)                                             
+14:19:38.811 [INFO] (policy.py:361) Session 210dd50361854a008989db4c4bf9b557: a close near a miss goes 2 cm deeper first
+14:19:44.384 [INFO] (policy.py:361) Session 42fa6f1edb5845a78ea888a4ac020acb: a close near a miss goes 2 cm deeper first
+14:19:45.677 [INFO] (policy.py:361) Session 6245ce4dc4c049d3b53cdbd0504ec661: a close near a miss goes 2 cm deeper first
+14:19:47.940 [INFO] (policy.py:361) Session 4dcb13b1365d4ff3ae1f248c9faf07da: a close near a miss goes 2 cm deeper first
+14:19:49.462 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 193 ms, p95 206 ms                       
+14:19:49.462 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 225, 'votes': 0, 'vote kept the close': 0}
+14:19:50.839 [INFO] (policy.py:361) Session ef2f159c363d435db8307349cf261f70: a close near a miss goes 2 cm deeper first
+14:20:16.872 [INFO] (policy.py:361) Session 210dd50361854a008989db4c4bf9b557: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 39668) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:20:17.375 [INFO] (server.py:205) Connected to ('10.80.0.192', 39668)                                             
+INFO:     ('10.80.0.192', 36248) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:20:27.107 [INFO] (server.py:205) Connected to ('10.80.0.192', 36248)                                             
+INFO:     ('10.80.0.192', 36264) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:20:28.293 [INFO] (server.py:205) Connected to ('10.80.0.192', 36264)                                             
+INFO:     ('10.80.0.192', 36272) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:20:32.826 [INFO] (server.py:205) Connected to ('10.80.0.192', 36272)                                             
+14:20:37.423 [INFO] (policy.py:361) Session 8231b08214ac442b9582109a5ae7979f: a close near a miss goes 2 cm deeper first
+14:20:42.082 [INFO] (policy.py:361) Session 8231b08214ac442b9582109a5ae7979f: a close near a miss goes 2 cm deeper first
+14:20:42.632 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 192 ms, p95 207 ms                       
+14:20:42.632 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 229, 'votes': 0, 'vote kept the close': 0}
+14:20:42.634 [INFO] (policy.py:361) Session 43e073dc7120468e85031fe032f2bb6f: a close near a miss goes 2 cm deeper first
+14:20:54.671 [INFO] (policy.py:361) Session 8231b08214ac442b9582109a5ae7979f: a close near a miss goes 2 cm deeper first
+14:20:55.407 [INFO] (policy.py:361) Session 4dcb13b1365d4ff3ae1f248c9faf07da: a close near a miss goes 2 cm deeper first
+14:20:57.182 [INFO] (policy.py:361) Session 4c058e87d5bd41bea37c05cb98165da0: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 54688) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:21:07.057 [INFO] (server.py:205) Connected to ('10.80.0.192', 54688)                                             
+14:21:09.102 [INFO] (policy.py:361) Session 4dcb13b1365d4ff3ae1f248c9faf07da: a close near a miss goes 2 cm deeper first
+14:21:11.173 [INFO] (policy.py:361) Session 4c058e87d5bd41bea37c05cb98165da0: a close near a miss goes 2 cm deeper first
+14:21:22.742 [INFO] (policy.py:361) Session f865698731b34756bf1736ae2567cb77: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 55914) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:21:28.748 [INFO] (server.py:205) Connected to ('10.80.0.192', 55914)                                             
+14:21:29.972 [INFO] (policy.py:374) Session 94c23324fa3e499eb2127bd6c7ec23e0: the arm is still and the gripper is open, task now 'pick up the gold watch.'
+14:21:30.163 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 200 ms, p95 213 ms                       
+14:21:30.163 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 236, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 58590) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:21:41.513 [INFO] (server.py:205) Connected to ('10.80.0.192', 58590)                                             
+INFO:     ('10.80.0.192', 47118) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:21:58.624 [INFO] (server.py:205) Connected to ('10.80.0.192', 47118)                                             
+14:21:59.334 [INFO] (policy.py:361) Session 3fbc7bab9bc2459090518b49ef6311f0: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 47128) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:22:04.341 [INFO] (server.py:205) Connected to ('10.80.0.192', 47128)                                             
+INFO:     ('10.80.0.192', 40118) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:22:13.944 [INFO] (server.py:205) Connected to ('10.80.0.192', 40118)                                             
+14:22:26.917 [INFO] (policy.py:361) Session 3fbc7bab9bc2459090518b49ef6311f0: a close near a miss goes 2 cm deeper first
+14:22:29.740 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 189 ms, p95 202 ms                       
+14:22:29.740 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 238, 'votes': 0, 'vote kept the close': 0}
+14:22:30.474 [INFO] (policy.py:374) Session 6245ce4dc4c049d3b53cdbd0504ec661: the arm is still and the gripper is open, task now 'pick up the wooden pencil.'
+INFO:     ('10.80.0.192', 58724) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:22:39.756 [INFO] (server.py:205) Connected to ('10.80.0.192', 58724)                                             
+INFO:     ('10.80.0.192', 46770) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:22:49.096 [INFO] (server.py:205) Connected to ('10.80.0.192', 46770)                                             
+14:22:55.990 [INFO] (policy.py:361) Session e89d3d280b944d839a70b9350a33bc87: a close near a miss goes 2 cm deeper first
+14:23:01.238 [INFO] (policy.py:361) Session 3fbc7bab9bc2459090518b49ef6311f0: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 33336) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:23:02.746 [INFO] (server.py:205) Connected to ('10.80.0.192', 33336)                                             
+INFO:     ('10.80.0.192', 44014) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:23:07.305 [INFO] (server.py:205) Connected to ('10.80.0.192', 44014)                                             
+14:23:12.871 [INFO] (policy.py:361) Session 0311046d5e9b4e13aaa7ef13656bba00: a close near a miss goes 2 cm deeper first
+14:23:15.956 [INFO] (policy.py:361) Session e89d3d280b944d839a70b9350a33bc87: a close near a miss goes 2 cm deeper first
+14:23:17.348 [INFO] (policy.py:374) Session 3df75a27e9494b63b62e86158fe0cf5d: the arm is still and the gripper is open, task now 'pick up the vintage bird-shaped metal nutcracker.'
+14:23:26.077 [INFO] (policy.py:361) Session 0311046d5e9b4e13aaa7ef13656bba00: a close near a miss goes 2 cm deeper first
+14:23:35.983 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 187 ms, p95 200 ms                       
+14:23:35.983 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 243, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 49714) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:23:45.253 [INFO] (server.py:205) Connected to ('10.80.0.192', 49714)                                             
+INFO:     ('10.80.0.192', 44178) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:23:47.670 [INFO] (server.py:205) Connected to ('10.80.0.192', 44178)                                             
+14:24:02.437 [INFO] (policy.py:361) Session 3df75a27e9494b63b62e86158fe0cf5d: a close near a miss goes 2 cm deeper first
+14:24:13.947 [INFO] (policy.py:361) Session e89d3d280b944d839a70b9350a33bc87: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 55394) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:24:30.241 [INFO] (server.py:205) Connected to ('10.80.0.192', 55394)                                             
+14:24:34.650 [INFO] (policy.py:361) Session 5adc66dd94454e0b84f8e113782583eb: a close near a miss goes 2 cm deeper first
+14:24:41.647 [INFO] (policy.py:361) Session 3a2db58d9f1247d99a9e3d627c81ae6c: a close near a miss goes 2 cm deeper first
+14:24:49.803 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 189 ms, p95 201 ms                       
+14:24:49.803 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 247, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 34746) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:24:53.820 [INFO] (server.py:205) Connected to ('10.80.0.192', 34746)                                             
+14:25:06.399 [INFO] (policy.py:361) Session 5adc66dd94454e0b84f8e113782583eb: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 44256) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:25:28.793 [INFO] (server.py:205) Connected to ('10.80.0.192', 44256)                                             
+14:25:34.435 [INFO] (policy.py:374) Session 677b50a43294475c8378315e1cea0782: the arm is still and the gripper is open, task now 'pick up the wooden humanoid puzzle piece.'
+14:25:38.478 [INFO] (policy.py:361) Session 5adc66dd94454e0b84f8e113782583eb: a close near a miss goes 2 cm deeper first
+14:26:04.351 [INFO] (policy.py:361) Session 677b50a43294475c8378315e1cea0782: a close near a miss goes 2 cm deeper first
+14:26:15.660 [INFO] (policy.py:361) Session 677b50a43294475c8378315e1cea0782: a close near a miss goes 2 cm deeper first
+14:26:25.558 [INFO] (policy.py:361) Session 677b50a43294475c8378315e1cea0782: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 50890) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:26:26.487 [INFO] (server.py:205) Connected to ('10.80.0.192', 50890)                                             
+14:26:36.581 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 189 ms, p95 203 ms                       
+14:26:36.581 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 252, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 52604) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:26:39.798 [INFO] (server.py:205) Connected to ('10.80.0.192', 52604)                                             
+INFO:     ('10.80.0.192', 39524) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:26:47.639 [INFO] (server.py:205) Connected to ('10.80.0.192', 39524)                                             
+INFO:     ('10.80.0.192', 39540) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:26:50.350 [INFO] (server.py:205) Connected to ('10.80.0.192', 39540)                                             
+INFO:     ('10.80.0.192', 39548) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:26:54.144 [INFO] (server.py:205) Connected to ('10.80.0.192', 39548)                                             
+14:27:04.090 [INFO] (policy.py:374) Session c70b858cbdef4326928981f5180605ea: the arm is still and the gripper is open, task now 'pick up the light wooden bridge with arches.'
+14:27:37.261 [INFO] (policy.py:361) Session 5df6d8aed5d84b3aa129adafc65216e2: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 35260) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:27:46.127 [INFO] (server.py:205) Connected to ('10.80.0.192', 35260)                                             
+14:28:42.833 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 190 ms, p95 202 ms                       
+14:28:42.833 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 253, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 37154) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:29:52.654 [INFO] (server.py:205) Connected to ('10.80.0.192', 37154)                                             
+INFO:     ('10.80.0.192', 51960) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:30:14.638 [INFO] (server.py:205) Connected to ('10.80.0.192', 51960)                                             
+INFO:     ('10.80.0.192', 44228) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:30:21.911 [INFO] (server.py:205) Connected to ('10.80.0.192', 44228)                                             
+14:31:07.759 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 189 ms, p95 202 ms                       
+14:31:07.759 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 253, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 47070) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:31:31.966 [INFO] (server.py:205) Connected to ('10.80.0.192', 47070)                                             
+INFO:     ('10.80.0.192', 47086) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:31:34.342 [INFO] (server.py:205) Connected to ('10.80.0.192', 47086)                                             
+INFO:     ('10.80.0.192', 55414) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:31:46.701 [INFO] (server.py:205) Connected to ('10.80.0.192', 55414)                                             
+INFO:     ('10.80.0.192', 56968) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:32:28.264 [INFO] (server.py:205) Connected to ('10.80.0.192', 56968)                                             
+INFO:     ('10.80.0.192', 56984) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:32:33.043 [INFO] (server.py:205) Connected to ('10.80.0.192', 56984)                                             
+14:33:08.404 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 192 ms, p95 204 ms                       
+14:33:08.404 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 253, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 59458) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:33:22.162 [INFO] (server.py:205) Connected to ('10.80.0.192', 59458)                                             
+14:33:26.378 [INFO] (policy.py:361) Session b52eb44f26e34013ad54a2db0baf3aad: a close near a miss goes 2 cm deeper first
+14:33:58.261 [INFO] (policy.py:361) Session b52eb44f26e34013ad54a2db0baf3aad: a close near a miss goes 2 cm deeper first
+14:34:13.867 [INFO] (policy.py:361) Session b52eb44f26e34013ad54a2db0baf3aad: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 49854) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:34:38.358 [INFO] (server.py:205) Connected to ('10.80.0.192', 49854)                                             
+INFO:     ('10.80.0.192', 49866) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:34:38.575 [INFO] (server.py:205) Connected to ('10.80.0.192', 49866)                                             
+14:35:17.751 [INFO] (policy.py:361) Session 6f2baea0265f4a08bc5805c6e4bba4a3: a close near a miss goes 2 cm deeper first
+14:35:46.871 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 192 ms, p95 206 ms                       
+14:35:46.871 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 257, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 53372) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:36:06.739 [INFO] (server.py:205) Connected to ('10.80.0.192', 53372)                                             
+INFO:     ('10.80.0.192', 43676) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:36:09.632 [INFO] (server.py:205) Connected to ('10.80.0.192', 43676)                                             
+14:36:54.113 [INFO] (policy.py:361) Session 1cc0ed9b38174db89ab2c44f4ee7114c: a close near a miss goes 2 cm deeper first
+14:37:07.291 [INFO] (policy.py:361) Session 1cc0ed9b38174db89ab2c44f4ee7114c: a close near a miss goes 2 cm deeper first
+14:37:20.494 [INFO] (policy.py:361) Session 1cc0ed9b38174db89ab2c44f4ee7114c: a close near a miss goes 2 cm deeper first
+INFO:     ('10.80.0.192', 60362) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:39:41.040 [INFO] (server.py:205) Connected to ('10.80.0.192', 60362)                                             
+14:42:34.419 [INFO] (policy.py:374) Session b042929426b645f999943ebb0b3dace7: the arm is still and the gripper is open, task now 'pick up the sleek black spinning top.'
+INFO:     ('10.80.0.192', 39922) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:42:45.958 [INFO] (server.py:205) Connected to ('10.80.0.192', 39922)                                             
+INFO:     ('10.80.0.192', 58722) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:42:56.811 [INFO] (server.py:205) Connected to ('10.80.0.192', 58722)                                             
+14:42:59.091 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 192 ms, p95 206 ms                       
+14:42:59.091 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 260, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 40154) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:44:11.936 [INFO] (server.py:205) Connected to ('10.80.0.192', 40154)                                             
+INFO:     ('10.80.0.192', 52812) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:45:50.251 [INFO] (server.py:205) Connected to ('10.80.0.192', 52812)                                             
+INFO:     ('10.80.0.192', 46326) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:46:31.769 [INFO] (server.py:205) Connected to ('10.80.0.192', 46326)                                             
+INFO:     ('10.80.0.192', 58340) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:46:39.430 [INFO] (server.py:205) Connected to ('10.80.0.192', 58340)                                             
+INFO:     ('10.80.0.192', 37992) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:47:04.117 [INFO] (server.py:205) Connected to ('10.80.0.192', 37992)                                             
+14:47:11.287 [INFO] (policy.py:383) MolmoBot inference over 100 calls: p50 184 ms, p95 204 ms                       
+14:47:11.288 [INFO] (policy.py:384) Rules so far: {'next step': 0, 'deeper': 260, 'votes': 0, 'vote kept the close': 0}
+INFO:     ('10.80.0.192', 41392) - "WebSocket /api/v1/session" [accepted]
+INFO:     connection open
+14:48:08.248 [INFO] (server.py:205) Connected to ('10.80.0.192', 41392)                                             
+14:48:45.917 [INFO] (policy.py:361) Session 706ff0a6951b41059db620068f365c77: a close near a miss goes 2 cm deeper first

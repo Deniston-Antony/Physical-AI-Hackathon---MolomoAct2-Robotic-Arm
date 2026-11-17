@@ -1,0 +1,122 @@
+[
+ {
+  "set": "FrankaCloseDataGenConfig",
+  "group": "close datagen",
+  "board_index": 6,
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/104",
+  "task": "close the drawer.",
+  "limit_s": 31.03
+ },
+ {
+  "set": "FrankaCloseDataGenConfig",
+  "group": "close datagen",
+  "board_index": 16,
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/10",
+  "task": "close the drawer.",
+  "limit_s": 31.03
+ },
+ {
+  "set": "FrankaCloseDataGenConfig",
+  "group": "close datagen",
+  "board_index": 26,
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/862",
+  "task": "close the drawer.",
+  "limit_s": 31.03
+ },
+ {
+  "set": "FrankaCloseDataGenConfig",
+  "group": "close datagen",
+  "board_index": 36,
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/708",
+  "task": "close the drawer.",
+  "limit_s": 31.03
+ },
+ {
+  "set": "FrankaCloseDataGenConfig",
+  "group": "close datagen",
+  "board_index": 46,
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/788",
+  "task": "close the drawer.",
+  "limit_s": 31.03
+ },
+ {
+  "set": "FrankaCloseDataGenConfig",
+  "group": "close datagen",
+  "board_index": 56,
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/152",
+  "task": "close the table.",
+  "limit_s": 31.03
+ },
+ {
+  "set": "FrankaCloseDataGenConfig",
+  "group": "close datagen",
+  "board_index": 66,
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/827",
+  "task": "close the drawer.",
+  "limit_s": 31.03
+ },
+ {
+  "set": "FrankaCloseDataGenConfig",
+  "group": "close datagen",
+  "board_index": 76,
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/85",
+  "task": "close the drawer.",
+  "limit_s": 31.03
+ },
+ {
+  "set": "FrankaCloseDataGenConfig",
+  "group": "close datagen",
+  "board_index": 86,
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/712",
+  "task": "close the cabinet.",
+  "limit_s": 31.03
+ },
+ {
+  "set": "FrankaCloseDataGenConfig",
+  "group": "close datagen",
+  "board_index": 96,
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/362",
+  "task": "close the dresser.",
+  "limit_s": 31.03
+ },
+ {
+  "set": "FrankaCloseDataGenConfig",
+  "group": "close datagen",
+  "board_index": 106,
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/586",
+  "task": "close the table.",
+  "limit_s": 31.03
+ },
+ {
+  "set": "FrankaCloseDataGenConfig",
+  "group": "close datagen",
+  "board_index": 116,
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/824",
+  "task": "close the drawer.",
+  "limit_s": 31.03
+ },
+ {
+  "set": "FrankaCloseDataGenConfig",
+  "group": "close datagen",
+  "board_index": 126,
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/726",
+  "task": "close the table.",
+  "limit_s": 31.03
+ },
+ {
+  "set": "FrankaCloseDataGenConfig",
+  "group": "close datagen",
+  "board_index": 136,
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/445",
+  "task": "close the table.",
+  "limit_s": 31.03
+ },
+ {
+  "set": "FrankaCloseDataGenConfig",
+  "group": "close datagen",
+  "board_index": 146,
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/354",
+  "task": "close the dresser.",
+  "limit_s": 31.03
+ }
+]

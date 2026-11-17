@@ -1,0 +1,82 @@
+[
+ {
+  "board_index": 41,
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "task": "pick up the shaker and place it on the bowl.",
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/148",
+  "limit_s": 46.012,
+  "group": "FrankaPickandPlaceDroidMiniBench"
+ },
+ {
+  "board_index": 71,
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "task": "pick up the bottle and place it on the bowl.",
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/280",
+  "limit_s": 46.012,
+  "group": "FrankaPickandPlaceDroidMiniBench"
+ },
+ {
+  "board_index": 282,
+  "set": "FrankaPickHardBench",
+  "task": "pick up the small red potato.",
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/677",
+  "limit_s": 20.998,
+  "group": "FrankaPickHardBench"
+ },
+ {
+  "board_index": 197,
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "task": "pick up the knife and place it on the bowl.",
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/616",
+  "limit_s": 46.012,
+  "group": "FrankaPickandPlaceDroidMiniBench"
+ },
+ {
+  "board_index": 209,
+  "set": "FrankaPickandPlaceDroidMiniBench",
+  "task": "pick up the shaker and place it on the bowl.",
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickandPlaceDroidMiniBench/FrankaPickandPlaceDroidMiniBench_20260111_json_benchmark/693",
+  "limit_s": 46.012,
+  "group": "FrankaPickandPlaceDroidMiniBench"
+ },
+ {
+  "board_index": 298,
+  "set": "FrankaPickHardBench",
+  "task": "pick up the white stopwatch.",
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/555",
+  "limit_s": 20.998,
+  "group": "FrankaPickHardBench"
+ },
+ {
+  "board_index": 122,
+  "set": "FrankaPickHardBench",
+  "task": "pick up the bottle.",
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/357",
+  "limit_s": 20.998,
+  "group": "FrankaPickHardBench"
+ },
+ {
+  "board_index": 242,
+  "set": "FrankaPickHardBench",
+  "task": "pick up the red skull key.",
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/1755",
+  "limit_s": 20.998,
+  "group": "FrankaPickHardBench"
+ },
+ {
+  "board_index": 226,
+  "set": "FrankaPickHardBench",
+  "task": "pick up the grenade.",
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/1280",
+  "limit_s": 20.998,
+  "group": "FrankaPickHardBench"
+ },
+ {
+  "board_index": 12,
+  "set": "FrankaPickHardBench",
+  "task": "pick up the brown pinecone keychain.",
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaPickHardBench/FrankaPickHardBench_20260206_json_benchmark/199",
+  "limit_s": 20.998,
+  "group": "FrankaPickHardBench"
+ }
+]

@@ -1,0 +1,37 @@
+From 0549ad2be8a259a8a630938ec0bce4caa3cf2648 Mon Sep 17 00:00:00 2001
+From: Deniston_Antony <deniston2k@gmail.com>
+Date: Wed, 11 Nov 2026 16:07:33 +0100
+Subject: [PATCH] Ask for JPEG camera frames in the MolmoBot server
+
+Remove the `compress_images` option of the MolmoBot `pipeline`, so `PolicyDeployment` asks for JPEG frames by default. Raw frames make each call slow on the robot network.
+---
+ positronic/vendors/molmobot/server.py | 12 ++----------
+ 1 file changed, 2 insertions(+), 10 deletions(-)
+
+diff --git a/positronic/vendors/molmobot/server.py b/positronic/vendors/molmobot/server.py
+index 70a4f1f1..2e3c200b 100644
+--- a/positronic/vendors/molmobot/server.py
++++ b/positronic/vendors/molmobot/server.py
+@@ -52,17 +52,9 @@ def molmobot_model(
+ 
+ # The checkpoint predicts 16 steps; MolmoBot's own eval executes the first 8 of them, at 66 ms per step.
+ @cfn.config(codec=molmobot_codecs.droid)
+-def pipeline(
+-    codec: Codec,
+-    fps: float = 15.0,
+-    horizon_sec: float | None = 7.5 / 15,
+-    inference_lead_sec: float = 0.0,
+-    compress_images: bool = False,
+-):
++def pipeline(codec: Codec, fps: float = 15.0, horizon_sec: float | None = 7.5 / 15, inference_lead_sec: float = 0.0):
+     schedule = ChunkedSchedule(fps, horizon_sec, inference_lead=ConstantDuration(inference_lead_sec))
+-    return PolicyDeployment(
+-        Sequential(schedule, TransformImages(640, 640, mode=ResizeMode.BOUND)), codec, compress_images=compress_images
+-    )
++    return PolicyDeployment(Sequential(schedule, TransformImages(640, 640, mode=ResizeMode.BOUND)), codec)
+ 
+ 
+ droid = pipeline
+-- 
+2.43.0
+

@@ -1,0 +1,82 @@
+[
+ {
+  "board_index": 127,
+  "set": "FrankaOpenDataGenConfig",
+  "task": "open the table.",
+  "path": "molmospaces-bench-v1/ithor/FrankaOpenDataGenConfig/FrankaOpenDataGenConfig_20260123_json_benchmark/602",
+  "limit_s": 31.03,
+  "group": "FrankaOpenDataGenConfig"
+ },
+ {
+  "board_index": 56,
+  "set": "FrankaCloseDataGenConfig",
+  "task": "close the table.",
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/152",
+  "limit_s": 31.03,
+  "group": "FrankaCloseDataGenConfig"
+ },
+ {
+  "board_index": 59,
+  "set": "FrankaCloseHardBench",
+  "task": "close the white dresser.",
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaCloseHardBench/FrankaCloseHardBench_20260206_json_benchmark/1277",
+  "limit_s": 31.03,
+  "group": "FrankaCloseHardBench"
+ },
+ {
+  "board_index": 107,
+  "set": "FrankaOpenDataGenConfig",
+  "task": "open the dresser.",
+  "path": "molmospaces-bench-v1/ithor/FrankaOpenDataGenConfig/FrankaOpenDataGenConfig_20260123_json_benchmark/754",
+  "limit_s": 31.03,
+  "group": "FrankaOpenDataGenConfig"
+ },
+ {
+  "board_index": 49,
+  "set": "FrankaCloseHardBench",
+  "task": "close the brown wooden desk.",
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaCloseHardBench/FrankaCloseHardBench_20260206_json_benchmark/115",
+  "limit_s": 31.03,
+  "group": "FrankaCloseHardBench"
+ },
+ {
+  "board_index": 48,
+  "set": "FrankaOpenHardBench",
+  "task": "open the desk.",
+  "path": "molmospaces-bench-v1/ithor/FrankaOpenHardBench/FrankaOpenHardBench_20260206_json_benchmark/991",
+  "limit_s": 31.03,
+  "group": "FrankaOpenHardBench"
+ },
+ {
+  "board_index": 38,
+  "set": "FrankaOpenHardBench",
+  "task": "open the wooden table.",
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaOpenHardBench/FrankaOpenHardBench_20260206_json_benchmark/1544",
+  "limit_s": 31.03,
+  "group": "FrankaOpenHardBench"
+ },
+ {
+  "board_index": 46,
+  "set": "FrankaCloseDataGenConfig",
+  "task": "close the drawer.",
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/788",
+  "limit_s": 31.03,
+  "group": "FrankaCloseDataGenConfig"
+ },
+ {
+  "board_index": 68,
+  "set": "FrankaOpenHardBench",
+  "task": "open the wooden table.",
+  "path": "molmospaces-bench-v1/holodeck-objaverse/FrankaOpenHardBench/FrankaOpenHardBench_20260206_json_benchmark/65",
+  "limit_s": 31.03,
+  "group": "FrankaOpenHardBench"
+ },
+ {
+  "board_index": 37,
+  "set": "FrankaOpenDataGenConfig",
+  "task": "open the desk.",
+  "path": "molmospaces-bench-v1/ithor/FrankaOpenDataGenConfig/FrankaOpenDataGenConfig_20260123_json_benchmark/693",
+  "limit_s": 31.03,
+  "group": "FrankaOpenDataGenConfig"
+ }
+]

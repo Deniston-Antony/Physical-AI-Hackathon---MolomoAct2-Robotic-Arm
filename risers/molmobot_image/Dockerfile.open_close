@@ -1,0 +1,12 @@
+# syntax=docker/dockerfile:1.7
+# A MolmoBot policy image with a second action expert for open and close tasks (see `open_close_expert`).
+# Only this layer is new: the server code of this checkout, the expert file and the server flags.
+#
+# Usage: bash molmobot_image/build_open_close.sh <tag> <action expert .pt> "<server flags>"
+
+ARG BASE
+FROM ${BASE}
+COPY *.py /positronic/positronic/vendors/molmobot/
+COPY action_expert_open_close.pt /opt/molmobot/action_expert_open_close.pt
+ARG SERVER_ARGS=
+ENV MOLMOBOT_ARGS=${SERVER_ARGS}
