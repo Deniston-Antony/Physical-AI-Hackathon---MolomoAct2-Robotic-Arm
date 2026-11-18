@@ -18,7 +18,7 @@ A full report of the work from image v3 to 10 November, with more pictures, is i
 | Best stage-1 board score | **68.4% (219/320)**, image v3 (7 November). Rank **6 of 40** on 11 November (the last rank we read) |
 | Start (31 October) | 19.4% (62/320) |
 | Best model | MolmoBot-Img-DROID (Ai2), half-overlap timing, left shoulder camera, 12 actions per call, 3 flow steps, still-arm rule |
-| Best stage-2 submission | v3-jpeg-rl2 (17 November): MolmoSpaces **66.9%** (214/320), RoboLab **0.325** (7/40 tasks fully done). Total (mean) **0.497** |
+| Best stage-2 submission | v3-jpeg-rl2 (17 November): MolmoSpaces **65.6%** (210/320), RoboLab **0.325** (7/40 tasks fully done). Total (mean) **0.490**. Board rank 7 of 47 (18 Nov) |
 | Other stage-2 submission | FLUX 3 Action, 1 step, fast timing + retry (18 November): MolmoSpaces 30.0% (96/320), RoboLab **0.568** (15/40 done). Total 0.434 |
 | Stage-2 image | `docker.io/denistonantony/molmobot-img-droid:v3-jpeg-rl2` |
 | RoboLab | Weak half of the stage-2 score for v3: 7 of 40 tasks done. FLUX does 15 of 40 (see 18 November) |
@@ -32,7 +32,7 @@ Every board submission. "Change" compares the score with our best score before t
 | Date (UTC) | Submission | Model and setting | Solved | Score | Change | Board rank |
 |---|---|---|---|---|---|---|
 | 18 Nov | `72d011cb7ae9650a` | **Stage 2**: FLUX 3 Action, 1 denoising step, fast timing + retry after a miss. RoboLab **0.568**, total 0.434 | 96 | 30.0% | −38.4 | – |
-| 17 Nov | `55bf0a88ba309931` | **Stage 2** (`competition.sim_stage_2`): v3-jpeg-rl2 again. RoboLab 0.325, total **0.497** | 214 | 66.9% | −1.6 | – |
+| 17 Nov | `55bf0a88ba309931` | **Stage 2** (`competition.sim_stage_2`): v3-jpeg-rl2 again. RoboLab 0.325, total **0.490** | 210 | 65.6% | −2.8 | 7 of 47 |
 | 14 Nov | `4bfca4de3f5020f4` | v3-jpeg-rl2: v3-jpeg-rl + training wording, steps of a task, deeper grasp after a miss | 214 | 66.9% | −1.6 | – |
 | 13 Nov | `59db633efae52708` | v3-jpeg-rl: v3-jpeg + still-arm rule for RoboLab wordings | 212 | 66.3% | −2.2 | – |
 | 11 Nov | `19a5da2d361187f1` | v3-jpeg: v3 with JPEG camera frames | 210 | 65.6% | −2.8 | – |
@@ -192,34 +192,34 @@ episodes (3 done). Submission `72d011cb7ae9650a`.
 
 | Part | FLUX 1 step + fast + retry | v3-jpeg-rl2 (17 Nov) |
 |---|---|---|
-| MolmoSpaces (320) | 30.0% (96) | **66.9%** (214) |
+| MolmoSpaces (320) | 30.0% (96) | **65.6%** (210) |
 | RoboLab (40 tasks) | **0.568** (15/40 done) | 0.325 (7/40 done) |
-| **Total (mean)** | 0.434 | **0.497** |
+| **Total (mean)** | 0.434 | **0.490** |
 
 MolmoSpaces by set (successes):
 
 | Set | Episodes | v3 | FLUX |
 |---|---|---|---|
 | Pick, normal | 59 | **53** | 28 |
-| Pick, hard | 57 | **34** | 12 |
-| Pick and place, normal | 54 | **49** | 11 |
-| Pick and place, hard | 58 | **41** | 9 |
+| Pick, hard | 57 | **30** | 12 |
+| Pick and place, normal | 54 | **47** | 11 |
+| Pick and place, hard | 58 | **43** | 9 |
 | Pick and place, colour | 16 | **13** | 4 |
-| Place next to | 16 | **3** | 2 |
+| Place next to | 16 | 1 | **2** |
 | Close, normal | 15 | 13 | **15** |
-| Close, hard | 15 | 6 | **11** |
+| Close, hard | 15 | 7 | **11** |
 | Open, normal | 15 | 2 | **3** |
-| Open, hard | 15 | 0 | **1** |
+| Open, hard | 15 | **1** | **1** |
 
 RoboLab: FLUX did 8 tasks that v3 did not (stack 3 Rubik's cubes, stack bowls, take mugs off the shelf, keyboard out
 of the bin, red items in the bin, pick the orange object, Rubik's cube or banana, white mug in the centre); v3 did no
 task that FLUX did not. All 40 tasks:
 [`risers/tests_1118/robolab_stage2_flux_vs_v3.md`](risers/tests_1118/robolab_stage2_flux_vs_v3.md).
 
-- v3 stays the best stage-2 entry (0.497 against 0.434): FLUX picks far worse in MolmoSpaces (66 of 260 pick
-  episodes against 193).
+- v3 stays the best stage-2 entry (0.490 against 0.434): FLUX picks far worse in MolmoSpaces (66 of 260 pick
+  episodes against 187).
 - FLUX is much better in RoboLab (tasks of several objects, stacking, shelves) and on close tasks.
-- Idea: v3 for MolmoSpaces and FLUX for RoboLab would give about (0.669 + 0.568) / 2 = 0.62. Open questions: both
+- Idea: v3 for MolmoSpaces and FLUX for RoboLab would give about (0.656 + 0.568) / 2 = 0.61. Open questions: both
   models in the 24 GB board GPU (about 40 GB together, see 17 November) and how the policy tells the two simulators
   apart.
 - Build and submit files: [`risers/flux_submit/`](risers/flux_submit/); cloud test job:
@@ -227,7 +227,7 @@ task that FLUX did not. All 40 tasks:
 
 ---
 
-## 17 November: first stage-2 score (0.497) and FLUX 3 Action with fewer denoising steps (no gain)
+## 17 November: first stage-2 score (0.490) and FLUX 3 Action with fewer denoising steps (no gain)
 
 ### Stage-2 submission: v3-jpeg-rl2
 
@@ -235,9 +235,9 @@ Stage 2 is one submission (`competition.sim_stage_2`) that runs both simulators;
 
 | Part | Episodes | Score | Before |
 |---|---|---|---|
-| MolmoSpaces (`molmo.competition_v2`) | 320 | **66.9%** (214) | 66.9% (214) for the same image on 14 Nov (we first read 210 here; the result file says 214) |
+| MolmoSpaces (`molmo.competition_v2`) | 320 | **65.6%** (210) | 66.9% (214) for the same image on 14 Nov: run-to-run noise |
 | RoboLab (`robolab.competition_40`) | 40 tasks, 1 try each | **0.325** mean subtask score, 7/40 fully done | Our cloud test 0.46; platform check of v3 0.40 |
-| **Total** | | **0.497** | – |
+| **Total** | | **0.490** | – |
 
 RoboLab per task (all 40 in
 [`risers/tests_1117/robolab_stage2_per_task.md`](risers/tests_1117/robolab_stage2_per_task.md)):
