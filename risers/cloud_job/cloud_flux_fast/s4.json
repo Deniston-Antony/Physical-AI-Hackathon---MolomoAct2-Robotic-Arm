@@ -1,0 +1,82 @@
+[
+ {
+  "board_index": 19,
+  "set": "FrankaCloseHardBench",
+  "task": "close the table.",
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaCloseHardBench/FrankaCloseHardBench_20260206_json_benchmark/1139",
+  "limit_s": 31.03,
+  "group": "FrankaCloseHardBench"
+ },
+ {
+  "board_index": 57,
+  "set": "FrankaOpenDataGenConfig",
+  "task": "open the dresser.",
+  "path": "molmospaces-bench-v1/ithor/FrankaOpenDataGenConfig/FrankaOpenDataGenConfig_20260123_json_benchmark/422",
+  "limit_s": 31.03,
+  "group": "FrankaOpenDataGenConfig"
+ },
+ {
+  "board_index": 76,
+  "set": "FrankaCloseDataGenConfig",
+  "task": "close the drawer.",
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/85",
+  "limit_s": 31.03,
+  "group": "FrankaCloseDataGenConfig"
+ },
+ {
+  "board_index": 129,
+  "set": "FrankaCloseHardBench",
+  "task": "close the dresser.",
+  "path": "molmospaces-bench-v1/procthor-objaverse/FrankaCloseHardBench/FrankaCloseHardBench_20260206_json_benchmark/168",
+  "limit_s": 31.03,
+  "group": "FrankaCloseHardBench"
+ },
+ {
+  "board_index": 109,
+  "set": "FrankaCloseHardBench",
+  "task": "close the dresser.",
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaCloseHardBench/FrankaCloseHardBench_20260206_json_benchmark/1379",
+  "limit_s": 31.03,
+  "group": "FrankaCloseHardBench"
+ },
+ {
+  "board_index": 16,
+  "set": "FrankaCloseDataGenConfig",
+  "task": "close the drawer.",
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/10",
+  "limit_s": 31.03,
+  "group": "FrankaCloseDataGenConfig"
+ },
+ {
+  "board_index": 117,
+  "set": "FrankaOpenDataGenConfig",
+  "task": "open the dresser.",
+  "path": "molmospaces-bench-v1/ithor/FrankaOpenDataGenConfig/FrankaOpenDataGenConfig_20260123_json_benchmark/372",
+  "limit_s": 31.03,
+  "group": "FrankaOpenDataGenConfig"
+ },
+ {
+  "board_index": 36,
+  "set": "FrankaCloseDataGenConfig",
+  "task": "close the drawer.",
+  "path": "molmospaces-bench-v1/ithor/FrankaCloseDataGenConfig/FrankaCloseDataGenConfig_20260123_json_benchmark/708",
+  "limit_s": 31.03,
+  "group": "FrankaCloseDataGenConfig"
+ },
+ {
+  "board_index": 128,
+  "set": "FrankaOpenHardBench",
+  "task": "open the dresser.",
+  "path": "molmospaces-bench-v1/procthor-10k/FrankaOpenHardBench/FrankaOpenHardBench_20260206_json_benchmark/452",
+  "limit_s": 31.03,
+  "group": "FrankaOpenHardBench"
+ },
+ {
+  "board_index": 28,
+  "set": "FrankaOpenHardBench",
+  "task": "open the wooden table.",
+  "path": "molmospaces-bench-v1/ithor/FrankaOpenHardBench/FrankaOpenHardBench_20260206_json_benchmark/1266",
+  "limit_s": 31.03,
+  "group": "FrankaOpenHardBench"
+ }
+]
