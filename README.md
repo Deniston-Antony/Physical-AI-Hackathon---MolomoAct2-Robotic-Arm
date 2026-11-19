@@ -11,17 +11,17 @@ This README is a log of the work, **newest first**. The first steps (31 October)
 A full report of the work from image v3 to 10 November, with more pictures, is in
 [`reports/2026-11-10-changes-since-v3.pdf`](reports/2026-11-10-changes-since-v3.pdf).
 
-## Current status (18 November 2026)
+## Current status (19 November 2026)
 
 | | |
 |---|---|
 | Best stage-1 board score | **68.4% (219/320)**, image v3 (7 November). Rank **6 of 40** on 11 November (the last rank we read) |
 | Start (31 October) | 19.4% (62/320) |
 | Best model | MolmoBot-Img-DROID (Ai2), half-overlap timing, left shoulder camera, 12 actions per call, 3 flow steps, still-arm rule |
-| Best stage-2 submission | v3-jpeg-rl2 (17 November): MolmoSpaces **66.9%** (214/320), RoboLab **0.325** (7/40 tasks fully done). Total (mean) **0.497** |
-| Other stage-2 submission | FLUX 3 Action, 1 step, fast timing + retry (18 November): MolmoSpaces 30.0% (96/320), RoboLab **0.568** (15/40 done). Total 0.434 |
-| Stage-2 image | `docker.io/denistonantony/molmobot-img-droid:v3-jpeg-rl2` |
-| RoboLab | Weak half of the stage-2 score for v3: 7 of 40 tasks done. FLUX does 15 of 40 (see 18 November) |
+| Best stage-2 submission | **Router image** (19 November): v3 for MolmoSpaces, FLUX 3 Action for RoboLab. MolmoSpaces **65.9%** (211/320), RoboLab **0.609** (16/40 tasks fully done). Total (mean) **0.634**. **Board rank 2** (19 Nov, #1 is 0.659) |
+| Earlier stage-2 submissions | v3-jpeg-rl2 (17 Nov): 65.6% + 0.325 = **0.490**. FLUX 1 step, fast + retry (18 Nov): 30.0% + 0.568 = 0.434 |
+| Stage-2 image | `docker.io/denistonantony/policy-router:v3` (one image, two models; only one on the GPU at a time) |
+| RoboLab | Was the weak half for v3 (7 of 40 tasks done). The router hands RoboLab to FLUX: 16 of 40 done, the best RoboLab score of the top 3 teams |
 | Real robot | Platform check of v3: **0 of 27** episodes on 9 tasks; the public models solve 42% (see 14 November) |
 | Limit | 1 submission per day |
 
@@ -31,8 +31,10 @@ Every board submission. "Change" compares the score with our best score before t
 
 | Date (UTC) | Submission | Model and setting | Solved | Score | Change | Board rank |
 |---|---|---|---|---|---|---|
+| **19 Nov** | `7ccfcc0950bd4651` | **Stage 2: router image** (v3 on MolmoSpaces wordings, FLUX on all others). RoboLab **0.609**, total **0.634** (+0.144 on 0.490) | **211** | 65.9% | −2.5 | **2 of 48** |
+| 19 Nov | `1ffc8542b968db30` | Router image, first try: ended `internal_error` (6 MolmoSpaces episodes hit the platform's queue limit, "none on a fault of your policy"). Not counted | – | error | – | – |
 | 18 Nov | `72d011cb7ae9650a` | **Stage 2**: FLUX 3 Action, 1 denoising step, fast timing + retry after a miss. RoboLab **0.568**, total 0.434 | 96 | 30.0% | −38.4 | – |
-| 17 Nov | `55bf0a88ba309931` | **Stage 2** (`competition.sim_stage_2`): v3-jpeg-rl2 again. RoboLab 0.325, total **0.497** | 214 | 66.9% | −1.6 | – |
+| 17 Nov | `55bf0a88ba309931` | **Stage 2** (`competition.sim_stage_2`): v3-jpeg-rl2 again. RoboLab 0.325, total **0.490** | 210 | 65.6% | −2.8 | 7 of 47 |
 | 14 Nov | `4bfca4de3f5020f4` | v3-jpeg-rl2: v3-jpeg-rl + training wording, steps of a task, deeper grasp after a miss | 214 | 66.9% | −1.6 | – |
 | 13 Nov | `59db633efae52708` | v3-jpeg-rl: v3-jpeg + still-arm rule for RoboLab wordings | 212 | 66.3% | −2.2 | – |
 | 11 Nov | `19a5da2d361187f1` | v3-jpeg: v3 with JPEG camera frames | 210 | 65.6% | −2.8 | – |
@@ -108,6 +110,7 @@ The ten submissions from v3 on are between 197 and 219. Six of them are within �
 | 7 Nov | Camera switch when the left camera is blocked | Local hard close 6/15 against 4/15 (#79 solved) | About +1 |
 | 9 Nov | Touch grasp (open tasks) | Local open 6/30 against 4/30. Board open 4/30, our best | Open +1 to +3. Total fell (see 9 November) |
 | 10 Nov | Both action experts stay on the GPU (v6) | Model call 245 ms against 485 ms for v5-touch on a board-load test | Total 208 against 197 for v5-touch (+11). Still below v3 |
+| 19 Nov | **Router image: v3 for MolmoSpaces, FLUX for RoboLab** (the first task wording picks the model) | 40-episode cloud test 27/40 against 26/40 for v3 (no MolmoSpaces loss); switch test: FLUX ready 170 s after the first RoboLab task | **Stage-2 total 0.490 → 0.634** (+0.144), rank 7 → 2 |
 | 13 Nov | Still-arm rule for the wordings of RoboLab ("Put the X in the Y") | The rule matched 0 of 120 RoboLab tasks before, 54 after. RoboLab cloud test 0.49 → 0.51, no task worse | RoboLab only (from stage 2) |
 
 ### Changes that did not help
@@ -147,6 +150,123 @@ that, or we cannot see it in one run.
 The cloud tests of 40 episodes vary more. On 14 November the control (the same behaviour as v3) solved 22 of 40,
 where v3 solved 26 and 27 of the same 40 episodes on 10 and 11 November: ±4–5 episodes in 40. On RoboLab, one
 episode per task, one task moves the mean score by 0.08.
+
+---
+
+## 19 November: the router image, v3 for MolmoSpaces and FLUX for RoboLab (stage 2: 0.490 → 0.634, rank 2)
+
+### The idea
+
+On 17–18 November each model was strong in one half of stage 2 and weak in the other:
+
+| Part | v3-jpeg-rl2 | FLUX 1 step, fast + retry |
+|---|---|---|
+| MolmoSpaces | **0.656** | 0.300 |
+| RoboLab | 0.325 | **0.568** |
+| Total | 0.490 | 0.434 |
+
+The platform runs each part of a submission in its own container from the same image. So one image that serves v3
+when the task is a MolmoSpaces task and FLUX otherwise should get the better half of both: about
+(0.656 + 0.568) / 2 = 0.61.
+
+### How the router works
+
+Both models do not fit the 24 GB board GPU together (about 40 GB), so only one is on the GPU at a time:
+
+1. `front.py` listens on the platform's port 8000 and starts v3 (port 8001). Every connection is passed to v3.
+2. v3 writes the task text of each new session to its log (one added line in `policy.py`).
+3. The **first real task** decides the whole run, once (the empty warm-up task at start-up is skipped):
+   - a MolmoSpaces wording → v3 stays for the whole run;
+   - any other wording (RoboLab, the real robot) → new sessions get 503 (the platform client retries for up to
+     900 s), the router waits until the open sessions end, stops v3, starts FLUX (port 8002) and passes everything
+     to FLUX from then on. During the switch the keepalive answers 200, so the platform waits.
+4. If FLUX does not start, v3 comes back so the run goes on.
+
+The MolmoSpaces wordings are 4 fixed sentence patterns (`route_rule.py`), for example `pick up the X.`,
+`open the X.` and `Pick up the X and place it in or on the Y`. Checked on all task texts we have: 320 of 320
+MolmoSpaces episodes go to v3 and 40 of 40 RoboLab tasks go to FLUX.
+
+### Fitting the image in the platform's size limit
+
+| Step | Size (as the platform counts it) |
+|---|---|
+| v3 image + FLUX image as layers | 62.3 GB (limit 55 GB) |
+| v3 checkpoint stored in bfloat16 (v3 already runs in bfloat16, so the weights are the same) | 20 GB → 10 GB for that file |
+| One flat layer, without the build cache (`Dockerfile.flat`) | **54.3 GB** |
+
+### Bugs found by the cloud tests before the submission
+
+| Problem | Fix |
+|---|---|
+| v3 started inside FLUX's code folder and imported FLUX's `positronic` | v3 is started in its own folder |
+| The image had an old v3 `policy.py` | Replaced by the exact file of v3-jpeg-rl2 + the one log line |
+| The empty warm-up task at start-up decided the route (to FLUX) | Empty tasks are skipped |
+
+### Cloud tests (L40S)
+
+| Test | Result |
+|---|---|
+| Organisers' start test | Server up after 20–25 s |
+| A: MolmoSpaces tasks only | Stays on v3, 6 of 8 episodes done |
+| B: forced switch | FLUX ready 170 s after the first non-MolmoSpaces task, the run went on |
+| 40 test episodes (4 streams, as on the board) | **27/40**, against 26/40 for v3 alone on the same episodes. All sessions on v3, 0 out-of-memory lines. Cost $1.35 |
+
+### Board result (submission `7ccfcc0950bd4651`)
+
+The first try (`1ffc8542b968db30`) ended with `internal_error` on the platform side; the organisers confirmed it was
+not a fault of the policy and gave the attempt back. The second try:
+
+| Part | **Router (19 Nov)** | v3-jpeg-rl2 (17 Nov) | FLUX fast + retry (18 Nov) |
+|---|---|---|---|
+| MolmoSpaces (320) | **65.9%** (211) | 65.6% (210) | 30.0% (96) |
+| RoboLab (40 tasks) | **0.609** (16 done) | 0.325 (7 done) | 0.568 (15 done) |
+| **Total (mean)** | **0.634** | 0.490 | 0.434 |
+| Board rank | **2** | 7 | – |
+
+MolmoSpaces by set (successes) — the router plays v3, so it matches v3 within the run noise (±6):
+
+| Set | Episodes | Router | v3 (17 Nov) | Change |
+|---|---|---|---|---|
+| Pick, normal | 59 | **55** | 53 | +2 |
+| Pick, hard | 57 | **32** | 30 | +2 |
+| Pick and place, normal | 54 | **49** | 47 | +2 |
+| Pick and place, hard | 58 | 40 | **43** | −3 |
+| Pick and place, colour | 16 | 13 | 13 | 0 |
+| Place next to | 16 | 0 | **1** | −1 |
+| Close, normal | 15 | 13 | 13 | 0 |
+| Close, hard | 15 | 5 | **7** | −2 |
+| Open, normal | 15 | 2 | 2 | 0 |
+| Open, hard | 15 | **2** | 1 | +1 |
+| **Total** | 320 | **211** | 210 | +1 |
+
+RoboLab: the router plays FLUX, so it matches FLUX of 18 November within the run noise (0.609 against 0.568; one
+RoboLab episode per task, so luck moves single tasks). The tasks that changed:
+
+| Task | Router | FLUX (18 Nov) | v3 (17 Nov) |
+|---|---|---|---|
+| BBQ sauce in bin | **done** | 0.5 | 0 |
+| Oranges on plate | **done** | 0.5 | 0.5 |
+| Red dishes in bin | **done** | 0 | 0.5 |
+| Rubik's cubes in bin | **done** | 0.67 | 0.33 |
+| Throw away apple | **done** | 0 | 0 |
+| Stack bowls right on left | 0 | **done** | 0 |
+| Reorient red mug | 0.5 | **done** | **done** |
+| Stack 3 Rubik's cubes | 0.5 | **done** | 0 |
+| Take mugs off the shelf | 0.5 | **done** | 0 |
+
+The top 3 of the board on 19 November:
+
+| Rank | Team | Total | MolmoSpaces | RoboLab |
+|---|---|---|---|---|
+| 1 | Mario Gemoll | **0.659** | **0.713** | 0.606 |
+| **2** | **The Risers** | 0.634 | 0.659 | **0.609** |
+| 3 | Sleem | 0.617 | 0.697 | 0.537 |
+
+- Our RoboLab half is now the best of the top 3; the gap to #1 is in MolmoSpaces (0.659 against 0.713).
+- Code: [`risers/router_image/`](risers/router_image/) (`front.py`, `route_rule.py`, `Dockerfile`, `Dockerfile.flat`,
+  `v3_patch/policy.py`); the FLUX server code is the one in [`risers/flux_submit/code_flux3v3/`](risers/flux_submit/code_flux3v3/).
+  Cloud tests: [`risers/cloud_job/cloud_router.sh`](risers/cloud_job/cloud_router.sh) and
+  [`risers/cloud_job/cloud_router40/`](risers/cloud_job/cloud_router40/).
 
 ---
 
@@ -192,34 +312,34 @@ episodes (3 done). Submission `72d011cb7ae9650a`.
 
 | Part | FLUX 1 step + fast + retry | v3-jpeg-rl2 (17 Nov) |
 |---|---|---|
-| MolmoSpaces (320) | 30.0% (96) | **66.9%** (214) |
+| MolmoSpaces (320) | 30.0% (96) | **65.6%** (210) |
 | RoboLab (40 tasks) | **0.568** (15/40 done) | 0.325 (7/40 done) |
-| **Total (mean)** | 0.434 | **0.497** |
+| **Total (mean)** | 0.434 | **0.490** |
 
 MolmoSpaces by set (successes):
 
 | Set | Episodes | v3 | FLUX |
 |---|---|---|---|
 | Pick, normal | 59 | **53** | 28 |
-| Pick, hard | 57 | **34** | 12 |
-| Pick and place, normal | 54 | **49** | 11 |
-| Pick and place, hard | 58 | **41** | 9 |
+| Pick, hard | 57 | **30** | 12 |
+| Pick and place, normal | 54 | **47** | 11 |
+| Pick and place, hard | 58 | **43** | 9 |
 | Pick and place, colour | 16 | **13** | 4 |
-| Place next to | 16 | **3** | 2 |
+| Place next to | 16 | 1 | **2** |
 | Close, normal | 15 | 13 | **15** |
-| Close, hard | 15 | 6 | **11** |
+| Close, hard | 15 | 7 | **11** |
 | Open, normal | 15 | 2 | **3** |
-| Open, hard | 15 | 0 | **1** |
+| Open, hard | 15 | **1** | **1** |
 
 RoboLab: FLUX did 8 tasks that v3 did not (stack 3 Rubik's cubes, stack bowls, take mugs off the shelf, keyboard out
 of the bin, red items in the bin, pick the orange object, Rubik's cube or banana, white mug in the centre); v3 did no
 task that FLUX did not. All 40 tasks:
 [`risers/tests_1118/robolab_stage2_flux_vs_v3.md`](risers/tests_1118/robolab_stage2_flux_vs_v3.md).
 
-- v3 stays the best stage-2 entry (0.497 against 0.434): FLUX picks far worse in MolmoSpaces (66 of 260 pick
-  episodes against 193).
+- v3 stays the best stage-2 entry (0.490 against 0.434): FLUX picks far worse in MolmoSpaces (66 of 260 pick
+  episodes against 187).
 - FLUX is much better in RoboLab (tasks of several objects, stacking, shelves) and on close tasks.
-- Idea: v3 for MolmoSpaces and FLUX for RoboLab would give about (0.669 + 0.568) / 2 = 0.62. Open questions: both
+- Idea: v3 for MolmoSpaces and FLUX for RoboLab would give about (0.656 + 0.568) / 2 = 0.61 (done on 19 November: 0.634). Open questions: both
   models in the 24 GB board GPU (about 40 GB together, see 17 November) and how the policy tells the two simulators
   apart.
 - Build and submit files: [`risers/flux_submit/`](risers/flux_submit/); cloud test job:
@@ -227,7 +347,7 @@ task that FLUX did not. All 40 tasks:
 
 ---
 
-## 17 November: first stage-2 score (0.497) and FLUX 3 Action with fewer denoising steps (no gain)
+## 17 November: first stage-2 score (0.490) and FLUX 3 Action with fewer denoising steps (no gain)
 
 ### Stage-2 submission: v3-jpeg-rl2
 
@@ -235,9 +355,9 @@ Stage 2 is one submission (`competition.sim_stage_2`) that runs both simulators;
 
 | Part | Episodes | Score | Before |
 |---|---|---|---|
-| MolmoSpaces (`molmo.competition_v2`) | 320 | **66.9%** (214) | 66.9% (214) for the same image on 14 Nov (we first read 210 here; the result file says 214) |
+| MolmoSpaces (`molmo.competition_v2`) | 320 | **65.6%** (210) | 66.9% (214) for the same image on 14 Nov: run-to-run noise |
 | RoboLab (`robolab.competition_40`) | 40 tasks, 1 try each | **0.325** mean subtask score, 7/40 fully done | Our cloud test 0.46; platform check of v3 0.40 |
-| **Total** | | **0.497** | – |
+| **Total** | | **0.490** | – |
 
 RoboLab per task (all 40 in
 [`risers/tests_1117/robolab_stage2_per_task.md`](risers/tests_1117/robolab_stage2_per_task.md)):
@@ -1303,10 +1423,9 @@ The official baselines on the board were π0.5 17.5% and MolmoAct2 30.6%. 1st pl
 
 ## Next
 
-1. **Stage 2 (16 November to 13 December):** submit v3-jpeg-rl2 as our stage-2 entry, so that it gets a RoboLab score.
-   The last scored stage-2 submission before 13 December is the final entry.
-2. **RoboLab is our weak half:** v3 scores 0.40 against 0.56 for the π0.5 baseline. The open problems are stacking,
-   tasks with two objects and words of place ("on top of", "left of"); rules did not fix them.
+1. **Stage 2 (to 13 December):** the router image (0.634, rank 2) is our entry. The last scored stage-2 submission
+   before 13 December is the final entry, so only a better image should replace it.
+2. **MolmoSpaces is now the gap to #1** (0.659 against 0.713): pick-and-place hard, close hard and open tasks.
 3. **The real robot decides the prizes:** v3 solved 0 of 27 real-robot episodes (public models 42%). MolmoBot learned
    only in simulation; a model trained on real robot data is the way to close this gap. To go to the finale, a team must
    also beat the best baseline in simulation.
@@ -1329,6 +1448,7 @@ The official baselines on the board were π0.5 17.5% and MolmoAct2 30.6%. 1st pl
 | `risers/datagen/` | MolmoSpaces data configs for open and close demos (normal and hard), runners, demo counter |
 | `risers/molmobot_image/` | Image build scripts: `build.sh`, `Dockerfile.settings`, and `build_open_close.sh` with `Dockerfile.open_close` (an image with a second action expert) |
 | `risers/competition_runs/` | Submit scripts, board results of every submission (`result.json`, policy logs), `board_by_set.py`, video tools, `board_videos/` (board download, top-5 comparison, wrist-video grip reader) |
+| `risers/router_image/` | The router image of 19 November: `front.py` (port 8000, starts v3, switches to FLUX), `route_rule.py` (the MolmoSpaces wordings), `Dockerfile` and `Dockerfile.flat` (one flat layer, 54.3 GB), `v3_patch/policy.py` (v3 policy + task log line), the cloud build/test and auto-submit scripts |
 | `risers/nebius_train/` | GR00T training scripts (1 November) |
 | `reports/` | Test reports, the report of 10 November (`2026-11-10-changes-since-v3.pdf`, pictures in `images_1110/`), and the charts and pictures of this README for 10–14 November (`images_1116/`, made by `scripts_1116/`) |
 
